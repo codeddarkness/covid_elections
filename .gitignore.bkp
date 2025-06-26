@@ -1,0 +1,21 @@
+./election_data/2022-elections-official/
+./election_data/PresElectionResults/
+./election_data/US_County_Level_Election_Results_08-24/
+./election_data/election-results/
+./nytimes_covid-19-data/
+./unused/export_dataverse/
+./updates_completed/
+./zipcodes/
+./zipcodes/US-Zip-Codes-JSON/
+        .DS_Store
+        election_data/2022-elections-official/
+        election_data/MSA_Turnout_2020_2024_v1.0.csv
+        election_data/PresElectionResults/
+        election_data/Turnout_2020G_v1.2.csv
+        election_data/Turnout_2024G_v0.3.csv
+        election_data/US_County_Level_Election_Results_08-24/
+        election_data/election-results/
+        house_senate
+        nytimes_covid-19-data/
+        unused/
+        zipcodes/
