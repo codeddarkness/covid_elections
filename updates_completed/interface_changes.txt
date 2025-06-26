@@ -1,0 +1,7 @@
+Next interface fixes - 
+1) the web interface should scale with the window size.
+2) the "Selected Regions for Comparison:" data selector frame and the "Selected Regions for Comparison:" should be more compact
+2.a) put the data type and select region labels and drop downs on the first line next to each other, the add region button should be to the right of the selectors
+2.b) The date range start date should be to the left of the end date selector, the update charts should be to the right of the data selectors
+2.c) the 'Selected Regions for Comparison' frame should have the label [show comparison table] [ cumulative view] [clear all] on line one and objects selected below the label/button line
+3) the charts when comparing different region types(college + state + county) should have an option to overlay the data where the user can select the data points to include for the object regions selected. the comparison charts for similar regional objects (state + state + state ) is fine.

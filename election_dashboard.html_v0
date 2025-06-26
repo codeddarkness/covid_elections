@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020 Presidential Election Data Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            border-bottom: 2px solid #1e3a8a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .nav-menu {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .nav-dropdown {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .nav-dropdown:hover {
+            background-color: #1d4ed8;
+        }
+
+        .nav-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            z-index: 1;
+            border-radius: 4px;
+            border: 1px solid #1e3a8a;
+        }
+
+        .nav-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .nav-content a:hover {
+            background-color: #1e3a8a;
+        }
+
+        .nav-menu:hover .nav-content {
+            display: block;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            min-height: calc(100vh - 100px);
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .controls {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid #1e3a8a;
+        }
+
+        .controls-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: end;
+            margin-bottom: 1rem;
+        }
+
+        .controls-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .control-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .control-item label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .control-item select, .control-item input {
+            width: 100%;
+            padding: 0.5rem;
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #1e3a8a;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .control-item select:focus, .control-item input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+        }
+
+        .control-item.button-item {
+            flex: 0 0 auto;
+            min-width: auto;
+            display: flex;
+            align-items: end;
+        }
+
+        .button {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .button:disabled {
+            background-color: #666666;
+            cursor: not-allowed;
+        }
+
+        .button.active {
+            background-color: #10b981;
+        }
+
+        .button.active:hover {
+            background-color: #059669;
+        }
+
+        .selected-regions {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid #1e3a8a;
+        }
+
+        .regions-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #333333;
+        }
+
+        .regions-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .regions-controls {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .region-tag {
+            display: inline-block;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 20px;
+            font-size: 14px;
+            position: relative;
+        }
+
+        .remove-region {
+            margin-left: 0.5rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-panel {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #1e3a8a;
+        }
+
+        .chart-panel h3 {
+            margin-bottom: 1rem;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 350px;
+            width: 100%;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #1e3a8a;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3b82f6;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #cccccc;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            border: 1px solid #1e3a8a;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #333333;
+        }
+
+        .comparison-table th {
+            background-color: #1e3a8a;
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #333333;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #cccccc;
+        }
+
+        .error {
+            background-color: #dc2626;
+            color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .info-section {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid #1e3a8a;
+        }
+
+        .info-section h2 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .info-section h3 {
+            color: #ffffff;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .info-section p, .info-section li {
+            margin-bottom: 0.5rem;
+            color: #cccccc;
+        }
+
+        .info-section ul {
+            margin-left: 2rem;
+        }
+
+        /* Political party colors */
+        .democrat {
+            color: #1e40af !important;
+            background-color: rgba(30, 64, 175, 0.2);
+        }
+
+        .republican {
+            color: #dc2626 !important;
+            background-color: rgba(220, 38, 38, 0.2);
+        }
+
+        .libertarian {
+            color: #fbbf24 !important;
+            background-color: rgba(251, 191, 36, 0.2);
+        }
+
+        .green {
+            color: #10b981 !important;
+            background-color: rgba(16, 185, 129, 0.2);
+        }
+
+        .other {
+            color: #9ca3af !important;
+            background-color: rgba(156, 163, 175, 0.2);
+        }
+
+        .winner-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 100%;
+                padding: 1rem;
+            }
+            
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .control-item {
+                min-width: 100%;
+            }
+
+            .regions-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .regions-controls {
+                width: 100%;
+                justify-content: flex-start;
+            }
+
+            .chart-panel {
+                padding: 1rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .chart-container {
+                height: 300px;
+            }
+
+            .button {
+                padding: 0.4rem 0.8rem;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>2020 Presidential Election Data Dashboard</h1>
+        <div class="nav-menu">
+            <button class="nav-dropdown">Navigation Menu</button>
+            <div class="nav-content">
+                <a href="#" onclick="showPage('dashboard')">Election Dashboard</a>
+                <a href="covid_dashboard.html">COVID-19 Dashboard</a>
+                <a href="#" onclick="showPage('methodology')">Election Data Methodology</a>
+                <a href="#" onclick="showPage('sources')">Data Sources</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Main Election Dashboard Page -->
+        <div id="dashboard" class="page active">
+            <div class="controls">
+                <!-- First row: State and county selection -->
+                <div class="controls-row">
+                    <div class="control-item">
+                        <label for="stateSelect">Select State:</label>
+                        <select id="stateSelect" onchange="loadCountiesForState()">
+                            <option value="">Select a state</option>
+                        </select>
+                    </div>
+
+                    <div class="control-item">
+                        <label for="countySelect">Select County:</label>
+                        <select id="countySelect" disabled>
+                            <option value="">Choose state first</option>
+                        </select>
+                    </div>
+
+                    <div class="control-item button-item">
+                        <button class="button" onclick="addRegion()" id="addRegionBtn" disabled>Add Region</button>
+                    </div>
+                </div>
+
+                <!-- Second row: Analysis controls -->
+                <div class="controls-row">
+                    <div class="control-item">
+                        <label for="analysisType">Analysis Type:</label>
+                        <select id="analysisType" onchange="updateCharts()">
+                            <option value="percentage">Vote Percentage</option>
+                            <option value="raw">Raw Vote Count</option>
+                            <option value="margin">Victory Margin</option>
+                        </select>
+                    </div>
+
+                    <div class="control-item">
+                        <label for="partyFilter">Party Filter:</label>
+                        <select id="partyFilter" onchange="updateCharts()">
+                            <option value="all">All Parties</option>
+                            <option value="major">Major Parties Only</option>
+                            <option value="dem-rep">Democrat vs Republican</option>
+                        </select>
+                    </div>
+
+                    <div class="control-item button-item">
+                        <button class="button" onclick="updateCharts()" id="updateBtn">Update Analysis</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selected-regions">
+                <div class="regions-header">
+                    <h3 class="regions-title">Selected Regions for Analysis:</h3>
+                    <div class="regions-controls">
+                        <button class="button" onclick="toggleComparisonMode()" id="comparisonBtn" disabled>Show Comparison Table</button>
+                        <button class="button" onclick="clearRegions()">Clear All</button>
+                    </div>
+                </div>
+
+                <div id="regionTags">
+                    <p>No regions selected</p>
+                </div>
+            </div>
+
+            <div class="comparison-table" id="comparisonTable" style="display: none;">
+                <!-- Comparison table will be dynamically generated -->
+            </div>
+
+            <div class="stats-grid" id="statsGrid" style="display: none;">
+                <!-- Stats cards will be dynamically generated -->
+            </div>
+
+            <div class="charts-container" id="chartsContainer" style="display: none;">
+                <!-- Charts will be dynamically generated -->
+            </div>
+
+            <div class="loading" id="loadingIndicator" style="display: none;">
+                Loading election data...
+            </div>
+        </div>
+
+        <!-- Methodology Page -->
+        <div id="methodology" class="page">
+            <div class="info-section">
+                <h2>Election Data Methodology</h2>
+                
+                <h3>Data Source</h3>
+                <p>This dashboard displays 2020 Presidential Election results by county, sourced from the MIT Election Data and Science Lab (MEDSL) via the PresElectionResults data package.</p>
+                
+                <h3>Data Structure</h3>
+                <ul>
+                    <li><strong>Geographic Level:</strong> County-level results for all US counties</li>
+                    <li><strong>Election Year:</strong> 2020 Presidential Election</li>
+                    <li><strong>Candidates:</strong> All candidates who received votes, including major and minor party candidates</li>
+                    <li><strong>Vote Types:</strong> Total votes, early votes, election day votes, absentee votes, and provisional votes where available</li>
+                </ul>
+
+                <h3>Data Fields</h3>
+                <ul>
+                    <li><strong>year:</strong> Election year (2020)</li>
+                    <li><strong>state:</strong> Full state name</li>
+                    <li><strong>state_po:</strong> State postal abbreviation</li>
+                    <li><strong>county_name:</strong> County name</li>
+                    <li><strong>county_fips:</strong> 5-digit FIPS county code</li>
+                    <li><strong>office:</strong> Office being contested (US PRESIDENT)</li>
+                    <li><strong>candidate:</strong> Candidate name</li>
+                    <li><strong>party:</strong> Political party affiliation</li>
+                    <li><strong>candidatevotes:</strong> Number of votes received by candidate</li>
+                    <li><strong>totalvotes:</strong> Total votes cast in that county</li>
+                    <li><strong>version:</strong> Data version identifier</li>
+                    <li><strong>mode:</strong> Vote counting method (TOTAL, EARLY VOTE, ELECTION DAY, etc.)</li>
+                </ul>
+
+                <h3>Vote Counting Methods</h3>
+                <ul>
+                    <li><strong>TOTAL:</strong> All votes combined (most common)</li>
+                    <li><strong>EARLY VOTE:</strong> Votes cast during early voting period</li>
+                    <li><strong>ELECTION DAY:</strong> Votes cast on election day</li>
+                    <li><strong>ABSENTEE:</strong> Absentee/mail-in ballots</li>
+                    <li><strong>PROVISIONAL:</strong> Provisional ballots</li>
+                </ul>
+
+                <h3>Data Quality Notes</h3>
+                <ul>
+                    <li>Data is aggregated from official state and local election results</li>
+                    <li>Minor discrepancies may exist between jurisdictions in reporting methods</li>
+                    <li>Some counties may have separate entries for different vote counting methods</li>
+                    <li>Write-in candidates and very minor parties may be grouped as "OTHER"</li>
+                </ul>
+
+                <h3>Analysis Calculations</h3>
+                <ul>
+                    <li><strong>Vote Percentage:</strong> (Candidate Votes / Total Votes) × 100</li>
+                    <li><strong>Victory Margin:</strong> Difference between first and second place candidates</li>
+                    <li><strong>Turnout:</strong> Total votes cast relative to registered/eligible voters (where data available)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Sources Page -->
+        <div id="sources" class="page">
+            <div class="info-section">
+                <h2>Data Sources and Attribution</h2>
+                
+                <h3>Primary Data Source</h3>
+                <p><strong>MIT Election Data and Science Lab (MEDSL)</strong></p>
+                <ul>
+                    <li>Repository: <a href="https://github.com/jaytimm/PresElectionResults" style="color: #3b82f6;">PresElectionResults Data Package</a></li>
+                    <li>Original Source: MIT Election Data and Science Lab</li>
+                    <li>License: Open source for research and educational use</li>
+                </ul>
+
+                <h3>Data Collection</h3>
+                <p>The underlying election data is compiled from official state and local election authorities across all 50 states and the District of Columbia. This includes:</p>
+                <ul>
+                    <li>State election departments and secretaries of state offices</li>
+                    <li>County and municipal election authorities</li>
+                    <li>Official election result certifications</li>
+                </ul>
+
+                <h3>Geographic Standards</h3>
+                <ul>
+                    <li><strong>FIPS Codes:</strong> Federal Information Processing Standards for county identification</li>
+                    <li><strong>Coverage:</strong> All 3,141 counties and county-equivalents in the United States</li>
+                    <li><strong>Special Cases:</strong> Independent cities, parishes, boroughs, and census areas included</li>
+                </ul>
+
+                <h3>Data Processing</h3>
+                <p>The PresElectionResults package processes raw election data to provide:</p>
+                <ul>
+                    <li>Standardized candidate and party names</li>
+                    <li>Consistent geographic identifiers</li>
+                    <li>Aggregated vote totals across different counting methods</li>
+                    <li>Quality checks and validation</li>
+                </ul>
+
+                <h3>Technical Implementation</h3>
+                <ul>
+                    <li><strong>Data Format:</strong> CSV (Comma-Separated Values)</li>
+                    <li><strong>Processing:</strong> Client-side JavaScript with Papa Parse</li>
+                    <li><strong>Visualization:</strong> Chart.js for interactive charts and graphs</li>
+                    <li><strong>Responsive Design:</strong> Mobile-friendly interface</li>
+                </ul>
+
+                <h3>Usage and Attribution</h3>
+                <p>When using this data, please provide appropriate attribution:</p>
+                <ul>
+                    <li>"Election data from MIT Election Data and Science Lab via PresElectionResults package"</li>
+                    <li>For academic use: Include full citation to MEDSL and data package</li>
+                    <li>For public use: Link back to original data sources when possible</li>
+                </ul>
+
+                <h3>Data Limitations</h3>
+                <ul>
+                    <li>Limited to 2020 Presidential Election results</li>
+                    <li>Does not include down-ballot races</li>
+                    <li>Demographic data not included (age, race, income, etc.)</li>
+                    <li>Precinct-level detail not available in this dataset</li>
+                </ul>
+
+                <h3>Related Resources</h3>
+                <ul>
+                    <li><a href="https://electionlab.mit.edu/" style="color: #3b82f6;">MIT Election Data and Science Lab</a></li>
+                    <li><a href="https://www.fec.gov/" style="color: #3b82f6;">Federal Election Commission</a></li>
+                    <li><a href="https://www.census.gov/" style="color: #3b82f6;">US Census Bureau (Geographic data)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let electionData = [];
+        let selectedRegions = [];
+        let charts = {};
+        let showComparison = false;
+
+        // Party color mapping
+        const partyColors = {
+            'DEMOCRAT': '#1e40af',
+            'REPUBLICAN': '#dc2626',
+            'LIBERTARIAN': '#fbbf24',
+            'GREEN': '#10b981',
+            'OTHER': '#9ca3af'
+        };
+
+        // Navigation functions
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        // Data loading functions
+        async function loadElectionData() {
+            showLoading(true);
+            
+            try {
+                console.log('Loading election data...');
+                
+                const response = await fetch('countypres_2020.csv');
+                if (!response.ok) {
+                    throw new Error(`Failed to load election data: ${response.statusText} (${response.status})`);
+                }
+                
+                const csvText = await response.text();
+                console.log(`Election CSV loaded (${csvText.length} characters), parsing...`);
+                
+                if (typeof Papa === 'undefined') {
+                    throw new Error('Papa Parse library not loaded. Please check your internet connection.');
+                }
+                
+                const parsedData = Papa.parse(csvText, {
+                    header: true,
+                    dynamicTyping: true,
+                    skipEmptyLines: true
+                });
+
+                if (parsedData.errors.length > 0) {
+                    console.warn('CSV parsing errors:', parsedData.errors);
+                }
+
+                // Filter for TOTAL mode only to avoid duplicates
+                electionData = parsedData.data.filter(row => {
+                    return row.mode === 'TOTAL' && row.office === 'US PRESIDENT' && row.year === 2020;
+                });
+                
+                console.log(`Loaded ${electionData.length} election records`);
+                
+                populateStateSelect();
+                showLoading(false);
+                
+            } catch (error) {
+                console.error('Error loading election data:', error);
+                showError(`Failed to load election data: ${error.message}`);
+                showLoading(false);
+            }
+        }
+
+        function populateStateSelect() {
+            const stateSelect = document.getElementById('stateSelect');
+            const states = [...new Set(electionData.map(d => d.state))].filter(Boolean).sort();
+            
+            stateSelect.innerHTML = '<option value="">Select a state</option>';
+            states.forEach(state => {
+                const option = document.createElement('option');
+                option.value = state;
+                option.textContent = state;
+                stateSelect.appendChild(option);
+            });
+        }
+
+        function loadCountiesForState() {
+            const stateSelect = document.getElementById('stateSelect');
+            const countySelect = document.getElementById('countySelect');
+            const selectedState = stateSelect.value;
+            
+            if (!selectedState) {
+                countySelect.innerHTML = '<option value="">Choose state first</option>';
+                countySelect.disabled = true;
+                document.getElementById('addRegionBtn').disabled = true;
+                return;
+            }
+
+            const counties = [...new Set(electionData
+                .filter(d => d.state === selectedState)
+                .map(d => d.county_name))]
+                .filter(Boolean)
+                .sort();
+            
+            countySelect.innerHTML = '<option value="">Select a county</option>';
+            counties.forEach(county => {
+                const option = document.createElement('option');
+                option.value = county;
+                option.textContent = county;
+                countySelect.appendChild(option);
+            });
+            
+            countySelect.disabled = false;
+            document.getElementById('addRegionBtn').disabled = false;
+        }
+
+        function addRegion() {
+            const stateSelect = document.getElementById('stateSelect');
+            const countySelect = document.getElementById('countySelect');
+            const selectedState = stateSelect.value;
+            const selectedCounty = countySelect.value;
+
+            if (selectedState && selectedCounty) {
+                const regionId = `${selectedCounty}, ${selectedState}`;
+                
+                if (!selectedRegions.find(r => r.id === regionId)) {
+                    selectedRegions.push({
+                        id: regionId,
+                        state: selectedState,
+                        county: selectedCounty
+                    });
+                    
+                    updateRegionTags();
+                    updateCharts();
+                    
+                    // Enable comparison controls
+                    document.getElementById('comparisonBtn').disabled = false;
+                    
+                    countySelect.value = '';
+                }
+            }
+        }
+
+        function removeRegion(regionId) {
+            selectedRegions = selectedRegions.filter(r => r.id !== regionId);
+            updateRegionTags();
+            updateCharts();
+            
+            if (selectedRegions.length === 0) {
+                document.getElementById('comparisonBtn').disabled = true;
+                document.getElementById('comparisonTable').style.display = 'none';
+            }
+        }
+
+        function clearRegions() {
+            selectedRegions = [];
+            updateRegionTags();
+            clearCharts();
+            document.getElementById('comparisonBtn').disabled = true;
+            document.getElementById('comparisonTable').style.display = 'none';
+        }
+
+        function updateRegionTags() {
+            const tagsContainer = document.getElementById('regionTags');
+            
+            if (selectedRegions.length === 0) {
+                tagsContainer.innerHTML = '<p>No regions selected</p>';
+                return;
+            }
+
+            tagsContainer.innerHTML = selectedRegions.map(region => {
+                return `<span class="region-tag">
+                    ${region.id}
+                    <span class="remove-region" onclick="removeRegion('${region.id.replace(/'/g, "\\'")}')">×</span>
+                </span>`;
+            }).join('');
+        }
+
+        function getRegionElectionData(region) {
+            return electionData.filter(d => 
+                d.state === region.state && 
+                d.county_name === region.county &&
+                d.mode === 'TOTAL'
+            );
+        }
+
+        function aggregateVotesByParty(regionData) {
+            const partyTotals = {};
+            let totalVotes = 0;
+
+            regionData.forEach(record => {
+                const party = record.party || 'OTHER';
+                const votes = record.candidatevotes || 0;
+                
+                if (!partyTotals[party]) {
+                    partyTotals[party] = 0;
+                }
+                partyTotals[party] += votes;
+                totalVotes = Math.max(totalVotes, record.totalvotes || 0);
+            });
+
+            return { partyTotals, totalVotes };
+        }
+
+        function toggleComparisonMode() {
+            showComparison = !showComparison;
+            const btn = document.getElementById('comparisonBtn');
+            const table = document.getElementById('comparisonTable');
+            
+            if (showComparison) {
+                btn.textContent = 'Hide Comparison Table';
+                btn.classList.add('active');
+                generateComparisonTable();
+                table.style.display = 'block';
+            } else {
+                btn.textContent = 'Show Comparison Table';
+                btn.classList.remove('active');
+                table.style.display = 'none';
+            }
+        }
+
+        function generateComparisonTable() {
+            const table = document.getElementById('comparisonTable');
+            
+            let tableHTML = '<table><thead><tr><th>Region</th><th>Winner</th><th>Democrat %</th><th>Republican %</th><th>Other %</th><th>Total Votes</th><th>Margin</th></tr></thead><tbody>';
+            
+            selectedRegions.forEach(region => {
+                const regionData = getRegionElectionData(region);
+                const { partyTotals, totalVotes } = aggregateVotesByParty(regionData);
+                
+                const demVotes = partyTotals['DEMOCRAT'] || 0;
+                const repVotes = partyTotals['REPUBLICAN'] || 0;
+                const otherVotes = totalVotes - demVotes - repVotes;
+                
+                const demPct = totalVotes > 0 ? ((demVotes / totalVotes) * 100).toFixed(1) : 0;
+                const repPct = totalVotes > 0 ? ((repVotes / totalVotes) * 100).toFixed(1) : 0;
+                const otherPct = totalVotes > 0 ? ((otherVotes / totalVotes) * 100).toFixed(1) : 0;
+                
+                const winner = demVotes > repVotes ? 'Democrat' : 'Republican';
+                const margin = Math.abs(demVotes - repVotes);
+                const marginPct = totalVotes > 0 ? ((margin / totalVotes) * 100).toFixed(1) : 0;
+                
+                const winnerClass = winner === 'Democrat' ? 'democrat' : 'republican';
+                
+                tableHTML += '<tr>';
+                tableHTML += `<td>${region.id}</td>`;
+                tableHTML += `<td><span class="winner-indicator ${winnerClass}"></span>${winner}</td>`;
+                tableHTML += `<td class="democrat">${demPct}%</td>`;
+                tableHTML += `<td class="republican">${repPct}%</td>`;
+                tableHTML += `<td class="other">${otherPct}%</td>`;
+                tableHTML += `<td>${totalVotes.toLocaleString()}</td>`;
+                tableHTML += `<td>+${marginPct}%</td>`;
+                tableHTML += '</tr>';
+            });
+            
+            tableHTML += '</tbody></table>';
+            table.innerHTML = tableHTML;
+        }
+
+        function updateCharts() {
+            if (selectedRegions.length === 0) {
+                document.getElementById('chartsContainer').style.display = 'none';
+                document.getElementById('statsGrid').style.display = 'none';
+                return;
+            }
+
+            generateStatistics();
+            generateCharts();
+            document.getElementById('chartsContainer').style.display = 'grid';
+            document.getElementById('statsGrid').style.display = 'grid';
+        }
+
+        function generateStatistics() {
+            const statsGrid = document.getElementById('statsGrid');
+            
+            let totalVoteCount = 0;
+            let totalDemVotes = 0;
+            let totalRepVotes = 0;
+            let demWins = 0;
+            let repWins = 0;
+
+            selectedRegions.forEach(region => {
+                const regionData = getRegionElectionData(region);
+                const { partyTotals, totalVotes } = aggregateVotesByParty(regionData);
+                
+                totalVoteCount += totalVotes;
+                totalDemVotes += partyTotals['DEMOCRAT'] || 0;
+                totalRepVotes += partyTotals['REPUBLICAN'] || 0;
+                
+                if ((partyTotals['DEMOCRAT'] || 0) > (partyTotals['REPUBLICAN'] || 0)) {
+                    demWins++;
+                } else {
+                    repWins++;
+                }
+            });
+
+            const overallDemPct = totalVoteCount > 0 ? ((totalDemVotes / totalVoteCount) * 100).toFixed(1) : 0;
+            const overallRepPct = totalVoteCount > 0 ? ((totalRepVotes / totalVoteCount) * 100).toFixed(1) : 0;
+
+            let statsHTML = `
+                <div class="stat-card">
+                    <div class="stat-value">${totalVoteCount.toLocaleString()}</div>
+                    <div class="stat-label">Total Votes Cast</div>
+                </div>
+                <div class="stat-card democrat">
+                    <div class="stat-value">${overallDemPct}%</div>
+                    <div class="stat-label">Democrat Vote Share</div>
+                </div>
+                <div class="stat-card republican">
+                    <div class="stat-value">${overallRepPct}%</div>
+                    <div class="stat-label">Republican Vote Share</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${demWins}/${repWins}</div>
+                    <div class="stat-label">Dem/Rep Wins</div>
+                </div>
+            `;
+
+            statsGrid.innerHTML = statsHTML;
+        }
+
+        function generateCharts() {
+            clearCharts();
+            const chartsContainer = document.getElementById('chartsContainer');
+            chartsContainer.innerHTML = '';
+
+            // Create party breakdown chart
+            createPartyBreakdownChart();
+            
+            // Create region comparison chart
+            if (selectedRegions.length > 1) {
+                createRegionComparisonChart();
+            }
+            
+            // Create vote margin chart
+            createVoteMarginChart();
+        }
+
+        function createPartyBreakdownChart() {
+            const chartsContainer = document.getElementById('chartsContainer');
+            
+            const chartPanel = document.createElement('div');
+            chartPanel.className = 'chart-panel';
+            chartPanel.innerHTML = `
+                <h3>Combined Party Vote Share</h3>
+                <div class="chart-container">
+                    <canvas id="party-breakdown-chart"></canvas>
+                </div>
+            `;
+            chartsContainer.appendChild(chartPanel);
+
+            const ctx = document.getElementById('party-breakdown-chart').getContext('2d');
+            
+            // Aggregate data across all selected regions
+            const combinedPartyTotals = {};
+            let combinedTotalVotes = 0;
+
+            selectedRegions.forEach(region => {
+                const regionData = getRegionElectionData(region);
+                const { partyTotals, totalVotes } = aggregateVotesByParty(regionData);
+                
+                combinedTotalVotes += totalVotes;
+                
+                Object.keys(partyTotals).forEach(party => {
+                    if (!combinedPartyTotals[party]) {
+                        combinedPartyTotals[party] = 0;
+                    }
+                    combinedPartyTotals[party] += partyTotals[party];
+                });
+            });
+
+            const parties = Object.keys(combinedPartyTotals).sort((a, b) => 
+                combinedPartyTotals[b] - combinedPartyTotals[a]
+            );
+
+            const data = parties.map(party => 
+                combinedTotalVotes > 0 ? (combinedPartyTotals[party] / combinedTotalVotes) * 100 : 0
+            );
+
+            const colors = parties.map(party => partyColors[party] || partyColors['OTHER']);
+
+            const chartConfig = {
+                type: 'doughnut',
+                data: {
+                    labels: parties.map(p => p.charAt(0) + p.slice(1).toLowerCase()),
+                    datasets: [{
+                        data: data,
+                        backgroundColor: colors,
+                        borderColor: '#333333',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { 
+                                color: '#ffffff',
+                                padding: 20
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleColor: '#ffffff',
+                            bodyColor: '#ffffff',
+                            borderColor: '#1e3a8a',
+                            borderWidth: 1,
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.label}: ${context.parsed.toFixed(1)}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            try {
+                charts['party-breakdown-chart'] = new Chart(ctx, chartConfig);
+                console.log('Party breakdown chart created successfully');
+            } catch (error) {
+                console.error('Error creating party breakdown chart:', error);
+            }
+        }
+
+        function createRegionComparisonChart() {
+            const chartsContainer = document.getElementById('chartsContainer');
+            
+            const chartPanel = document.createElement('div');
+            chartPanel.className = 'chart-panel';
+            chartPanel.innerHTML = `
+                <h3>Region Comparison - Major Parties</h3>
+                <div class="chart-container">
+                    <canvas id="region-comparison-chart"></canvas>
+                </div>
+            `;
+            chartsContainer.appendChild(chartPanel);
+
+            const ctx = document.getElementById('region-comparison-chart').getContext('2d');
+            
+            const demData = [];
+            const repData = [];
+            const labels = [];
+
+            selectedRegions.forEach(region => {
+                const regionData = getRegionElectionData(region);
+                const { partyTotals, totalVotes } = aggregateVotesByParty(regionData);
+                
+                const demPct = totalVotes > 0 ? ((partyTotals['DEMOCRAT'] || 0) / totalVotes) * 100 : 0;
+                const repPct = totalVotes > 0 ? ((partyTotals['REPUBLICAN'] || 0) / totalVotes) * 100 : 0;
+                
+                demData.push(demPct);
+                repData.push(repPct);
+                labels.push(region.county);
+            });
+
+            const chartConfig = {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Democrat',
+                            data: demData,
+                            backgroundColor: partyColors['DEMOCRAT'],
+                            borderColor: partyColors['DEMOCRAT'],
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Republican',
+                            data: repData,
+                            backgroundColor: partyColors['REPUBLICAN'],
+                            borderColor: partyColors['REPUBLICAN'],
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { 
+                                color: '#ffffff',
+                                padding: 20
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleColor: '#ffffff',
+                            bodyColor: '#ffffff',
+                            borderColor: '#1e3a8a',
+                            borderWidth: 1,
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.dataset.label}: ${context.parsed.y.toFixed(1)}%`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { color: '#ffffff' },
+                            grid: { color: '#333333' }
+                        },
+                        y: {
+                            ticks: { 
+                                color: '#ffffff',
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            },
+                            grid: { color: '#333333' },
+                            title: {
+                                display: true,
+                                text: 'Vote Percentage',
+                                color: '#ffffff'
+                            },
+                            max: 100
+                        }
+                    }
+                }
+            };
+
+            try {
+                charts['region-comparison-chart'] = new Chart(ctx, chartConfig);
+                console.log('Region comparison chart created successfully');
+            } catch (error) {
+                console.error('Error creating region comparison chart:', error);
+            }
+        }
+
+        function createVoteMarginChart() {
+            const chartsContainer = document.getElementById('chartsContainer');
+            
+            const chartPanel = document.createElement('div');
+            chartPanel.className = 'chart-panel';
+            chartPanel.innerHTML = `
+                <h3>Victory Margins by Region</h3>
+                <div class="chart-container">
+                    <canvas id="vote-margin-chart"></canvas>
+                </div>
+            `;
+            chartsContainer.appendChild(chartPanel);
+
+            const ctx = document.getElementById('vote-margin-chart').getContext('2d');
+            
+            const marginData = [];
+            const labels = [];
+            const colors = [];
+
+            selectedRegions.forEach(region => {
+                const regionData = getRegionElectionData(region);
+                const { partyTotals, totalVotes } = aggregateVotesByParty(regionData);
+                
+                const demVotes = partyTotals['DEMOCRAT'] || 0;
+                const repVotes = partyTotals['REPUBLICAN'] || 0;
+                
+                let margin, color;
+                if (demVotes > repVotes) {
+                    margin = totalVotes > 0 ? ((demVotes - repVotes) / totalVotes) * 100 : 0;
+                    color = partyColors['DEMOCRAT'];
+                } else {
+                    margin = totalVotes > 0 ? -((repVotes - demVotes) / totalVotes) * 100 : 0;
+                    color = partyColors['REPUBLICAN'];
+                }
+                
+                marginData.push(margin);
+                labels.push(region.county);
+                colors.push(color);
+            });
+
+            const chartConfig = {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Victory Margin',
+                        data: marginData,
+                        backgroundColor: colors,
+                        borderColor: colors,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { 
+                                color: '#ffffff',
+                                padding: 20
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleColor: '#ffffff',
+                            bodyColor: '#ffffff',
+                            borderColor: '#1e3a8a',
+                            borderWidth: 1,
+                            callbacks: {
+                                label: function(context) {
+                                    const margin = Math.abs(context.parsed.y);
+                                    const party = context.parsed.y > 0 ? 'Democrat' : 'Republican';
+                                    return `${party} +${margin.toFixed(1)}%`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { color: '#ffffff' },
+                            grid: { color: '#333333' }
+                        },
+                        y: {
+                            ticks: { 
+                                color: '#ffffff',
+                                callback: function(value) {
+                                    return (value > 0 ? '+' : '') + value.toFixed(1) + '%';
+                                }
+                            },
+                            grid: { color: '#333333' },
+                            title: {
+                                display: true,
+                                text: 'Margin (+ Democrat, - Republican)',
+                                color: '#ffffff'
+                            }
+                        }
+                    }
+                }
+            };
+
+            try {
+                charts['vote-margin-chart'] = new Chart(ctx, chartConfig);
+                console.log('Vote margin chart created successfully');
+            } catch (error) {
+                console.error('Error creating vote margin chart:', error);
+            }
+        }
+
+        function clearCharts() {
+            Object.values(charts).forEach(chart => {
+                try {
+                    chart.destroy();
+                } catch (e) {
+                    console.warn('Error destroying chart:', e);
+                }
+            });
+            charts = {};
+        }
+
+        function showError(message) {
+            const container = document.querySelector('.container');
+            const existingError = document.querySelector('.error');
+            if (existingError) {
+                existingError.remove();
+            }
+            
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error';
+            errorDiv.textContent = message;
+            container.insertBefore(errorDiv, container.firstChild);
+            
+            setTimeout(() => {
+                if (errorDiv.parentNode) {
+                    errorDiv.remove();
+                }
+            }, 10000);
+        }
+
+        function showLoading(show) {
+            document.getElementById('loadingIndicator').style.display = show ? 'block' : 'none';
+        }
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Election Data Dashboard initialized');
+            console.log('Libraries loaded:', {
+                Chart: typeof Chart !== 'undefined',
+                Papa: typeof Papa !== 'undefined'
+            });
+            
+            loadElectionData();
+        });
+
+        // Window resize handler for responsive charts
+        window.addEventListener('resize', function() {
+            Object.values(charts).forEach(chart => {
+                try {
+                    chart.resize();
+                } catch (e) {
+                    console.warn('Error resizing chart:', e);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

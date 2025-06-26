@@ -1,0 +1,7 @@
+https://github.com/owid/covid-19-data.git
+https://github.com/nytimes/covid-19-data.git
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K7760H ## 2020 Precinct-Level Election Results
+https://github.com/tonmcg/US_County_Level_Election_Results_08-24.git
+https://github.com/jaytimm/PresElectionResults
+https://github.com/MEDSL/2022-elections-official.git
+https://github.com/fivethirtyeight/election-results.git

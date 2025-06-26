@@ -1,0 +1,87 @@
+## SAMPLE DATA from countypres_2020.csv (25 random lines sorted) ##
+year,state,state_po,county_name,county_fips,office,candidate,party,candidatevotes,totalvotes,version,mode
+2020,ARIZONA,AZ,YUMA,04027,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,657,69881,20220315,PROVISIONAL
+2020,ARKANSAS,AR,BRADLEY,05011,US PRESIDENT,JOSEPH R BIDEN JR,DEMOCRAT,759,3654,20220315,EARLY VOTE
+2020,ARKANSAS,AR,COLUMBIA,05027,US PRESIDENT,JOSEPH R BIDEN JR,DEMOCRAT,1971,8616,20220315,EARLY VOTE
+2020,ARKANSAS,AR,MADISON,05087,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,289,7351,20220315,ABSENTEE
+2020,ARKANSAS,AR,POPE,05115,US PRESIDENT,OTHER,GREEN,34,24432,20220315,EARLY VOTE
+2020,CALIFORNIA,CA,LAKE,06033,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,13123,28812,20220315,TOTAL
+2020,GEORGIA,GA,FORSYTH,13117,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,9740,129305,20220315,ELECTION DAY
+2020,INDIANA,IN,BOONE,18011,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,22351,38520,20220315,TOTAL
+2020,KANSAS,KS,WILSON,20205,US PRESIDENT,JOSEPH R BIDEN JR,DEMOCRAT,723,3954,20220315,TOTAL
+2020,MISSISSIPPI,MS,JONES,28067,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,21226,30091,20220315,TOTAL
+2020,MISSISSIPPI,MS,LINCOLN,28085,US PRESIDENT,JO JORGENSEN,LIBERTARIAN,64,16801,20220315,TOTAL
+2020,MISSOURI,MO,PHELPS,29161,US PRESIDENT,OTHER,OTHER,21,19568,20220315,TOTAL
+2020,NEBRASKA,NE,PERKINS,31135,US PRESIDENT,JO JORGENSEN,LIBERTARIAN,24,1544,20220315,TOTAL
+2020,NEW JERSEY,NJ,OCEAN,34029,US PRESIDENT,JOSEPH R BIDEN JR,DEMOCRAT,119456,341516,20220315,TOTAL
+2020,NORTH CAROLINA,NC,DARE,37055,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,9076,24232,20220315,ONE STOP
+2020,NORTH CAROLINA,NC,DURHAM,37063,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,22228,179914,20220315,ONE STOP
+2020,NORTH CAROLINA,NC,HALIFAX,37083,US PRESIDENT,OTHER,OTHER,20,25759,20220315,ONE STOP
+2020,OKLAHOMA,OK,SEQUOYAH,40135,US PRESIDENT,DONALD J TRUMP,REPUBLICAN,623,15386,20220315,ABSENTEE BY MAIL
+2020,SOUTH CAROLINA,SC,BEAUFORT,45013,US PRESIDENT,OTHER,OTHER,13,97835,20220315,ABSENTEE BY MAIL
+2020,SOUTH CAROLINA,SC,ORANGEBURG,45075,US PRESIDENT,JO JORGENSEN,LIBERTARIAN,0,41205,20220315,PROVISIONAL
+2020,UTAH,UT,UTAH,49049,US PRESIDENT,OTHER,OTHER,0,284286,20220315,MAIL
+2020,VIRGINIA,VA,FLOYD,51063,US PRESIDENT,JOSEPH R BIDEN JR,DEMOCRAT,466,9412,20220315,ELECTION DAY
+2020,VIRGINIA,VA,HALIFAX,51083,US PRESIDENT,JO JORGENSEN,LIBERTARIAN,64,18248,20220315,ABSENTEE
+2020,WASHINGTON,WA,KLICKITAT,53039,US PRESIDENT,JOSEPH R BIDEN JR,DEMOCRAT,5959,13560,20220315,TOTAL
+2020,WYOMING,WY,CAMPBELL,56005,US PRESIDENT,JOSEPH R BIDEN JR,DEMOCRAT,1935,19735,20220315,TOTAL
+## RECORDS IN FILE [ 'wc -l countypres_2020.csv' ]:    22094 countypres_2020.csv
+## END countypres_2020.csv
+
+## osprey(dev) folder structure /Users/raymond/covid_elections
+total 6184
+-rw-r--r--    1 raymond  staff   2.7K Jun 25 18:13 sample_election_data.csv.ref
+drwxr-x---+ 233 raymond  staff   7.3K Jun 25 18:13 ..
+drwxr-xr-x   10 raymond  staff   320B Jun 25 18:13 election_data
+drwxr-xr-x   39 raymond  staff   1.2K Jun 25 18:10 .
+-rwxr-xr-x    1 raymond  staff   705B Jun 25 18:10 create_covid_data_sample.sh
+-rw-r--r--@   1 raymond  staff   6.0K Jun 25 18:03 .DS_Store
+-rw-r--r--    1 raymond  staff   2.6K Jun 25 17:59 current_project_structure.txt
+drwxr-xr-x    4 raymond  staff   128B Jun 25 17:57 unused
+drwxr-xr-x   12 raymond  staff   384B Jun 25 17:56 scripts_ran
+-rw-r--r--@   1 raymond  staff    89K Jun 25 17:55 covid_dashboard.html_v5
+-rw-r--r--@   1 raymond  staff    89K Jun 25 17:52 covid_dashboard.html
+-rw-r--r--@   1 raymond  staff    89K Jun 25 17:44 covid_dashboard.html.county-fix-backup-20250625-174456
+-rwxr-xr-x@   1 raymond  staff   6.2K Jun 25 17:43 debug_county_matching.sh
+-rw-r--r--@   1 raymond  staff    89K Jun 25 17:42 covid_dashboard.html_v4
+-rw-r--r--    1 raymond  staff   2.0M Jun 25 17:39 countypres_2020.csv
+-rwxr-xr-x@   1 raymond  staff    14K Jun 25 17:31 sync.sh
+-rw-r--r--@   1 raymond  staff   6.1K Jun 25 17:29 final_deployment_guide.md
+-rwxr-xr-x@   1 raymond  staff   6.8K Jun 25 17:23 sync.sh_v0
+-rw-r--r--@   1 raymond  staff    70K Jun 25 17:20 covid_dashboard.html.pre-integration-backup-20250625-172038
+-rwxr-xr-x@   1 raymond  staff    13K Jun 25 17:19 test_integration.sh
+-rw-r--r--@   1 raymond  staff   7.8K Jun 25 17:18 integration_usage_guide.md
+-rw-r--r--@   1 raymond  staff    89K Jun 25 17:16 covid_dashboard_integrated.html
+-rw-r--r--@   1 raymond  staff    49K Jun 25 17:10 election_dashboard.html_v0
+-rw-r--r--@   1 raymond  staff    70K Jun 25 17:10 covid_dashboard.html_v3
+-rw-r--r--@   1 raymond  staff    70K Jun 25 17:00 covid_dashboard.html.nav-backup-20250625-170017
+-rw-r--r--@   1 raymond  staff    49K Jun 25 16:58 election_dashboard.html
+drwxr-xr-x   15 raymond  staff   480B Jun 25 13:40 zipcodes
+-rw-r--r--    1 raymond  staff   432B Jun 25 13:22 sources.txt
+-rw-r--r--    1 raymond  staff   143B Jun 25 12:57 change_requests.txt
+lrwxr-xr-x    1 raymond  staff    28B Jun 25 12:49 house_senate -> PresElectionResults/archived
+drwxr-xr-x    2 raymond  staff    64B Jun 25 12:18 notes
+drwxr-xr-x    3 raymond  staff    96B Jun 25 10:58 updates_completed
+-rw-r--r--@   1 raymond  staff    70K Jun 25 10:48 covid_dashboard.html_v2
+-rw-r--r--@   1 raymond  staff    10K Jun 23 17:00 README.md
+-rw-r--r--@   1 raymond  staff    55K Jun 23 16:51 covid_dashboard.html_v1
+drwxr-xr-x   24 raymond  staff   768B Jun 23 16:23 nytimes_covid-19-data
+-rw-r--r--@   1 raymond  staff    39K Jun 23 15:24 covid_dashboard.html_v0
+-rw-r--r--    1 raymond  staff   940B Jun 23 14:57 README_WEB.md
+-rw-r--r--    1 raymond  staff   842B Jun 23 14:57 index.html
+
+## bataleon(web server) folder structure /var/www/html/covid_elections
+total 2.3M
+drwxr-xr-x  3 www-data www-data 4.0K Jun 25 17:53 .
+-rw-r--r--  1 www-data www-data  90K Jun 25 17:53 covid_dashboard.html
+-rw-r--r--  1 www-data www-data  50K Jun 25 17:45 election_dashboard.html
+-rw-r--r--  1 www-data www-data 2.0M Jun 25 17:45 countypres_2020.csv
+-rw-r--r--  1 www-data www-data   52 Jun 23 15:17 retry_later
+-rw-r--r--  1 www-data www-data  842 Jun 23 14:57 index.html
+-rw-r--r--  1 www-data www-data  940 Jun 23 14:57 README_WEB.md
+drwxr-xr-x  9 www-data www-data 4.0K Jun 23 14:55 nytimes_covid-19-data
+drwxr-xr-x 22 www-data www-data 4.0K Jun 23 14:45 ..
+-rw-r--r--  1 www-data www-data   87 Jun 23 14:18 sources.txt
+-rw-r--r--  1 www-data www-data  44K Jun 23 13:40 MSA_Turnout_2020_2024_v1.0.csv
+-rw-r--r--  1 www-data www-data 8.2K Jun 23 13:37 Turnout_2024G_v0.3.csv
+-rw-r--r--  1 www-data www-data 8.5K Jun 23 13:36 Turnout_2020G_v1.2.csv
