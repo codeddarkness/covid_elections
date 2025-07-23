@@ -9,3 +9,8 @@ unused/export_dataverse/
 updates_completed/
 zipcodes/
 zipcodes/US-Zip-Codes-JSON/
+create_covid_data_sample.sh
+sample_covid_data.csv.ref
+sample_election_data.csv.ref
+sync.sh
+sync.sh_v0
