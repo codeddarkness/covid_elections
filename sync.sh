@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# COVID Elections Project - Universal Sync Script (Updated for Integration)
-# Syncs from osprey.darkremy to bataleon web server
-# Version: Integration Update - Includes political analysis features
+# COVID Elections Project - Minimal Sync Script
+# Syncs only essential website files (no huge data files)
+# Version: Essential Files Only
 
 set -e
 
@@ -11,14 +11,12 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
 NC='\033[0m'
 
 print_status() { echo -e "${BLUE}[INFO]${NC} $1"; }
 print_success() { echo -e "${GREEN}[SUCCESS]${NC} $1"; }
 print_warning() { echo -e "${YELLOW}[WARNING]${NC} $1"; }
 print_error() { echo -e "${RED}[ERROR]${NC} $1"; }
-print_feature() { echo -e "${PURPLE}[FEATURE]${NC} $1"; }
 
 # Configuration
 PROJECT_DIR="/Users/raymond/covid_elections"
@@ -26,46 +24,61 @@ WEB_HOST="bataleon"
 WEB_USER="raymond"
 WEB_PATH="/var/www/html/covid_elections"
 
+# Core website files
+CORE_FILES=(
+    "covid_dashboard.html"
+    "election_dashboard.html"
+    "index.html"
+    "README_WEB.md"
+    "countypres_2020.csv"
+)
+
+# Essential COVID data files only (small, frequently used)
+COVID_DATA_FILES=(
+    "nytimes_covid-19-data/us-states.csv"
+    "nytimes_covid-19-data/us-counties-recent.csv"
+    "nytimes_covid-19-data/colleges/colleges.csv"
+    "nytimes_covid-19-data/prisons/facilities.csv"
+    "nytimes_covid-19-data/prisons/systems.csv"
+    "nytimes_covid-19-data/excess-deaths/deaths.csv"
+    "nytimes_covid-19-data/mask-use/mask-use-by-county.csv"
+)
+
 # Parse command line arguments
-QUICK_MODE=false
 DASHBOARD_ONLY=false
 NO_BACKUP=false
 FORCE_MODE=false
-INTEGRATION_MODE=false
 
 show_usage() {
-    echo "COVID Elections Sync Script (Integration Edition)"
+    echo "COVID Elections Minimal Sync Script"
     echo ""
     echo "Usage: $0 [OPTIONS]"
     echo ""
     echo "Options:"
-    echo "  -q, --quick         Quick sync (dashboard only)"
     echo "  -d, --dashboard     Dashboard file only"
-    echo "  -i, --integration   Integration mode (dashboard + election data)"
     echo "  -n, --no-backup     Skip backup creation"
     echo "  -f, --force         Force sync without confirmation"
     echo "  -h, --help          Show this help"
     echo ""
     echo "Examples:"
-    echo "  $0                  # Full sync with backup"
-    echo "  $0 -q               # Quick dashboard-only sync"
-    echo "  $0 -i               # Integration sync (dashboard + election data)"
-    echo "  $0 -f               # Force full sync without prompts"
-    echo "  $0 -d -n            # Dashboard only, no backup"
+    echo "  $0                  # Sync essential website files"
+    echo "  $0 -d               # Dashboard only"
+    echo "  $0 -f               # Force sync without prompts"
     echo ""
-    echo "🔗 Integration Features:"
-    echo "  • Political analysis toggle in COVID dashboard"
-    echo "  • 2020 election data integration"
-    echo "  • Enhanced region tags with vote percentages"
-    echo "  • Political summary statistics"
-    echo "  • Cross-correlation charts and analysis"
+    echo "Essential files synced:"
+    for file in "${CORE_FILES[@]}"; do
+        echo "  • $file"
+    done
+    echo ""
+    echo "Essential COVID data files:"
+    for file in "${COVID_DATA_FILES[@]}"; do
+        echo "  • $file"
+    done
 }
 
 while [[ $# -gt 0 ]]; do
     case $1 in
-        -q|--quick) QUICK_MODE=true; DASHBOARD_ONLY=true; shift ;;
         -d|--dashboard) DASHBOARD_ONLY=true; shift ;;
-        -i|--integration) INTEGRATION_MODE=true; shift ;;
         -n|--no-backup) NO_BACKUP=true; shift ;;
         -f|--force) FORCE_MODE=true; shift ;;
         -h|--help) show_usage; exit 0 ;;
@@ -74,7 +87,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo "============================================="
-echo "COVID Elections Project Sync (Integration)"
+echo "COVID Elections Minimal Sync"
 echo "============================================="
 echo ""
 
@@ -86,106 +99,145 @@ fi
 
 cd "$PROJECT_DIR"
 
-# Check for integration features
-check_integration_files() {
-    local issues=0
+# Check for required files
+check_files() {
+    local missing_files=()
     
-    print_status "Checking integration files..."
+    print_status "Checking essential files..."
     
-    # Check if COVID dashboard has integration features
-    if [ -f "covid_dashboard.html" ]; then
-        if grep -q "showPoliticalAnalysis" "covid_dashboard.html"; then
-            print_success "✓ COVID dashboard has political integration"
-        else
-            print_warning "⚠ COVID dashboard missing political integration"
-            print_status "  Run the integration deployment script first"
-            ((issues++))
+    if [ "$DASHBOARD_ONLY" = true ]; then
+        # Only check dashboard file
+        if [ ! -f "covid_dashboard.html" ]; then
+            missing_files+=("covid_dashboard.html")
         fi
     else
-        print_error "✗ COVID dashboard not found"
-        ((issues++))
+        # Check core files
+        for file in "${CORE_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+                missing_files+=("$file")
+            fi
+        done
+        
+        # Check essential COVID data files
+        for file in "${COVID_DATA_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+                missing_files+=("$file")
+            fi
+        done
     fi
     
-    # Check election data
-    if [ -f "countypres_2020.csv" ]; then
-        local size=$(wc -c < "countypres_2020.csv")
-        print_success "✓ Election data found (${size} bytes)"
+    if [ ${#missing_files[@]} -gt 0 ]; then
+        print_warning "Missing files:"
+        for file in "${missing_files[@]}"; do
+            print_warning "  • $file"
+        done
+        
+        if [ "$FORCE_MODE" != true ]; then
+            read -p "Continue anyway? (y/N): " -r
+            if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+                print_error "Sync cancelled due to missing files"
+                exit 1
+            fi
+        fi
     else
-        print_warning "⚠ Election data file missing: countypres_2020.csv"
-        print_status "  Political analysis features will not work"
-        ((issues++))
+        print_success "All required files found"
     fi
-    
-    # Check standalone election dashboard
-    if [ -f "election_dashboard.html" ]; then
-        print_success "✓ Standalone election dashboard found"
-    else
-        print_warning "⚠ Standalone election dashboard missing"
-    fi
-    
-    # Check COVID data
-    if [ -d "nytimes_covid-19-data" ]; then
-        local csv_count=$(find "nytimes_covid-19-data" -name "*.csv" | wc -l)
-        print_success "✓ COVID data directory found (${csv_count} files)"
-    else
-        print_error "✗ COVID data directory missing"
-        ((issues++))
-    fi
-    
-    return $issues
 }
 
 # Connection test
 print_status "Testing connection to $WEB_HOST..."
-if ! ssh -o ConnectTimeout=5 -o BatchMode=yes "${WEB_USER}@${WEB_HOST}" exit 2>/dev/null; then
+if ! ssh -o ConnectTimeout=10 -o BatchMode=yes "${WEB_USER}@${WEB_HOST}" exit 2>/dev/null; then
     print_error "Cannot connect to $WEB_HOST"
     exit 1
 fi
 print_success "Connected to $WEB_HOST"
 
-# Check integration status
-if ! check_integration_files; then
-    print_warning "Integration files have issues, but continuing..."
-    echo ""
-fi
+# Check files
+check_files
 
-# Determine sync mode
-if [ "$INTEGRATION_MODE" = true ]; then
-    SYNC_MODE="Integration (Dashboard + Election Data)"
-    SYNC_FILES=(
-        "covid_dashboard.html"
-        "countypres_2020.csv"
-        "election_dashboard.html"
-        "index.html"
-        "README_WEB.md"
-    )
-elif [ "$DASHBOARD_ONLY" = true ]; then
-    SYNC_MODE="Dashboard Only"
-    SYNC_FILES=("covid_dashboard.html")
-else
-    SYNC_MODE="Full Project"
-    SYNC_FILES=("*")
-fi
+# Calculate total size
+calculate_size() {
+    local total_size=0
+    local file
+    
+    if [ "$DASHBOARD_ONLY" = true ]; then
+        if [ -f "covid_dashboard.html" ]; then
+            size=$(stat -f%z "covid_dashboard.html" 2>/dev/null || stat -c%s "covid_dashboard.html" 2>/dev/null || echo "0")
+            total_size=$((total_size + size))
+        fi
+    else
+        for file in "${CORE_FILES[@]}"; do
+            if [ -f "$file" ]; then
+                size=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null || echo "0")
+                total_size=$((total_size + size))
+            fi
+        done
+        
+        for file in "${COVID_DATA_FILES[@]}"; do
+            if [ -f "$file" ]; then
+                size=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null || echo "0")
+                total_size=$((total_size + size))
+            fi
+        done
+    fi
+    
+    # Convert to human readable
+    if [ $total_size -gt 1048576 ]; then
+        echo "$((total_size / 1048576))MB"
+    elif [ $total_size -gt 1024 ]; then
+        echo "$((total_size / 1024))KB"
+    else
+        echo "${total_size}B"
+    fi
+}
 
 # Show sync plan
-print_status "Sync mode: $SYNC_MODE"
+if [ "$DASHBOARD_ONLY" = true ]; then
+    print_status "Sync mode: Dashboard Only"
+    SYNC_LIST=("covid_dashboard.html")
+else
+    print_status "Sync mode: Essential Website Files"
+    SYNC_LIST=("${CORE_FILES[@]}" "${COVID_DATA_FILES[@]}")
+fi
+
 echo "  Source: $(pwd)"
 echo "  Target: ${WEB_USER}@${WEB_HOST}:${WEB_PATH}"
-echo "  Backup: $([ "$NO_BACKUP" = true ] && echo "Disabled" || echo "Enabled")"
+echo "  Total size: $(calculate_size)"
+echo ""
+echo "  Files to sync:"
 
-if [ "$INTEGRATION_MODE" = true ] || [ "$DASHBOARD_ONLY" != true ]; then
-    echo ""
-    print_feature "🔗 Integration Features Being Deployed:"
-    echo "  • Political analysis toggle in COVID dashboard"
-    echo "  • 2020 Presidential election data (county-level)"
-    echo "  • Enhanced visualization with political context"
-    echo "  • Cross-correlation analysis capabilities"
+if [ "$DASHBOARD_ONLY" = true ]; then
+    if [ -f "covid_dashboard.html" ]; then
+        size=$(ls -lh "covid_dashboard.html" | awk '{print $5}')
+        echo "    ✓ covid_dashboard.html ($size)"
+    fi
+else
+    echo "    Core files:"
+    for file in "${CORE_FILES[@]}"; do
+        if [ -f "$file" ]; then
+            size=$(ls -lh "$file" | awk '{print $5}')
+            echo "      ✓ $file ($size)"
+        else
+            echo "      ✗ $file (missing)"
+        fi
+    done
+    
+    echo "    Essential COVID data:"
+    for file in "${COVID_DATA_FILES[@]}"; do
+        if [ -f "$file" ]; then
+            size=$(ls -lh "$file" | awk '{print $5}')
+            basename_file=$(basename "$file")
+            echo "      ✓ $basename_file ($size)"
+        else
+            echo "      ✗ $(basename "$file") (missing)"
+        fi
+    done
 fi
 
 echo ""
 
-# Confirmation (unless forced or quick mode)
-if [ "$FORCE_MODE" != true ] && [ "$QUICK_MODE" != true ]; then
+# Confirmation (unless forced)
+if [ "$FORCE_MODE" != true ]; then
     read -p "Proceed with sync? (y/N): " -r
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         print_warning "Sync cancelled"
@@ -197,153 +249,132 @@ fi
 if [ "$NO_BACKUP" != true ]; then
     print_status "Creating backup..."
     BACKUP_NAME="covid_backup_$(date +%Y%m%d_%H%M%S)"
+    
     ssh "${WEB_USER}@${WEB_HOST}" "
         if [ -d '${WEB_PATH}' ]; then
-            sudo cp -r '${WEB_PATH}' '/tmp/${BACKUP_NAME}' 2>/dev/null || cp -r '${WEB_PATH}' '/tmp/${BACKUP_NAME}'
-            echo 'Backup created: /tmp/${BACKUP_NAME}'
+            cp -r '${WEB_PATH}' '/tmp/${BACKUP_NAME}' || true
+            if [ -d '/tmp/${BACKUP_NAME}' ]; then
+                echo 'Backup created: /tmp/${BACKUP_NAME}'
+            fi
         fi
-    " || print_warning "Backup creation had issues, continuing..."
+    "
 fi
 
-# Setup permissions
-print_status "Setting up permissions..."
-ssh "${WEB_USER}@${WEB_HOST}" "
-    sudo mkdir -p '${WEB_PATH}' 2>/dev/null || mkdir -p '${WEB_PATH}'
-    sudo chmod 775 '${WEB_PATH}' 2>/dev/null || chmod 775 '${WEB_PATH}' 2>/dev/null || true
-    sudo usermod -a -G www-data raymond 2>/dev/null || true
-" || print_warning "Permission setup had issues, continuing..."
+# Setup target directory
+print_status "Setting up target directory..."
+TEMP_DIR="/tmp/covid_sync_$$"
 
-# Sync files based on mode
-if [ "$INTEGRATION_MODE" = true ]; then
-    print_status "Syncing integration files..."
+ssh "${WEB_USER}@${WEB_HOST}" "
+    # Create staging directory
+    mkdir -p '${TEMP_DIR}'
+    chmod 755 '${TEMP_DIR}'
     
-    # Sync core files
-    for file in "${SYNC_FILES[@]}"; do
+    # Setup target directory
+    sudo mkdir -p '${WEB_PATH}' 2>/dev/null || mkdir -p '${WEB_PATH}' || exit 1
+    sudo chmod 775 '${WEB_PATH}' 2>/dev/null || chmod 775 '${WEB_PATH}' || true
+    sudo chown ${WEB_USER}:www-data '${WEB_PATH}' 2>/dev/null || true
+"
+
+# Upload files
+print_status "Uploading files..."
+
+if [ "$DASHBOARD_ONLY" = true ]; then
+    print_status "  → covid_dashboard.html"
+    scp "covid_dashboard.html" "${WEB_USER}@${WEB_HOST}:${TEMP_DIR}/"
+else
+    # Upload core files
+    print_status "  Uploading core files..."
+    for file in "${CORE_FILES[@]}"; do
         if [ -f "$file" ]; then
-            print_status "  Syncing $file..."
-            rsync -avz --no-perms --no-times \
-                "$file" \
-                "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/" || {
-                print_warning "Rsync failed for $file, trying scp..."
-                scp "$file" "${WEB_USER}@${WEB_HOST}:/tmp/$(basename $file)_new"
-                ssh "${WEB_USER}@${WEB_HOST}" "
-                    sudo mv '/tmp/$(basename $file)_new' '${WEB_PATH}/$file' 2>/dev/null || \
-                        mv '/tmp/$(basename $file)_new' '${WEB_PATH}/$file'
-                "
-            }
-        else
-            print_warning "  File not found: $file"
+            print_status "    → $file"
+            scp "$file" "${WEB_USER}@${WEB_HOST}:${TEMP_DIR}/"
         fi
     done
     
-    # Sync COVID data directory
-    if [ -d "nytimes_covid-19-data" ]; then
-        print_status "  Syncing COVID data directory..."
-        rsync -avz --no-perms --no-times \
-            "nytimes_covid-19-data/" \
-            "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/nytimes_covid-19-data/" || {
-            print_warning "COVID data sync had issues"
-        }
-    fi
-
-elif [ "$DASHBOARD_ONLY" = true ]; then
-    print_status "Syncing dashboard file..."
-    if [ ! -f "covid_dashboard.html" ]; then
-        print_error "Dashboard file not found: covid_dashboard.html"
-        exit 1
-    fi
+    # Create COVID data directory structure and upload essential files
+    print_status "  Uploading essential COVID data..."
+    ssh "${WEB_USER}@${WEB_HOST}" "
+        mkdir -p '${TEMP_DIR}/nytimes_covid-19-data/colleges'
+        mkdir -p '${TEMP_DIR}/nytimes_covid-19-data/prisons'
+        mkdir -p '${TEMP_DIR}/nytimes_covid-19-data/excess-deaths'
+        mkdir -p '${TEMP_DIR}/nytimes_covid-19-data/mask-use'
+    "
     
-    rsync -avz --no-perms --no-times \
-        covid_dashboard.html \
-        "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/" || {
-        print_warning "Rsync failed, trying alternative method..."
-        scp covid_dashboard.html "${WEB_USER}@${WEB_HOST}:/tmp/dashboard_new.html"
-        ssh "${WEB_USER}@${WEB_HOST}" "
-            sudo mv /tmp/dashboard_new.html '${WEB_PATH}/covid_dashboard.html' 2>/dev/null || \
-                mv /tmp/dashboard_new.html '${WEB_PATH}/covid_dashboard.html'
-        "
-    }
-
-else
-    print_status "Syncing full project..."
-    rsync -avz --delete --no-perms --no-times \
-        --exclude='.git/' \
-        --exclude='*.log' \
-        --exclude='node_modules/' \
-        --exclude='.env' \
-        --exclude='*.sh' \
-        --exclude='scripts_ran/' \
-        --exclude='covid_dashboard.html_v*' \
-        --exclude='retry_later' \
-        --exclude='*backup*' \
-        --exclude='integration_usage_guide.md' \
-        --exclude='test_integration.sh' \
-        --exclude='deploy_integrated_dashboard.sh' \
-        --exclude='update_covid_nav.sh' \
-        "$PROJECT_DIR/" \
-        "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/" || {
-        print_error "Full sync failed"
-        exit 1
-    }
+    for file in "${COVID_DATA_FILES[@]}"; do
+        if [ -f "$file" ]; then
+            basename_file=$(basename "$file")
+            dirname_file=$(dirname "$file")
+            print_status "    → $basename_file"
+            scp "$file" "${WEB_USER}@${WEB_HOST}:${TEMP_DIR}/${dirname_file}/"
+        fi
+    done
 fi
 
-# Set final permissions
-print_status "Setting final permissions..."
+# Move files to final location
+print_status "Installing files..."
 ssh "${WEB_USER}@${WEB_HOST}" "
-    sudo chown -R www-data:www-data '${WEB_PATH}' 2>/dev/null || chown -R ${WEB_USER}:${WEB_USER} '${WEB_PATH}' 2>/dev/null || true
-    sudo find '${WEB_PATH}' -type d -exec chmod 755 {} \; 2>/dev/null || find '${WEB_PATH}' -type d -exec chmod 755 {} \; 2>/dev/null || true
-    sudo find '${WEB_PATH}' -type f -exec chmod 644 {} \; 2>/dev/null || find '${WEB_PATH}' -type f -exec chmod 644 {} \; 2>/dev/null || true
-" || print_warning "Final permissions had issues, but files should still work"
+    # Move files to web directory
+    sudo cp -r '${TEMP_DIR}'/* '${WEB_PATH}/' 2>/dev/null || cp -r '${TEMP_DIR}'/* '${WEB_PATH}/' || exit 1
+    
+    # Set permissions
+    sudo chown -R www-data:www-data '${WEB_PATH}' 2>/dev/null || chown -R ${WEB_USER}:${WEB_USER} '${WEB_PATH}' || true
+    sudo find '${WEB_PATH}' -type d -exec chmod 755 {} \; 2>/dev/null || find '${WEB_PATH}' -type d -exec chmod 755 {} \; || true
+    sudo find '${WEB_PATH}' -type f -exec chmod 644 {} \; 2>/dev/null || find '${WEB_PATH}' -type f -exec chmod 644 {} \; || true
+    
+    # Cleanup staging
+    rm -rf '${TEMP_DIR}'
+"
 
 # Verify deployment
 print_status "Verifying deployment..."
-ssh "${WEB_USER}@${WEB_HOST}" "
-    echo 'Key files:'
-    [ -f '${WEB_PATH}/covid_dashboard.html' ] && echo '✓ COVID Dashboard' || echo '✗ COVID Dashboard missing'
-    [ -f '${WEB_PATH}/election_dashboard.html' ] && echo '✓ Election Dashboard' || echo '⚠ Election Dashboard missing'
-    [ -f '${WEB_PATH}/countypres_2020.csv' ] && echo '✓ Election Data' || echo '⚠ Election Data missing'
-    [ -f '${WEB_PATH}/index.html' ] && echo '✓ Index' || echo '✗ Index missing'
-    [ -d '${WEB_PATH}/nytimes_covid-19-data' ] && echo '✓ COVID Data directory' || echo '✗ COVID Data directory missing'
+VERIFICATION=$(ssh "${WEB_USER}@${WEB_HOST}" "
+    cd '${WEB_PATH}' 2>/dev/null || exit 1
+    
+    echo 'Deployed files:'
+    [ -f 'covid_dashboard.html' ] && echo '✓ COVID Dashboard' || echo '✗ COVID Dashboard missing'
+    [ -f 'election_dashboard.html' ] && echo '✓ Election Dashboard' || echo '✗ Election Dashboard missing'  
+    [ -f 'countypres_2020.csv' ] && echo '✓ Election Data' || echo '✗ Election Data missing'
+    [ -f 'index.html' ] && echo '✓ Index Page' || echo '✗ Index Page missing'
+    
+    # Check COVID data
+    [ -f 'nytimes_covid-19-data/us-states.csv' ] && echo '✓ US States Data' || echo '✗ US States Data missing'
+    [ -f 'nytimes_covid-19-data/us-counties-recent.csv' ] && echo '✓ US Counties Data' || echo '✗ US Counties Data missing'
+    [ -f 'nytimes_covid-19-data/colleges/colleges.csv' ] && echo '✓ Colleges Data' || echo '✗ Colleges Data missing'
+    [ -f 'nytimes_covid-19-data/prisons/facilities.csv' ] && echo '✓ Prison Facilities Data' || echo '✗ Prison Facilities Data missing'
+    
     echo ''
-    echo 'Directory size:' \$(du -sh '${WEB_PATH}' 2>/dev/null | cut -f1)
+    echo 'Total size:' \$(du -sh . 2>/dev/null | cut -f1 || echo 'unknown')
     
     # Check for integration features
-    if [ -f '${WEB_PATH}/covid_dashboard.html' ]; then
-        if grep -q 'showPoliticalAnalysis' '${WEB_PATH}/covid_dashboard.html'; then
-            echo '✓ Political integration enabled'
-        else
-            echo '⚠ Political integration not detected'
-        fi
+    if [ -f 'covid_dashboard.html' ] && grep -q 'showPoliticalAnalysis' 'covid_dashboard.html'; then
+        echo '✓ Political integration enabled'
     fi
-"
+")
+
+echo "$VERIFICATION"
 
 # Test web access
 print_status "Testing web access..."
 HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "http://${WEB_HOST}/covid_elections/" 2>/dev/null || echo "000")
 
 case $HTTP_CODE in
-    200|301|302) print_success "Web server responding (HTTP $HTTP_CODE)" ;;
-    403) print_warning "Access forbidden (HTTP 403) - check permissions" ;;
-    404) print_warning "Not found (HTTP 404) - check web server config" ;;
-    *) print_warning "Unexpected response (HTTP $HTTP_CODE)" ;;
+    200) print_success "✓ Website accessible (HTTP $HTTP_CODE)" ;;
+    301|302) print_success "✓ Website redirecting (HTTP $HTTP_CODE)" ;;
+    403) print_warning "⚠ Access forbidden (HTTP 403)" ;;
+    404) print_warning "⚠ Not found (HTTP 404)" ;;
+    *) print_warning "⚠ Unexpected response (HTTP $HTTP_CODE)" ;;
 esac
-
-# Test election data access if in integration mode
-if [ "$INTEGRATION_MODE" = true ] || [ "$DASHBOARD_ONLY" != true ]; then
-    print_status "Testing election data access..."
-    ELECTION_HTTP=$(curl -s -o /dev/null -w "%{http_code}" "http://${WEB_HOST}/covid_elections/countypres_2020.csv" 2>/dev/null || echo "000")
-    
-    case $ELECTION_HTTP in
-        200) print_success "Election data accessible (HTTP $ELECTION_HTTP)" ;;
-        404) print_warning "Election data not accessible (HTTP 404)" ;;
-        *) print_warning "Election data response (HTTP $ELECTION_HTTP)" ;;
-    esac
-fi
 
 print_success "Sync completed successfully!"
 echo ""
-print_status "🌐 Available URLs:"
-echo "  Main Dashboard: http://${WEB_HOST}/covid_elections/"
+
+# Show results
+echo "============================================="
+print_success "🚀 DEPLOYMENT COMPLETE"
+echo "============================================="
+echo ""
+print_status "🌐 Access URLs:"
+echo "  Main Site: http://${WEB_HOST}/covid_elections/"
 echo "  COVID Dashboard: http://${WEB_HOST}/covid_elections/covid_dashboard.html"
 if [ -f "election_dashboard.html" ]; then
     echo "  Election Dashboard: http://${WEB_HOST}/covid_elections/election_dashboard.html"
@@ -351,46 +382,25 @@ fi
 echo ""
 
 if [ "$NO_BACKUP" != true ]; then
-    print_status "📦 Backup location: /tmp/${BACKUP_NAME:-latest_backup}"
+    print_status "📦 Backup: /tmp/${BACKUP_NAME:-backup} (on ${WEB_HOST})"
+fi
+
+# Integration status
+if grep -q "showPoliticalAnalysis" "covid_dashboard.html" 2>/dev/null; then
+    echo ""
+    print_status "🔗 Integration Features Active:"
+    echo "  ✓ Political analysis toggle"
+    echo "  ✓ Election data integration"
+    echo "  ✓ Essential COVID datasets"
+    echo ""
+    print_status "💡 Quick Test:"
+    echo "  1. Visit http://${WEB_HOST}/covid_elections/"
+    echo "  2. Select 'US States' or 'US Counties'"
+    echo "  3. Add a region (e.g., Florida)"
+    echo "  4. Check 'Show Political Analysis'"
+    echo "  5. View integrated data!"
 fi
 
 echo ""
-if [ "$INTEGRATION_MODE" = true ] || grep -q "showPoliticalAnalysis" "covid_dashboard.html" 2>/dev/null; then
-    print_feature "🔗 Integration Features Deployed:"
-    echo "  ✓ Political analysis toggle in controls"
-    echo "  ✓ Enhanced region tags with vote percentages"
-    echo "  ✓ Political summary statistics section"
-    echo "  ✓ Cross-correlation charts and analysis"
-    echo "  ✓ 2020 election data integration"
-    echo ""
-    print_status "💡 Usage Tips:"
-    echo "  1. Select US states or counties in the dashboard"
-    echo "  2. Check 'Show Political Analysis' checkbox"
-    echo "  3. View integrated COVID + political data"
-    echo "  4. Analyze correlations and patterns"
-fi
-
-echo ""
-print_success "🚀 All done!"
-
-# Show quick start guide for integration
-if [ "$INTEGRATION_MODE" = true ]; then
-    echo ""
-    echo "=================================================="
-    print_feature "🎯 QUICK START GUIDE"
-    echo "=================================================="
-    echo ""
-    echo "To test the political integration:"
-    echo ""
-    echo "1. Open: http://${WEB_HOST}/covid_elections/"
-    echo "2. Select 'US States' or 'US Counties' data type"
-    echo "3. Add regions like 'Florida', 'California', etc."
-    echo "4. Check ☑ 'Show Political Analysis'"
-    echo "5. View enhanced data with political context!"
-    echo ""
-    echo "Example regions to try:"
-    echo "  • States: Florida, Pennsylvania, Arizona"
-    echo "  • Counties: Orange (CA), Miami-Dade (FL), Cook (IL)"
-    echo ""
-    echo "=================================================="
-fi
+print_success "✨ Ready to use!"
+echo "============================================="
