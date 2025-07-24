@@ -1,0 +1,191 @@
+"year","state","state_po","state_fips","state_cen","state_ic","office","district","stage","special","candidate","party","writein","mode","candidatevotes","totalvotes","unofficial","version"
+2012,"Arizona","AZ",4,86,61,"US Senate","statewide","gen",FALSE,"Don Manspeaker","independent",TRUE,"total",24,2243422,FALSE,20171011
+2012,"Arizona","AZ",4,86,61,"US Senate","statewide","gen",FALSE,"Jeff Flake","republican",FALSE,"total",1104457,2243422,FALSE,20171011
+2012,"Arizona","AZ",4,86,61,"US Senate","statewide","gen",FALSE,"Marc Victor","libertarian",FALSE,"total",102109,2243422,FALSE,20171011
+2012,"Arizona","AZ",4,86,61,"US Senate","statewide","gen",FALSE,"Richard Carmona","democrat",FALSE,"total",1036542,2243422,FALSE,20171011
+2012,"Arizona","AZ",4,86,61,"US Senate","statewide","gen",FALSE,"Steven Watts","independent",TRUE,"total",290,2243422,FALSE,20171011
+2012,"California","CA",6,93,71,"US Senate","statewide","gen",FALSE,"Dianne Feinstein","democrat",FALSE,"total",7864624,12578511,FALSE,20171011
+2012,"California","CA",6,93,71,"US Senate","statewide","gen",FALSE,"Elizabeth Emken","republican",FALSE,"total",4713887,12578511,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Christopher S. Murphy","democrat",FALSE,"total",792983,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Christopher S. Murphy","working families",FALSE,"total",35778,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Jeff Russell","",TRUE,"total",40,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"John Traceski","",TRUE,"total",19,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Linda E. McMahon","independent",FALSE,"total",46520,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Linda E. McMahon","republican",FALSE,"total",604569,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Matthew Coleman","",TRUE,"total",6414,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Michael D. Adams","",TRUE,"total",388,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Michael Vasile","",TRUE,"total",8,1511764,FALSE,20171011
+2012,"Connecticut","CT",9,16,1,"US Senate","statewide","gen",FALSE,"Paul Passarelli","libertarian",FALSE,"total",25045,1511764,FALSE,20171011
+2012,"Delaware","DE",10,51,11,"US Senate","statewide","gen",FALSE,"Alexander Pires","independent",FALSE,"total",15300,399606,FALSE,20171011
+2012,"Delaware","DE",10,51,11,"US Senate","statewide","gen",FALSE,"Andrew Richard Groff","green",FALSE,"total",3191,399606,FALSE,20171011
+2012,"Delaware","DE",10,51,11,"US Senate","statewide","gen",FALSE,"Kevin Wade","republican",FALSE,"total",115700,399606,FALSE,20171011
+2012,"Delaware","DE",10,51,11,"US Senate","statewide","gen",FALSE,"Thomas R. Carper","democrat",FALSE,"total",265415,399606,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Bill Gaylor","none",FALSE,"total",126079,8189946,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Bill Nelson","democrat",FALSE,"total",4523451,8189946,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Chris Borgia","none",FALSE,"total",82089,8189946,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Connie Mack","republican",FALSE,"total",3458267,8189946,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Lawrence Sidney Scott","",TRUE,"total",18,8189946,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Lionel Long","",TRUE,"total",2,8189946,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Naomi Craine","",TRUE,"total",19,8189946,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Piotr Blass","",TRUE,"total",9,8189946,FALSE,20171011
+2012,"Florida","FL",12,59,43,"US Senate","statewide","gen",FALSE,"Robert Monroe","",TRUE,"total",12,8189946,FALSE,20171011
+2012,"Hawaii","HI",15,95,82,"US Senate","statewide","gen",FALSE,"Blank Vote","",FALSE,"total",6599,437159,FALSE,20171011
+2012,"Hawaii","HI",15,95,82,"US Senate","statewide","gen",FALSE,"Linda Lingle","republican",FALSE,"total",160994,437159,FALSE,20171011
+2012,"Hawaii","HI",15,95,82,"US Senate","statewide","gen",FALSE,"Mazie K. Hirono","democrat",FALSE,"total",269489,437159,FALSE,20171011
+2012,"Hawaii","HI",15,95,82,"US Senate","statewide","gen",FALSE,"Over Vote","",FALSE,"total",77,437159,FALSE,20171011
+2012,"Indiana","IN",18,32,22,"US Senate","statewide","gen",FALSE,"Amy J. Willis","independent",TRUE,"total",3,2560102,FALSE,20171011
+2012,"Indiana","IN",18,32,22,"US Senate","statewide","gen",FALSE,"Andrew ??Andy?? Horning","libertarian",FALSE,"total",145282,2560102,FALSE,20171011
+2012,"Indiana","IN",18,32,22,"US Senate","statewide","gen",FALSE,"James L. Johnson, Jr.","workers peace and love",TRUE,"total",15,2560102,FALSE,20171011
+2012,"Indiana","IN",18,32,22,"US Senate","statewide","gen",FALSE,"Joe Donnelly","democrat",FALSE,"total",1281181,2560102,FALSE,20171011
+2012,"Indiana","IN",18,32,22,"US Senate","statewide","gen",FALSE,"Richard E. Mourdock","republican",FALSE,"total",1133621,2560102,FALSE,20171011
+2012,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Andrew Ian Dodge","",FALSE,"total",5624,724720,FALSE,20171011
+2012,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Angus King","",FALSE,"total",370580,724720,FALSE,20171011
+2012,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Blank Vote","",FALSE,"total",24121,724720,FALSE,20171011
+2012,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Charles E. Summers, Jr.","",FALSE,"total",215399,724720,FALSE,20171011
+2012,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Cynthia Ann Dill","",FALSE,"total",92900,724720,FALSE,20171011
+2012,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Danny Francis Dalton","",FALSE,"total",5807,724720,FALSE,20171011
+2012,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Stephen M. Woods","",FALSE,"total",10289,724720,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",2346,2633234,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"Benjamin L. Cardin","democrat",FALSE,"total",1474028,2633234,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"Brandy Baker","none",TRUE,"total",151,2633234,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"Daniel John Bongino","republican",FALSE,"total",693291,2633234,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"Dean Ahmad","libertarian",FALSE,"total",32252,2633234,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"Ed Tinus","none",TRUE,"total",48,2633234,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"Lih Young","democrat",TRUE,"total",163,2633234,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"Mary Podlesak","republican",TRUE,"total",21,2633234,FALSE,20171011
+2012,"Maryland","MD",24,52,52,"US Senate","statewide","gen",FALSE,"S. Rob Sobhani","none",FALSE,"total",430934,2633234,FALSE,20171011
+2012,"Massachusetts","MA",25,14,3,"US Senate","statewide","gen",FALSE,"Blank Vote/Scattering","",FALSE,"total",27643,3184196,FALSE,20171011
+2012,"Massachusetts","MA",25,14,3,"US Senate","statewide","gen",FALSE,"Elizabeth A. Warren","democrat",FALSE,"total",1696346,3184196,FALSE,20171011
+2012,"Massachusetts","MA",25,14,3,"US Senate","statewide","gen",FALSE,"Other","",FALSE,"total",2159,3184196,FALSE,20171011
+2012,"Massachusetts","MA",25,14,3,"US Senate","statewide","gen",FALSE,"Scott P. Brown","republican",FALSE,"total",1458048,3184196,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Amitabh Ghosh","",TRUE,"total",48,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Daniel Holloway","",TRUE,"total",10,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Debbie Stabenow","democrat",FALSE,"total",2735826,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Harley Mikkelson","green",FALSE,"total",27890,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"John D. Litle","natural law",FALSE,"total",11229,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Katherine Houston","",TRUE,"total",4,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Pete Hoekstra","republican",FALSE,"total",1767386,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Raymond O?Donnell","",TRUE,"total",7,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Richard A. Matkin","u.s. taxpayers",FALSE,"total",26038,4652918,FALSE,20171011
+2012,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Scotty Boman","libertarian",FALSE,"total",84480,4652918,FALSE,20171011
+2012,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",2582,2843207,FALSE,20171011
+2012,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Amy Klobuchar","democrat",FALSE,"total",1854595,2843207,FALSE,20171011
+2012,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Kurt Bills","republican",FALSE,"total",867974,2843207,FALSE,20171011
+2012,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Michael Cavlan","minnesota open progressives",FALSE,"total",13986,2843207,FALSE,20171011
+2012,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Stephen Williams","independence",FALSE,"total",73539,2843207,FALSE,20171011
+2012,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Tim Davis","grassroots party",FALSE,"total",30531,2843207,FALSE,20171011
+2012,"Mississippi","MS",28,64,46,"US Senate","statewide","gen",FALSE,"Albert N. Gore, Jr.","democrat",FALSE,"total",503467,1241568,FALSE,20171011
+2012,"Mississippi","MS",28,64,46,"US Senate","statewide","gen",FALSE,"Roger F. Wicker","republican",FALSE,"total",709626,1241568,FALSE,20171011
+2012,"Mississippi","MS",28,64,46,"US Senate","statewide","gen",FALSE,"Shawn O'Hara","reform",FALSE,"total",13194,1241568,FALSE,20171011
+2012,"Mississippi","MS",28,64,46,"US Senate","statewide","gen",FALSE,"Thomas Cramer","constitution",FALSE,"total",15281,1241568,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"Arnie C. ??A C ?? Dienoff","",TRUE,"total",2,2725793,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"Bernard J. ??Spark?? Duraski","",TRUE,"total",9,2725793,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"Bernie Mowinski","",TRUE,"total",5,2725793,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"Charlie L. Bailey","",TRUE,"total",4,2725793,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"Claire McCaskill","democrat",FALSE,"total",1494125,2725793,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"Jonathan Dine","libertarian",FALSE,"total",165468,2725793,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"Ted Kimzey","",TRUE,"total",15,2725793,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"W. Todd Akin","republican",FALSE,"total",1066159,2725793,FALSE,20171011
+2012,"Missouri","MO",29,43,34,"US Senate","statewide","gen",FALSE,"William Dean","",TRUE,"total",6,2725793,FALSE,20171011
+2012,"Montana","MT",30,81,64,"US Senate","statewide","gen",FALSE,"Dan Cox","libertarian",FALSE,"total",31892,486066,FALSE,20171011
+2012,"Montana","MT",30,81,64,"US Senate","statewide","gen",FALSE,"Denny Rehberg","republican",FALSE,"total",218051,486066,FALSE,20171011
+2012,"Montana","MT",30,81,64,"US Senate","statewide","gen",FALSE,"Jon Tester","democrat",FALSE,"total",236123,486066,FALSE,20171011
+2012,"Nebraska","NE",31,46,35,"US Senate","statewide","gen",FALSE,"Bob Kerrey","democrat",FALSE,"total",332979,788572,FALSE,20171011
+2012,"Nebraska","NE",31,46,35,"US Senate","statewide","gen",FALSE,"Deb Fischer","republican",FALSE,"total",455593,788572,FALSE,20171011
+2012,"Nevada","NV",32,88,65,"US Senate","statewide","gen",FALSE,"David Lory Vanderbeek","independent american",FALSE,"total",48792,997805,FALSE,20171011
+2012,"Nevada","NV",32,88,65,"US Senate","statewide","gen",FALSE,"Dean Heller","republican",FALSE,"total",457656,997805,FALSE,20171011
+2012,"Nevada","NV",32,88,65,"US Senate","statewide","gen",FALSE,"Other","",FALSE,"total",45277,997805,FALSE,20171011
+2012,"Nevada","NV",32,88,65,"US Senate","statewide","gen",FALSE,"Shelley Berkley","democrat",FALSE,"total",446080,997805,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Daryl Mikell Brooks","reform nation",FALSE,"total",2066,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Eugene Martin Lavergne","no slogan",FALSE,"total",2198,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Gregory Pason","socialist party usa",FALSE,"total",2249,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Gwen Diakos","jersey strong independents",FALSE,"total",9359,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Inder ??Andy?? Soni","america first",FALSE,"total",3593,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"J. David Dranikoff","totally independent candidate",FALSE,"total",3834,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Joe Kyrillos","republican",FALSE,"total",1329534,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Ken Wolski","green",FALSE,"total",15801,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Kenneth R. Kaplan","libertarian",FALSE,"total",16803,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Robert ??Turk?? Turkavage","responsibility fairness integrity",FALSE,"total",3532,3376649,FALSE,20171011
+2012,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Robert Menendez","democrat",FALSE,"total",1987680,3376649,FALSE,20171011
+2012,"New Mexico","NM",35,85,66,"US Senate","statewide","gen",FALSE,"Heather A. Wilson","republican",FALSE,"total",351260,775793,FALSE,20171011
+2012,"New Mexico","NM",35,85,66,"US Senate","statewide","gen",FALSE,"Jon R. Barrie","independent american",FALSE,"total",28199,775793,FALSE,20171011
+2012,"New Mexico","NM",35,85,66,"US Senate","statewide","gen",FALSE,"Martin Heinrich","democrat",FALSE,"total",395717,775793,FALSE,20171011
+2012,"New Mexico","NM",35,85,66,"US Senate","statewide","gen",FALSE,"Robert L. Anderson","independent",TRUE,"total",617,775793,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"Blank Vote/Void Vote/Scattering","",FALSE,"total",455963,7116628,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"Chris Edes","libertarian",FALSE,"total",31894,7116628,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"Colia Clark","green",FALSE,"total",42442,7116628,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"John Mangelli","common sense",FALSE,"total",21985,7116628,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"Kirsten E. Gillibrand","democrat",FALSE,"total",4420043,7116628,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"Kirsten E. Gillibrand","independence",FALSE,"total",138255,7116628,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"Kirsten E. Gillibrand","working families",FALSE,"total",250580,7116628,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"Wendy Long","conservative",FALSE,"total",240819,7116628,FALSE,20171011
+2012,"New York","NY",36,21,13,"US Senate","statewide","gen",FALSE,"Wendy Long","republican",FALSE,"total",1514647,7116628,FALSE,20171011
+2012,"North Dakota","ND",38,44,36,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",1406,321144,FALSE,20171011
+2012,"North Dakota","ND",38,44,36,"US Senate","statewide","gen",FALSE,"Heidi Heitkamp","democrat",FALSE,"total",161337,321144,FALSE,20171011
+2012,"North Dakota","ND",38,44,36,"US Senate","statewide","gen",FALSE,"Rick Berg","republican",FALSE,"total",158401,321144,FALSE,20171011
+2012,"Ohio","OH",39,31,24,"US Senate","statewide","gen",FALSE,"Josh Mandel","republican",FALSE,"total",2435712,5449018,FALSE,20171011
+2012,"Ohio","OH",39,31,24,"US Senate","statewide","gen",FALSE,"Scott A. Rupert","independent",FALSE,"total",250616,5449018,FALSE,20171011
+2012,"Ohio","OH",39,31,24,"US Senate","statewide","gen",FALSE,"Sherrod Brown","democrat",FALSE,"total",2762690,5449018,FALSE,20171011
+2012,"Pennsylvania","PA",42,23,14,"US Senate","statewide","gen",FALSE,"Rayburn Douglas Smith","libertarian",FALSE,"total",96926,5627422,FALSE,20171011
+2012,"Pennsylvania","PA",42,23,14,"US Senate","statewide","gen",FALSE,"Robert P. Casey, Jr.","democrat",FALSE,"total",3021364,5627422,FALSE,20171011
+2012,"Pennsylvania","PA",42,23,14,"US Senate","statewide","gen",FALSE,"Tom Smith","republican",FALSE,"total",2509132,5627422,FALSE,20171011
+2012,"Rhode Island","RI",44,15,5,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",933,418189,FALSE,20171011
+2012,"Rhode Island","RI",44,15,5,"US Senate","statewide","gen",FALSE,"Benjamin Barrett Hinckley III","republican",FALSE,"total",146222,418189,FALSE,20171011
+2012,"Rhode Island","RI",44,15,5,"US Senate","statewide","gen",FALSE,"Sheldon Whitehouse","democrat",FALSE,"total",271034,418189,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Allen Hoenicke","",TRUE,"total",5,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Angelia Stinnett","",TRUE,"total",470,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Bob Corker","republican",FALSE,"total",1506443,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Christopher Schappert","",TRUE,"total",12,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"David Gatchell","independent",FALSE,"total",6523,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Gary Gene Davis","",TRUE,"total",18,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Jacob Maurer","",TRUE,"total",409,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"James Higdon","independent",FALSE,"total",8085,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Jim Maynard","",TRUE,"total",117,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Kermit Steck","constitution",FALSE,"total",18620,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Larry Crim","",TRUE,"total",218,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Lee Stewart","",TRUE,"total",14,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Margie Nell Penn","",TRUE,"total",23,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Mark E. Clayton","democrat",FALSE,"total",705882,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Martin Pleasant","green",FALSE,"total",38472,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Mary D. Wright","",TRUE,"total",2,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Michel Joseph Long","independent",FALSE,"total",8080,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Shaun E. Crowell","independent",FALSE,"total",20936,2321477,FALSE,20171011
+2012,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Troy Stephen Scoggin","independent",FALSE,"total",7148,2321477,FALSE,20171011
+2012,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"David B. Collins","green",FALSE,"total",67404,7864822,FALSE,20171011
+2012,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"John Jay Myers","libertarian",FALSE,"total",162354,7864822,FALSE,20171011
+2012,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"Paul Sadler","democrat",FALSE,"total",3194927,7864822,FALSE,20171011
+2012,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"Ted Cruz","republican",FALSE,"total",4440137,7864822,FALSE,20171011
+2012,"Utah","UT",49,87,67,"US Senate","statewide","gen",FALSE,"Bill Barron","none",FALSE,"total",7172,1006901,FALSE,20171011
+2012,"Utah","UT",49,87,67,"US Senate","statewide","gen",FALSE,"Daniel Geery","justice",FALSE,"total",8342,1006901,FALSE,20171011
+2012,"Utah","UT",49,87,67,"US Senate","statewide","gen",FALSE,"JoAnn Secrist","",TRUE,"total",1,1006901,FALSE,20171011
+2012,"Utah","UT",49,87,67,"US Senate","statewide","gen",FALSE,"Orrin G. Hatch","republican",FALSE,"total",657608,1006901,FALSE,20171011
+2012,"Utah","UT",49,87,67,"US Senate","statewide","gen",FALSE,"Scott Howell","democrat",FALSE,"total",301873,1006901,FALSE,20171011
+2012,"Utah","UT",49,87,67,"US Senate","statewide","gen",FALSE,"Shaun Lynn McCausland","constitution",FALSE,"total",31905,1006901,FALSE,20171011
+2012,"Vermont","VT",50,13,6,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",252,292762,FALSE,20171011
+2012,"Vermont","VT",50,13,6,"US Senate","statewide","gen",FALSE,"Bernard Sanders","independent",FALSE,"total",207848,292762,FALSE,20171011
+2012,"Vermont","VT",50,13,6,"US Senate","statewide","gen",FALSE,"Chris Ericson","united states marijuana",FALSE,"total",5924,292762,FALSE,20171011
+2012,"Vermont","VT",50,13,6,"US Senate","statewide","gen",FALSE,"John MacGovern","republican",FALSE,"total",72898,292762,FALSE,20171011
+2012,"Vermont","VT",50,13,6,"US Senate","statewide","gen",FALSE,"Laurel Laframboise","votekiss",FALSE,"total",877,292762,FALSE,20171011
+2012,"Vermont","VT",50,13,6,"US Senate","statewide","gen",FALSE,"Pete Diamondstone","liberty union",FALSE,"total",2511,292762,FALSE,20171011
+2012,"Vermont","VT",50,13,6,"US Senate","statewide","gen",FALSE,"Peter Moss","peace and prosperity",FALSE,"total",2452,292762,FALSE,20171011
+2012,"Virginia","VA",51,54,40,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",6587,3802196,FALSE,20171011
+2012,"Virginia","VA",51,54,40,"US Senate","statewide","gen",FALSE,"George F. Allen","republican",FALSE,"total",1785542,3802196,FALSE,20171011
+2012,"Virginia","VA",51,54,40,"US Senate","statewide","gen",FALSE,"Timothy M. Kaine","democrat",FALSE,"total",2010067,3802196,FALSE,20171011
+2012,"Washington","WA",53,91,73,"US Senate","statewide","gen",FALSE,"Maria Cantwell","democrat",FALSE,"total",1855493,3069417,FALSE,20171011
+2012,"Washington","WA",53,91,73,"US Senate","statewide","gen",FALSE,"Michael Baumgartner","republican",FALSE,"total",1213924,3069417,FALSE,20171011
+2012,"West Virginia","WV",54,55,56,"US Senate","statewide","gen",FALSE,"Bob Henry Baber","mountain party",FALSE,"total",19517,660202,FALSE,20171011
+2012,"West Virginia","WV",54,55,56,"US Senate","statewide","gen",FALSE,"Joe Manchin III","democrat",FALSE,"total",399898,660202,FALSE,20171011
+2012,"West Virginia","WV",54,55,56,"US Senate","statewide","gen",FALSE,"John R. Raese","republican",FALSE,"total",240787,660202,FALSE,20171011
+2012,"Wisconsin","WI",55,35,25,"US Senate","statewide","gen",FALSE,"Diane E. Lorbiecki","independent",TRUE,"total",43,3009411,FALSE,20171011
+2012,"Wisconsin","WI",55,35,25,"US Senate","statewide","gen",FALSE,"Joseph Kexel","libertarian",FALSE,"total",62240,3009411,FALSE,20171011
+2012,"Wisconsin","WI",55,35,25,"US Senate","statewide","gen",FALSE,"Nimrod Y. U. Allen III","i.d.e.a.",FALSE,"total",16455,3009411,FALSE,20171011
+2012,"Wisconsin","WI",55,35,25,"US Senate","statewide","gen",FALSE,"Riley J. Hood","constitution",TRUE,"total",70,3009411,FALSE,20171011
+2012,"Wisconsin","WI",55,35,25,"US Senate","statewide","gen",FALSE,"Tammy Baldwin","democrat",FALSE,"total",1547104,3009411,FALSE,20171011
+2012,"Wisconsin","WI",55,35,25,"US Senate","statewide","gen",FALSE,"Tommy G. Thompson","republican",FALSE,"total",1380126,3009411,FALSE,20171011
+2012,"Wisconsin","WI",55,35,25,"US Senate","statewide","gen",FALSE,"scatter","",FALSE,"total",3373,3009411,FALSE,20171011
+2012,"Wyoming","WY",56,83,68,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",417,250700,FALSE,20171011
+2012,"Wyoming","WY",56,83,68,"US Senate","statewide","gen",FALSE,"Blank Vote","",FALSE,"total",5747,250700,FALSE,20171011
+2012,"Wyoming","WY",56,83,68,"US Senate","statewide","gen",FALSE,"Joel Otto","country party",FALSE,"total",6176,250700,FALSE,20171011
+2012,"Wyoming","WY",56,83,68,"US Senate","statewide","gen",FALSE,"John Barrasso","republican",FALSE,"total",185250,250700,FALSE,20171011
+2012,"Wyoming","WY",56,83,68,"US Senate","statewide","gen",FALSE,"Over Vote","",FALSE,"total",91,250700,FALSE,20171011
+2012,"Wyoming","WY",56,83,68,"US Senate","statewide","gen",FALSE,"Tim Chesnut","democrat",FALSE,"total",53019,250700,FALSE,20171011
