@@ -1,0 +1,1282 @@
+"year","state","state_po","state_fips","state_cen","state_ic","office","district","stage","special","candidate","party","writein","mode","candidatevotes","totalvotes","unofficial","version"
+1980,"Alabama","AL",1,63,41,"US House",1,"gen",FALSE,"","",TRUE,"total",2,117221,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",1,"gen",FALSE,"Jack Edwards","republican",FALSE,"total",111089,117221,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",1,"gen",FALSE,"Steve Smith","libertarian",FALSE,"total",6130,117221,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",2,"gen",FALSE,"Adam Hand","libertarian",FALSE,"total",4103,172962,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",2,"gen",FALSE,"Bill Dickinson","republican",FALSE,"total",104796,172962,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",2,"gen",FALSE,"Cecil Wyatt","democrat",FALSE,"total",63447,172962,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",2,"gen",FALSE,"Jerome Couch","statesman",FALSE,"total",616,172962,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",3,"gen",FALSE,"","",TRUE,"total",1561,109215,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",3,"gen",FALSE,"Bill Nichols","democrat",FALSE,"total",107654,109215,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",4,"gen",FALSE,"A.J. Killingsworth","statesman",FALSE,"total",2721,132086,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",4,"gen",FALSE,"Tom Bevill","democrat",FALSE,"total",129365,132086,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",5,"gen",FALSE,"","",TRUE,"total",389,125356,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",5,"gen",FALSE,"Betty T. Benson","libertarian",FALSE,"total",7341,125356,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",5,"gen",FALSE,"Ronnie Flippo","democrat",FALSE,"total",117626,125356,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",6,"gen",FALSE,"Albert Lee Smith Jr.","republican",FALSE,"total",95019,187982,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",6,"gen",FALSE,"Charles C. Robey","statesman",FALSE,"total",466,187982,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",6,"gen",FALSE,"Philip Lenud","national democratic party of alabama",FALSE,"total",1743,187982,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",6,"gen",FALSE,"Richard H. Jacobson","libertarian",FALSE,"total",3218,187982,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",6,"gen",FALSE,"W.B. (Pete) Clifford","democrat",FALSE,"total",87536,187982,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",7,"gen",FALSE,"James E. ""Jim"" Bacon","republican",FALSE,"total",43320,168804,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",7,"gen",FALSE,"Joe Walker","libertarian",FALSE,"total",2132,168804,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",7,"gen",FALSE,"Mrs. Mary Owensby","statesman",FALSE,"total",847,168804,FALSE,20171005
+1980,"Alabama","AL",1,63,41,"US House",7,"gen",FALSE,"Richard C. Shelby","democrat",FALSE,"total",122505,168804,FALSE,20171005
+1980,"Alaska","AK",2,94,81,"US House",0,"gen",FALSE,"","",TRUE,"total",607,154618,FALSE,20171005
+1980,"Alaska","AK",2,94,81,"US House",0,"gen",FALSE,"Donald E. Young","republican",FALSE,"total",114089,154618,FALSE,20171005
+1980,"Alaska","AK",2,94,81,"US House",0,"gen",FALSE,"Kevin ""Pat"" Parnell","democrat",FALSE,"total",39922,154618,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",1,"gen",FALSE,"Irene Leitch","libertarian",FALSE,"total",7784,186833,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",1,"gen",FALSE,"John J. Rhodes","republican",FALSE,"total",136961,186833,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",1,"gen",FALSE,"Rob Roper","socialist workers",FALSE,"total",2043,186833,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",1,"gen",FALSE,"Steve Jancek","democrat",FALSE,"total",40045,186833,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",2,"gen",FALSE,"Morris K. Udall","democrat",FALSE,"total",127736,219686,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",2,"gen",FALSE,"Richard H. Huff","republican",FALSE,"total",88653,219686,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",2,"gen",FALSE,"William ""Bill"" Stefanov","libertarian",FALSE,"total",3297,219686,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",3,"gen",FALSE,"Bob Croft","republican",FALSE,"total",65845,219822,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",3,"gen",FALSE,"Bob Stump","democrat",FALSE,"total",141448,219822,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",3,"gen",FALSE,"Sharon Hayse","libertarian",FALSE,"total",12529,219822,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",4,"gen",FALSE,"Eldon Rudd","republican",FALSE,"total",142565,227611,FALSE,20171005
+1980,"Arizona","AZ",4,86,61,"US House",4,"gen",FALSE,"Les Miller","democrat",FALSE,"total",85046,227611,FALSE,20171005
+1980,"Arkansas","AR",5,71,42,"US House",1,"gen",FALSE,"Bill Alexander","democrat",FALSE,"total",1,1,FALSE,20171005
+1980,"Arkansas","AR",5,71,42,"US House",2,"gen",FALSE,"","",TRUE,"total",229,201655,FALSE,20171005
+1980,"Arkansas","AR",5,71,42,"US House",2,"gen",FALSE,"Ed Bethune","republican",FALSE,"total",159148,201655,FALSE,20171005
+1980,"Arkansas","AR",5,71,42,"US House",2,"gen",FALSE,"James G. (Jim) Reid","democrat",FALSE,"total",42278,201655,FALSE,20171005
+1980,"Arkansas","AR",5,71,42,"US House",3,"gen",FALSE,"John Paul Hammerschimdt","republican",FALSE,"total",1,1,FALSE,20171005
+1980,"Arkansas","AR",5,71,42,"US House",4,"gen",FALSE,"Beryl Anthony Jr.","democrat",FALSE,"total",1,1,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",1,"gen",FALSE,"Eugene A. Chappie","republican",FALSE,"total",145098,270199,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",1,"gen",FALSE,"Harold T. Johnson","democrat",FALSE,"total",107682,270199,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",1,"gen",FALSE,"Jim McClarin","libertarian",FALSE,"total",17419,270199,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",10,"gen",FALSE,"Don Edwards","democrat",FALSE,"total",102231,164543,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",10,"gen",FALSE,"Edmon V. Kaiser","american independent",FALSE,"total",4421,164543,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",10,"gen",FALSE,"John M. Lutton","republican",FALSE,"total",45987,164543,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",10,"gen",FALSE,"Joseph Fuhrig","libertarian",FALSE,"total",11904,164543,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",11,"gen",FALSE,"Bill Royer","republican",FALSE,"total",80100,185012,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",11,"gen",FALSE,"Nicholas W. Kudrovzeff","american independent",FALSE,"total",1550,185012,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",11,"gen",FALSE,"Tom Lantos","democrat",FALSE,"total",85823,185012,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",11,"gen",FALSE,"William S. Wade Jr.","libertarian",FALSE,"total",3816,185012,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",11,"gen",FALSE,"Wilson Branch","peace and freedom",FALSE,"total",13723,185012,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",12,"gen",FALSE,"Adele Fumino","peace and freedom",FALSE,"total",3184,199083,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",12,"gen",FALSE,"Bill Evers","libertarian",FALSE,"total",15073,199083,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",12,"gen",FALSE,"Kirsten Olsen","democrat",FALSE,"total",37009,199083,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",12,"gen",FALSE,"Paul N. ""Pete"" McCloskey Jr.","republican",FALSE,"total",143817,199083,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",13,"gen",FALSE,"Norman Y. Mineta","democrat",FALSE,"total",132246,224609,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",13,"gen",FALSE,"Ray Strong","libertarian",FALSE,"total",8806,224609,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",13,"gen",FALSE,"Robert Goldsborough","peace and freedom",FALSE,"total",3791,224609,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",13,"gen",FALSE,"W.E. (Ted) Gagne","republican",FALSE,"total",79766,224609,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",14,"gen",FALSE,"Ann Cerney","democrat",FALSE,"total",79883,220579,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",14,"gen",FALSE,"Douglas G. Housley","libertarian",FALSE,"total",6717,220579,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",14,"gen",FALSE,"Norman D. Shumway","republican",FALSE,"total",133979,220579,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",15,"gen",FALSE,"Michael L. Pullen","libertarian",FALSE,"total",4524,150491,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",15,"gen",FALSE,"Ron Schwartz","republican",FALSE,"total",37895,150491,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",15,"gen",FALSE,"Tony Coelho","democrat",FALSE,"total",108072,150491,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",16,"gen",FALSE,"Jeff Mauro","independent",FALSE,"total",3198,223035,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",16,"gen",FALSE,"Kenton H. Bowers","libertarian",FALSE,"total",6802,223035,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",16,"gen",FALSE,"Leon E. Panetta","democrat",FALSE,"total",158360,223035,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",16,"gen",FALSE,"W.A. Jack Roth","republican",FALSE,"total",54675,223035,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",17,"gen",FALSE,"Charles ""Chip"" Pashayan Jr.","republican",FALSE,"total",129159,182939,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",17,"gen",FALSE,"Willard H. ""Bill"" Johnson","democrat",FALSE,"total",53780,182939,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",18,"gen",FALSE,"Mary ""Pat"" Timmermans","democrat",FALSE,"total",51415,177461,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",18,"gen",FALSE,"William M. Thomas","republican",FALSE,"total",126046,177461,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",19,"gen",FALSE,"Carmen Lodise","democrat",FALSE,"total",36990,209603,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",19,"gen",FALSE,"Jim Trotter","libertarian",FALSE,"total",9764,209603,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",19,"gen",FALSE,"Robert J. Lagomarsino","republican",FALSE,"total",162849,209603,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",2,"gen",FALSE,"Daniel Mosier","libertarian",FALSE,"total",6833,261674,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",2,"gen",FALSE,"Don H. Clausen","republican",FALSE,"total",141698,261674,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",2,"gen",FALSE,"Linda D. Wren","peace and freedom",FALSE,"total",3354,261674,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",2,"gen",FALSE,"Norma K. Bork","democrat",FALSE,"total",109789,261674,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",20,"gen",FALSE,"Barry Goldwater Jr.","republican",FALSE,"total",199674,253303,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",20,"gen",FALSE,"Christopher R. Darwin","libertarian",FALSE,"total",10605,253303,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",20,"gen",FALSE,"Matt Miller","democrat",FALSE,"total",43024,253303,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",21,"gen",FALSE,"Bobbi Fiedler","republican",FALSE,"total",74674,153400,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",21,"gen",FALSE,"George J. Lehmann","libertarian",FALSE,"total",2790,153400,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",21,"gen",FALSE,"James C. Corman","democrat",FALSE,"total",73898,153400,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",21,"gen",FALSE,"Jan B. Tucker","peace and freedom",FALSE,"total",2038,153400,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",22,"gen",FALSE,"Carlos J. Moorhead","republican",FALSE,"total",115241,180423,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",22,"gen",FALSE,"Pierce O'Donnell","democrat",FALSE,"total",57477,180423,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",22,"gen",FALSE,"William V. Susel","libertarian",FALSE,"total",7705,180423,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",23,"gen",FALSE,"Anthony C. Beilenson","democrat",FALSE,"total",126020,199385,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",23,"gen",FALSE,"Jeffrey P. Lieb","libertarian",FALSE,"total",10623,199385,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",23,"gen",FALSE,"Robert (Bob) Winckler","republican",FALSE,"total",62742,199385,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",24,"gen",FALSE,"Henry A. Waxman","democrat",FALSE,"total",93569,146731,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",24,"gen",FALSE,"Jack Smilowitz","american independent",FALSE,"total",2341,146731,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",24,"gen",FALSE,"Maggie Feigin","peace and freedom",FALSE,"total",5905,146731,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",24,"gen",FALSE,"Robert E. Lehman","libertarian",FALSE,"total",5172,146731,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",24,"gen",FALSE,"Roland Cayard","republican",FALSE,"total",39744,146731,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",25,"gen",FALSE,"Edward R. Roybal","democrat",FALSE,"total",49080,74365,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",25,"gen",FALSE,"Richard E. Ferraro Jr.","republican",FALSE,"total",21116,74365,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",25,"gen",FALSE,"William D. Mitchell","libertarian",FALSE,"total",4169,74365,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",26,"gen",FALSE,"John H. Rousselot","republican",FALSE,"total",116715,164514,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",26,"gen",FALSE,"Joseph Louis Lisoni","democrat",FALSE,"total",40099,164514,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",26,"gen",FALSE,"William J. (B.J.) Wagener","libertarian",FALSE,"total",7700,164514,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",27,"gen",FALSE,"Carey Peck","democrat",FALSE,"total",100061,215316,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",27,"gen",FALSE,"Jerome L. ""Jerry"" Sievers","libertarian",FALSE,"total",5448,215316,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",27,"gen",FALSE,"Robert K. Dornan","republican",FALSE,"total",109807,215316,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",28,"gen",FALSE,"Ernst F. Ghermann","libertarian",FALSE,"total",5400,137304,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",28,"gen",FALSE,"Julian C. Dixon","democrat",FALSE,"total",108725,137304,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",28,"gen",FALSE,"Robert Reid","republican",FALSE,"total",23179,137304,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",29,"gen",FALSE,"Augustus F. (Gus) Hawkins","democrat",FALSE,"total",80095,92999,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",29,"gen",FALSE,"Earl Smith","libertarian",FALSE,"total",2622,92999,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",29,"gen",FALSE,"Michael Arthur Hirt","republican",FALSE,"total",10282,92999,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",3,"gen",FALSE,"Bruce A. Daniel","libertarian",FALSE,"total",6980,241865,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",3,"gen",FALSE,"Joseph Murphy","republican",FALSE,"total",64215,241865,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",3,"gen",FALSE,"Robert T. Matsui","democrat",FALSE,"total",170670,241865,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",30,"gen",FALSE,"Bruce M. Hobbs","libertarian",FALSE,"total",4480,102735,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",30,"gen",FALSE,"George E. Danielson","democrat",FALSE,"total",74119,102735,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",30,"gen",FALSE,"J. Arthur ""Art"" Platten","republican",FALSE,"total",24136,102735,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",31,"gen",FALSE,"Don Grimshaw","republican",FALSE,"total",38203,107349,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",31,"gen",FALSE,"Mervyn M. Dymally","democrat",FALSE,"total",69146,107349,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",32,"gen",FALSE,"Glenn M. Anderson","democrat",FALSE,"total",84057,127526,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",32,"gen",FALSE,"John R. Adler","republican",FALSE,"total",39260,127526,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",32,"gen",FALSE,"Thomas A. Cosgrove","libertarian",FALSE,"total",4209,127526,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",33,"gen",FALSE,"Fred L. Anderson","democrat",FALSE,"total",50365,172804,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",33,"gen",FALSE,"Wayne Grisham","republican",FALSE,"total",122439,172804,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",34,"gen",FALSE,"Dan Lungren","republican",FALSE,"total",138024,192169,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",34,"gen",FALSE,"John S. Donohue","peace and freedom",FALSE,"total",7794,192169,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",34,"gen",FALSE,"Simone","democrat",FALSE,"total",46351,192169,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",35,"gen",FALSE,"Dave Dreier","republican",FALSE,"total",100743,194514,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",35,"gen",FALSE,"James Michael ""Mike"" Noonan","peace and freedom",FALSE,"total",5492,194514,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",35,"gen",FALSE,"Jim Lloyd","democrat",FALSE,"total",88279,194514,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",36,"gen",FALSE,"George E. Brown Jr.","democrat",FALSE,"total",88628,168690,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",36,"gen",FALSE,"Harry J. Histen","libertarian",FALSE,"total",6815,168690,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",36,"gen",FALSE,"John Paul Stark","republican",FALSE,"total",73247,168690,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",37,"gen",FALSE,"Donald M. ""Don"" Rusk","democrat",FALSE,"total",58091,231077,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",37,"gen",FALSE,"Jerry Lewis","republican",FALSE,"total",165371,231077,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",37,"gen",FALSE,"Larry Morris","libertarian",FALSE,"total",7615,231077,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",38,"gen",FALSE,"Art Jacobson","republican",FALSE,"total",66256,165437,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",38,"gen",FALSE,"Charles E. ""Chuck"" Heiser","libertarian",FALSE,"total",7301,165437,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",38,"gen",FALSE,"Jerry M. Patterson","democrat",FALSE,"total",91880,165437,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",39,"gen",FALSE,"Leonard L. Lahtinen","democrat",FALSE,"total",54504,229732,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",39,"gen",FALSE,"William E. (Bill) Dannemeyer","republican",FALSE,"total",175228,229732,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",4,"gen",FALSE,"Albert Dehr","republican",FALSE,"total",60935,205055,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",4,"gen",FALSE,"Robert J. Burnside","libertarian",FALSE,"total",10267,205055,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",4,"gen",FALSE,"Vic Fazio","democrat",FALSE,"total",133853,205055,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",40,"gen",FALSE,"Dan Mahaffey","libertarian",FALSE,"total",24486,304997,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",40,"gen",FALSE,"Michael F. Dow","democrat",FALSE,"total",66512,304997,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",40,"gen",FALSE,"Robert E. Badham","republican",FALSE,"total",213999,304997,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",41,"gen",FALSE,"Bill Lowery","republican",FALSE,"total",123187,233918,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",41,"gen",FALSE,"Bob Wilson","democrat",FALSE,"total",101101,233918,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",41,"gen",FALSE,"Joseph D. Alldredge","libertarian",FALSE,"total",9630,233918,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",42,"gen",FALSE,"Duncan L. Hunter","republican",FALSE,"total",79713,149649,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",42,"gen",FALSE,"Lionel Van Deerlin","democrat",FALSE,"total",69936,149649,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",43,"gen",FALSE,"Clair W. Burgener","republican",FALSE,"total",298815,345176,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",43,"gen",FALSE,"Tom Metzger","democrat",FALSE,"total",46361,345176,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",5,"gen",FALSE,"Dan P. Dougherty","libertarian",FALSE,"total",7092,197821,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",5,"gen",FALSE,"Dennis McQuaid","republican",FALSE,"total",89624,197821,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",5,"gen",FALSE,"John L. Burton","democrat",FALSE,"total",101105,197821,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",6,"gen",FALSE,"Phillip Burton","democrat",FALSE,"total",93400,134650,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",6,"gen",FALSE,"Roy Childs","libertarian",FALSE,"total",6750,134650,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",6,"gen",FALSE,"Tom Spinosa","republican",FALSE,"total",34500,134650,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",7,"gen",FALSE,"George Miller","democrat",FALSE,"total",142044,224469,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",7,"gen",FALSE,"Giles St. Clair","republican",FALSE,"total",70479,224469,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",7,"gen",FALSE,"Steve Snow","libertarian",FALSE,"total",6923,224469,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",7,"gen",FALSE,"Thomas J. (Tommy) Thompson","american independent",FALSE,"total",5023,224469,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",8,"gen",FALSE,"Charles V. Hughes","republican",FALSE,"total",76580,195425,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",8,"gen",FALSE,"Ronald V. Dellums","democrat",FALSE,"total",108380,195425,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",8,"gen",FALSE,"Tod Mikuriya","libertarian",FALSE,"total",10465,195425,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",9,"gen",FALSE,"Fortney H. (Pete) Stark","democrat",FALSE,"total",90504,163592,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",9,"gen",FALSE,"Steven W. Clanin","libertarian",FALSE,"total",5823,163592,FALSE,20171005
+1980,"California","CA",6,93,71,"US House",9,"gen",FALSE,"William J. (Bill) Kennedy","republican",FALSE,"total",67265,163592,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",1,"gen",FALSE,"Harold Sudmeyer","socialist workers",FALSE,"total",566,179622,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",1,"gen",FALSE,"John Mason","libertarian",FALSE,"total",3888,179622,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",1,"gen",FALSE,"Naomi Bradford","republican",FALSE,"total",67804,179622,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",1,"gen",FALSE,"Pat Schroeder","democrat",FALSE,"total",107364,179622,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",2,"gen",FALSE,"John McElderry","republican",FALSE,"total",111868,272270,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",2,"gen",FALSE,"Paul K. Grant","libertarian",FALSE,"total",4633,272270,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",2,"gen",FALSE,"Robert Bruce McFarland","citizens",FALSE,"total",2219,272270,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",2,"gen",FALSE,"Timothy E. Wirth","democrat",FALSE,"total",153550,272270,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",3,"gen",FALSE,"Harold L. ""Mack"" McCormick","republican",FALSE,"total",84292,192782,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",3,"gen",FALSE,"James S. Glennie","libertarian",FALSE,"total",2670,192782,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",3,"gen",FALSE,"Ray Kogovsek","democrat",FALSE,"total",105820,192782,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",4,"gen",FALSE,"Cynthia Molson-Smith","libertarian",FALSE,"total",5421,260491,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",4,"gen",FALSE,"Hank Brown","republican",FALSE,"total",178221,260491,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",4,"gen",FALSE,"Polly Baca Barragan","democrat",FALSE,"total",76849,260491,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",5,"gen",FALSE,"Ed Schreiber","democrat",FALSE,"total",62003,244900,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",5,"gen",FALSE,"John A. Lanning","libertarian",FALSE,"total",5578,244900,FALSE,20171005
+1980,"Colorado","CO",8,84,62,"US House",5,"gen",FALSE,"Ken Kramer","republican",FALSE,"total",177319,244900,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",1,"gen",FALSE,"","",TRUE,"total",29,218694,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",1,"gen",FALSE,"Marjorie D. Anderson","republican",FALSE,"total",80816,218694,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",1,"gen",FALSE,"William R. Cotter","democrat",FALSE,"total",137849,218694,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",2,"gen",FALSE,"","",TRUE,"total",28,223311,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",2,"gen",FALSE,"Samuel Gejdenson","democrat",FALSE,"total",119176,223311,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",2,"gen",FALSE,"Tony Guglielmo","republican",FALSE,"total",104107,223311,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",3,"gen",FALSE,"","",TRUE,"total",10,223648,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",3,"gen",FALSE,"Joelle R. Fishman","citizens",FALSE,"total",2711,223648,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",3,"gen",FALSE,"Joseph L. Lieberman","democrat",FALSE,"total",103903,223648,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",3,"gen",FALSE,"Lawrence J. DeNardis","republican",FALSE,"total",117024,223648,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",4,"gen",FALSE,"","",TRUE,"total",14,198625,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",4,"gen",FALSE,"John A. Phillips","democrat",FALSE,"total",74326,198625,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",4,"gen",FALSE,"Stewart B. McKinney","republican",FALSE,"total",124285,198625,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",5,"gen",FALSE,"","",TRUE,"total",13,232943,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",5,"gen",FALSE,"Edward M. Donahue","republican",FALSE,"total",115614,232943,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",5,"gen",FALSE,"William R. Ratchford","democrat",FALSE,"total",117316,232943,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",6,"gen",FALSE,"","",TRUE,"total",13,242024,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",6,"gen",FALSE,"Anthony Toby Moffett","democrat",FALSE,"total",142685,242024,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",6,"gen",FALSE,"Louis J. Marietta","independent",FALSE,"total",995,242024,FALSE,20171005
+1980,"Connecticut","CT",9,16,1,"US House",6,"gen",FALSE,"Nicholas Schaus","republican",FALSE,"total",98331,242024,FALSE,20171005
+1980,"Delaware","DE",10,51,11,"US House",0,"gen",FALSE,"Lawrence D. Sullivan","libertarian",FALSE,"total",1506,216575,FALSE,20171005
+1980,"Delaware","DE",10,51,11,"US House",0,"gen",FALSE,"Robert L. Maxwell","democrat",FALSE,"total",81227,216575,FALSE,20171005
+1980,"Delaware","DE",10,51,11,"US House",0,"gen",FALSE,"Thomas B. Evans Jr.","republican",FALSE,"total",133842,216575,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",1,"gen",FALSE,"Earl Hutto","democrat",FALSE,"total",119829,195768,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",1,"gen",FALSE,"Warren Briggs","republican",FALSE,"total",75939,195768,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",10,"gen",FALSE,"L. A. ""Skip"" Bafalis","republican",FALSE,"total",272393,345039,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",10,"gen",FALSE,"Richard D. (Sparky) Sparkman","democrat",FALSE,"total",72646,345039,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",11,"gen",FALSE,"Al Coogler","republican",FALSE,"total",137520,339233,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",11,"gen",FALSE,"Dan Mica","democrat",FALSE,"total",201713,339233,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",12,"gen",FALSE,"Alan S. Becker","democrat",FALSE,"total",107164,235725,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",12,"gen",FALSE,"Clay Shaw","republican",FALSE,"total",128561,235725,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",13,"gen",FALSE,"Alvin E. ""Al"" Entin","republican",FALSE,"total",42830,170658,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",13,"gen",FALSE,"William Lehman","democrat",FALSE,"total",127828,170658,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",14,"gen",FALSE,"Claude Pepper","democrat",FALSE,"total",95820,127847,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",14,"gen",FALSE,"Evelop S. Estrella","republican",FALSE,"total",32027,127847,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",15,"gen",FALSE,"Dante B. Fascell","democrat",FALSE,"total",132952,203385,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",15,"gen",FALSE,"Herbert J. Hoodwin","republican",FALSE,"total",70433,203385,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",2,"gen",FALSE,"Don Fuqua","democrat",FALSE,"total",138252,195840,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",2,"gen",FALSE,"John R. LaCapra","republican",FALSE,"total",57588,195840,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",3,"gen",FALSE,"Charles E. Bennett","democrat",FALSE,"total",104672,135880,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",3,"gen",FALSE,"Harry Radcliffe","republican",FALSE,"total",31208,135880,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",4,"gen",FALSE,"Barney E. Dillard Jr.","republican",FALSE,"total",76924,224699,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",4,"gen",FALSE,"Bill Chappell","democrat",FALSE,"total",147775,224699,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",5,"gen",FALSE,"Bil McCollum","republican",FALSE,"total",177603,318506,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",5,"gen",FALSE,"David Best","democrat",FALSE,"total",140903,318506,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",6,"gen",FALSE,"C. W. Bill Young","republican",FALSE,"total",1,1,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",7,"gen",FALSE,"Charles P. ""Chuck"" Jones","republican",FALSE,"total",52138,184667,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",7,"gen",FALSE,"Sam M. Gibbons","democrat",FALSE,"total",132529,184667,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",8,"gen",FALSE,"Andy Ireland","democrat",FALSE,"total",151613,218913,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",8,"gen",FALSE,"Rod Rebholz","independent",FALSE,"total",5480,218913,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",8,"gen",FALSE,"Scott Nicholson","republican",FALSE,"total",61820,218913,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",9,"gen",FALSE,"Bill Nelson","democrat",FALSE,"total",139468,198202,FALSE,20171005
+1980,"Florida","FL",12,59,43,"US House",9,"gen",FALSE,"Stan Dowiat","republican",FALSE,"total",58734,198202,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",1,"gen",FALSE,"","",TRUE,"total",1,82146,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",1,"gen",FALSE,"Bo Ginn","democrat",FALSE,"total",82145,82146,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",10,"gen",FALSE,"","",TRUE,"total",7,127378,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",10,"gen",FALSE,"Bruce J. Neubauer","republican",FALSE,"total",25194,127378,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",10,"gen",FALSE,"Doug Barnard Jr.","democrat",FALSE,"total",102177,127378,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",2,"gen",FALSE,"","",TRUE,"total",1,125372,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",2,"gen",FALSE,"Charles Hatcher","democrat",FALSE,"total",92264,125372,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",2,"gen",FALSE,"Jack E. Harrell Jr.","republican",FALSE,"total",33107,125372,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",3,"gen",FALSE,"","",TRUE,"total",30,89070,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",3,"gen",FALSE,"Jack Brinkley","democrat",FALSE,"total",89040,89070,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",4,"gen",FALSE,"","",TRUE,"total",13,168650,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",4,"gen",FALSE,"Barry Billington","republican",FALSE,"total",51546,168650,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",4,"gen",FALSE,"Elliott H. Levitas","democrat",FALSE,"total",117091,168650,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",5,"gen",FALSE,"","",TRUE,"total",16,137302,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",5,"gen",FALSE,"F. William Dowda","republican",FALSE,"total",35640,137302,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",5,"gen",FALSE,"Wyche Fowler Jr.","democrat",FALSE,"total",101646,137302,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",6,"gen",FALSE,"","",TRUE,"total",8,162685,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",6,"gen",FALSE,"Dock H. Davis","democrat",FALSE,"total",66606,162685,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",6,"gen",FALSE,"Newt Gingrich","republican",FALSE,"total",96071,162685,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",7,"gen",FALSE,"","",TRUE,"total",8,170142,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",7,"gen",FALSE,"Larry P. McDonald","democrat",FALSE,"total",115892,170142,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",7,"gen",FALSE,"Richard Castellucis","republican",FALSE,"total",54242,170142,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",8,"gen",FALSE,"","",TRUE,"total",2,122138,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",8,"gen",FALSE,"Billy Lee Evans","democrat",FALSE,"total",91103,122138,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",8,"gen",FALSE,"Darwin Ashworth","republican",FALSE,"total",31033,122138,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",9,"gen",FALSE,"","",TRUE,"total",1,169918,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",9,"gen",FALSE,"David Ashworth","republican",FALSE,"total",54341,169918,FALSE,20171005
+1980,"Georgia","GA",13,58,44,"US House",9,"gen",FALSE,"Ed Jenkins","democrat",FALSE,"total",115576,169918,FALSE,20171005
+1980,"Hawaii","HI",15,95,82,"US House",1,"gen",FALSE,"Aloma Keen Noble","republican",FALSE,"total",19819,123181,FALSE,20171005
+1980,"Hawaii","HI",15,95,82,"US House",1,"gen",FALSE,"Cec Heftel","democrat",FALSE,"total",98256,123181,FALSE,20171005
+1980,"Hawaii","HI",15,95,82,"US House",1,"gen",FALSE,"Rockne H. Johnson","libertarian",FALSE,"total",5106,123181,FALSE,20171005
+1980,"Hawaii","HI",15,95,82,"US House",2,"gen",FALSE,"Daniel K. Akaka","democrat",FALSE,"total",141477,157380,FALSE,20171005
+1980,"Hawaii","HI",15,95,82,"US House",2,"gen",FALSE,"Don G. Smith","libertarian",FALSE,"total",15903,157380,FALSE,20171005
+1980,"Idaho","ID",16,82,63,"US House",1,"gen",FALSE,"Glenn W. Nichols","democrat",FALSE,"total",100697,217542,FALSE,20171005
+1980,"Idaho","ID",16,82,63,"US House",1,"gen",FALSE,"Larry Craig","republican",FALSE,"total",116845,217542,FALSE,20171005
+1980,"Idaho","ID",16,82,63,"US House",2,"gen",FALSE,"Diane Bilyeu","democrat",FALSE,"total",81364,197560,FALSE,20171005
+1980,"Idaho","ID",16,82,63,"US House",2,"gen",FALSE,"George Hansen","republican",FALSE,"total",116196,197560,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",1,"gen",FALSE,"","",TRUE,"total",1,125223,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",1,"gen",FALSE,"George Williams","republican",FALSE,"total",5660,125223,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",1,"gen",FALSE,"Harold Washington","democrat",FALSE,"total",119562,125223,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",10,"gen",FALSE,"","",TRUE,"total",18,226733,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",10,"gen",FALSE,"John Edward Porter","republican",FALSE,"total",137707,226733,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",10,"gen",FALSE,"Robert A. Weinberger","democrat",FALSE,"total",89008,226733,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",11,"gen",FALSE,"","",TRUE,"total",4,173587,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",11,"gen",FALSE,"Frank Annunzio","democrat",FALSE,"total",121166,173587,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",11,"gen",FALSE,"Michael R. Zanillo","republican",FALSE,"total",52417,173587,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",12,"gen",FALSE,"","",TRUE,"total",9,249818,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",12,"gen",FALSE,"David McCartney","democrat",FALSE,"total",64729,249818,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",12,"gen",FALSE,"Philip M. Crane","republican",FALSE,"total",185080,249818,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",13,"gen",FALSE,"","",TRUE,"total",10,183458,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",13,"gen",FALSE,"Michael Reese","democrat",FALSE,"total",52000,183458,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",13,"gen",FALSE,"Robert McClory","republican",FALSE,"total",131448,183458,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",14,"gen",FALSE,"","",TRUE,"total",21,263828,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",14,"gen",FALSE,"John N. Erlenborn","republican",FALSE,"total",202583,263828,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",14,"gen",FALSE,"LeRoy E. Kennel","democrat",FALSE,"total",61224,263828,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",15,"gen",FALSE,"John P. Quillin","democrat",FALSE,"total",45721,196619,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",15,"gen",FALSE,"Tom Corcoran","republican",FALSE,"total",150898,196619,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",16,"gen",FALSE,"","",TRUE,"total",18,197147,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",16,"gen",FALSE,"Douglas R. Aurand","democrat",FALSE,"total",64224,197147,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",16,"gen",FALSE,"Lynn Martin","republican",FALSE,"total",132905,197147,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",17,"gen",FALSE,"George M. O'Brien","republican",FALSE,"total",125806,191111,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",17,"gen",FALSE,"Michael A. Murer","democrat",FALSE,"total",65305,191111,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",18,"gen",FALSE,"","",TRUE,"total",11,202043,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",18,"gen",FALSE,"John L. Knuppel","democrat",FALSE,"total",76471,202043,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",18,"gen",FALSE,"Robert H. Michel","republican",FALSE,"total",125561,202043,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",19,"gen",FALSE,"Thomas J. Hand","democrat",FALSE,"total",51753,194369,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",19,"gen",FALSE,"Tom Railsback","republican",FALSE,"total",142616,194369,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",2,"gen",FALSE,"","",TRUE,"total",103,147302,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",2,"gen",FALSE,"Gus Savage","democrat",FALSE,"total",129771,147302,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",2,"gen",FALSE,"Marsha A. Harris","republican",FALSE,"total",17428,147302,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",20,"gen",FALSE,"David Robinson","democrat",FALSE,"total",96950,220377,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",20,"gen",FALSE,"Paul Findley","republican",FALSE,"total",123427,220377,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",21,"gen",FALSE,"Edward R. Madigan","republican",FALSE,"total",132186,195662,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",21,"gen",FALSE,"Penny L. Severns","democrat",FALSE,"total",63476,195662,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",22,"gen",FALSE,"Daniel B. Crane","republican",FALSE,"total",146014,212079,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",22,"gen",FALSE,"Peter M. Voelz","democrat",FALSE,"total",66065,212079,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",23,"gen",FALSE,"Melvin Price","democrat",FALSE,"total",107786,167430,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",23,"gen",FALSE,"Ronald L. Davinroy","republican",FALSE,"total",59644,167430,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",24,"gen",FALSE,"","",TRUE,"total",1,228296,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",24,"gen",FALSE,"James H. Barrett","constitution party of illinois",FALSE,"total",5985,228296,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",24,"gen",FALSE,"John T. Anderson","republican",FALSE,"total",110176,228296,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",24,"gen",FALSE,"Paul Simon","democrat",FALSE,"total",112134,228296,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",3,"gen",FALSE,"","",TRUE,"total",2,199240,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",3,"gen",FALSE,"Lawrence C. Sarsoun","republican",FALSE,"total",61955,199240,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",3,"gen",FALSE,"Martin A. Russo","democrat",FALSE,"total",137283,199240,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",4,"gen",FALSE,"","",TRUE,"total",1,224192,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",4,"gen",FALSE,"Edward J. Derwinski","republican",FALSE,"total",152377,224192,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",4,"gen",FALSE,"Richard S. Jalovec","democrat",FALSE,"total",71814,224192,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",5,"gen",FALSE,"","",TRUE,"total",1,133279,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",5,"gen",FALSE,"John G. Fary","democrat",FALSE,"total",106142,133279,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",5,"gen",FALSE,"Robert V. Kotowski","republican",FALSE,"total",27136,133279,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",6,"gen",FALSE,"","",TRUE,"total",6,184550,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",6,"gen",FALSE,"Henry J. Hyde","republican",FALSE,"total",123593,184550,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",6,"gen",FALSE,"Mario Raymond Reda","democrat",FALSE,"total",60951,184550,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",7,"gen",FALSE,"Cardiss Collins","democrat",FALSE,"total",80056,94097,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",7,"gen",FALSE,"Ruth R. Hooper","republican",FALSE,"total",14041,94097,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",8,"gen",FALSE,"","",TRUE,"total",4,116373,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",8,"gen",FALSE,"Dan Rostenkowski","democrat",FALSE,"total",98524,116373,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",8,"gen",FALSE,"Walter F. Zilke","republican",FALSE,"total",17845,116373,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",9,"gen",FALSE,"","",TRUE,"total",1,145788,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",9,"gen",FALSE,"John D. Andrica","republican",FALSE,"total",39244,145788,FALSE,20171005
+1980,"Illinois","IL",17,33,21,"US House",9,"gen",FALSE,"Sidney R. Yates","democrat",FALSE,"total",106543,145788,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",1,"gen",FALSE,"Adam Benjamin Jr. ","democrat",FALSE,"total",112016,155553,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",1,"gen",FALSE,"Joseph Douglas Harkin","republican",FALSE,"total",43537,155553,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",10,"gen",FALSE,"Philip R. Sharp","democrat",FALSE,"total",103083,193134,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",10,"gen",FALSE,"William G. Frazier","republican",FALSE,"total",90051,193134,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",11,"gen",FALSE,"Andrew Jacobs Jr. ","democrat",FALSE,"total",105468,184211,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",11,"gen",FALSE,"Sheila Suess","republican",FALSE,"total",78743,184211,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",2,"gen",FALSE,"Ernest Niemeyer","republican",FALSE,"total",103957,226283,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",2,"gen",FALSE,"Floyd J. Fithian","democrat",FALSE,"total",122326,226283,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",3,"gen",FALSE,"John Brademas","democrat",FALSE,"total",85136,189108,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",3,"gen",FALSE,"John Patrick Hiler","republican",FALSE,"total",103972,189108,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",4,"gen",FALSE,"Dan R. Coats","republican",FALSE,"total",120055,198342,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",4,"gen",FALSE,"John D. Walda","democrat",FALSE,"total",77542,198342,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",4,"gen",FALSE,"Stephen G. Hope","independent",FALSE,"total",745,198342,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",5,"gen",FALSE,"Elwood H. Hillis","republican",FALSE,"total",129474,209852,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",5,"gen",FALSE,"Nels J. Ackerson","democrat",FALSE,"total",80378,209852,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",6,"gen",FALSE,"Dave Evans","democrat",FALSE,"total",99089,197391,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",6,"gen",FALSE,"David G. Crane","republican",FALSE,"total",98302,197391,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",7,"gen",FALSE,"John T. Myers","republican",FALSE,"total",137604,208264,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",7,"gen",FALSE,"Patrick D. Carroll","democrat",FALSE,"total",69051,208264,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",7,"gen",FALSE,"Peter P. Tescione","independent",FALSE,"total",1609,208264,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",8,"gen",FALSE,"Joel Deckard","republican",FALSE,"total",119415,216474,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",8,"gen",FALSE,"Kenneth C. Snider","democrat",FALSE,"total",97059,216474,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",9,"gen",FALSE,"George Meyer Jr. ","republican",FALSE,"total",75601,212175,FALSE,20171005
+1980,"Indiana","IN",18,32,22,"US House",9,"gen",FALSE,"Lee H. Hamilton","democrat",FALSE,"total",136574,212175,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",1,"gen",FALSE,"Gloria Williams ","socialist",FALSE,"total",786,208111,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",1,"gen",FALSE,"Jim Larew","democrat",FALSE,"total",72602,208111,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",1,"gen",FALSE,"Jim Leach","republican",FALSE,"total",133349,208111,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",1,"gen",FALSE,"Michael R. Grant","libertarian",FALSE,"total",1374,208111,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",2,"gen",FALSE,"Dean Miller","libertarian",FALSE,"total",985,206634,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",2,"gen",FALSE,"James D. Roberson","by petition",FALSE,"total",887,206634,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",2,"gen",FALSE,"Steve Sovern","democrat",FALSE,"total",93175,206634,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",2,"gen",FALSE,"Tom Tauke","republican",FALSE,"total",111587,206634,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",3,"gen",FALSE,"Cooper Evans","republican",FALSE,"total",107869,209945,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",3,"gen",FALSE,"James E. Suppus","american",FALSE,"total",341,209945,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",3,"gen",FALSE,"Lynne G. Cutler","democrat",FALSE,"total",101735,209945,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",4,"gen",FALSE,"Donald C. Young","republican",FALSE,"total",100335,218620,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",4,"gen",FALSE,"Kalonji Saadiq","socialist",FALSE,"total",389,218620,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",4,"gen",FALSE,"Neal Smith","democrat",FALSE,"total",117896,218620,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",5,"gen",FALSE,"Cal Hultman","republican",FALSE,"total",84472,212367,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",5,"gen",FALSE,"Tom Harkin","democrat",FALSE,"total",127895,212367,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",6,"gen",FALSE,"Berkley Bedell","democrat",FALSE,"total",129460,201326,FALSE,20171005
+1980,"Iowa","IA",19,42,31,"US House",6,"gen",FALSE,"Clarence S. Carney","republican",FALSE,"total",71866,201326,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",1,"gen",FALSE,"Pat Roberts","republican",FALSE,"total",121545,195131,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",1,"gen",FALSE,"Phil Martin","democrat",FALSE,"total",73586,195131,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",2,"gen",FALSE,"","",TRUE,"total",11,170977,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",2,"gen",FALSE,"Jim Jeffries","republican",FALSE,"total",92107,170977,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",2,"gen",FALSE,"Sam Keys","democrat",FALSE,"total",78859,170977,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",3,"gen",FALSE,"Dan Watkins","democrat",FALSE,"total",82414,197046,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",3,"gen",FALSE,"John O. Stewart","conservative",FALSE,"total",5338,197046,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",3,"gen",FALSE,"Larry Winn Jr. ","republican",FALSE,"total",109294,197046,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",4,"gen",FALSE,"Clay Hunter ","republican",FALSE,"total",55899,179913,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",4,"gen",FALSE,"Dan Glickman","democrat",FALSE,"total",124014,179913,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",5,"gen",FALSE,"Bob Whittaker","republican",FALSE,"total",141029,190047,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",5,"gen",FALSE,"David L. Miller","democrat",FALSE,"total",45676,190047,FALSE,20171005
+1980,"Kansas","KS",20,47,32,"US House",5,"gen",FALSE,"Jack C. Blackwell","statesman",FALSE,"total",3342,190047,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",1,"gen",FALSE,"Carroll Hubbard Jr. ","democrat",FALSE,"total",118565,118565,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",2,"gen",FALSE,"Mark T. Watson","republican",FALSE,"total",52110,151780,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",2,"gen",FALSE,"William H. Natcher","democrat",FALSE,"total",99670,151780,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",3,"gen",FALSE,"Henry Glover Logsdon","independent",FALSE,"total",430,134724,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",3,"gen",FALSE,"John Cumbler","citizens",FALSE,"total",1272,134724,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",3,"gen",FALSE,"Richard Cesler","republican",FALSE,"total",46681,134724,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",3,"gen",FALSE,"Robert D. Vessels","american",FALSE,"total",468,134724,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",3,"gen",FALSE,"Romano L. Mazzoli","democrat",FALSE,"total",85873,134724,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",4,"gen",FALSE,"Gene Snyder ","republican",FALSE,"total",126049,188187,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",4,"gen",FALSE,"Phil M. McGary","democrat",FALSE,"total",62138,188187,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",5,"gen",FALSE,"Harold ""Hal"" Rogers","republican",FALSE,"total",112093,166120,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",5,"gen",FALSE,"Ted R. Marcum","democrat",FALSE,"total",54027,166120,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",6,"gen",FALSE,"Don Bertram Pratt","independent",FALSE,"total",1202,179051,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",6,"gen",FALSE,"Larry J. Hopkins","republican",FALSE,"total",105376,179051,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",6,"gen",FALSE,"Tom Easterly","democrat",FALSE,"total",72473,179051,FALSE,20171005
+1980,"Kentucky","KY",21,61,51,"US House",7,"gen",FALSE,"Carl D. Perkins","democrat",FALSE,"total",117665,117665,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",1,"gen",FALSE,"Michael J. Musmeci Sr. ","democrat",FALSE,"total",8277,92555,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",1,"gen",FALSE,"Robert L. ""Bob"" Livingston","republican",FALSE,"total",81777,92555,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",1,"gen",FALSE,"Tristan P. Junius","no party",FALSE,"total",2501,92555,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",2,"gen",FALSE,"Clyde F. Bell Jr. ","democrat",FALSE,"total",3571,74183,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",2,"gen",FALSE,"Lindy (Mrs. Hale) Boggs","democrat",FALSE,"total",45091,74183,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",2,"gen",FALSE,"Rob Couhig","republican",FALSE,"total",25521,74183,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",3,"gen",FALSE,"Bob Namer","democrat",FALSE,"total",14074,94529,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",3,"gen",FALSE,"W. J. ""Billy"" Tauzin","democrat",FALSE,"total",80455,94529,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",4,"gen",FALSE,"Buddy Roemer","democrat",FALSE,"total",103625,162330,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",4,"gen",FALSE,"Claude ""Buddy"" Leach","democrat",FALSE,"total",58705,162330,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",5,"gen",FALSE,"Jerry Huckaby","democrat",FALSE,"total",93519,105267,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",5,"gen",FALSE,"L. D. Knox","democrat",FALSE,"total",11748,105267,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",6,"gen",FALSE,"Alice Brooks","democrat",FALSE,"total",12149,130689,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",6,"gen",FALSE,"W. Henson Moore","republican",FALSE,"total",118540,130689,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",7,"gen",FALSE,"John Breaux","democrat",FALSE,"total",1,1,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",8,"gen",FALSE,"Clyde C. Holloway","republican",FALSE,"total",27816,109492,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",8,"gen",FALSE,"Gillis Long","democrat",FALSE,"total",75433,109492,FALSE,20171005
+1980,"Louisiana","LA",22,72,45,"US House",8,"gen",FALSE,"Robert H. Mitchell","republican",FALSE,"total",6243,109492,FALSE,20171005
+1980,"Maine","ME",23,11,2,"US House",1,"gen",FALSE,"","",TRUE,"total",5,275491,FALSE,20171005
+1980,"Maine","ME",23,11,2,"US House",1,"gen",FALSE,"David F. Emery","republican",FALSE,"total",188667,275491,FALSE,20171005
+1980,"Maine","ME",23,11,2,"US House",1,"gen",FALSE,"Harold C. Pachios","democrat",FALSE,"total",86819,275491,FALSE,20171005
+1980,"Maine","ME",23,11,2,"US House",2,"gen",FALSE,"","",TRUE,"total",16,237448,FALSE,20171005
+1980,"Maine","ME",23,11,2,"US House",2,"gen",FALSE,"Harold L. Silverman","democrat",FALSE,"total",51026,237448,FALSE,20171005
+1980,"Maine","ME",23,11,2,"US House",2,"gen",FALSE,"Olympia J. Snowe","republican",FALSE,"total",186406,237448,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",1,"gen",FALSE,"Robert E. Bauman","republican",FALSE,"total",91143,188886,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",1,"gen",FALSE,"Roy Dyson","democrat",FALSE,"total",97743,188886,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",2,"gen",FALSE,"Clarence D. Long","democrat",FALSE,"total",121017,210978,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",2,"gen",FALSE,"Helen Delich Bentley","republican",FALSE,"total",89961,210978,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",3,"gen",FALSE,"Barbara A. Mikulski","democrat",FALSE,"total",102293,134367,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",3,"gen",FALSE,"Russell T. Schaffer","republican",FALSE,"total",32074,134367,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",4,"gen",FALSE,"James J. Riley","democrat",FALSE,"total",47375,168360,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",4,"gen",FALSE,"Marjorie S. Holt","republican",FALSE,"total",120985,168360,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",5,"gen",FALSE,"Gladys Noon Spellman","democrat",FALSE,"total",106035,131728,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",5,"gen",FALSE,"Kevin R. Igoe","republican",FALSE,"total",25693,131728,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",6,"gen",FALSE,"Beverly B. Byron","democrat",FALSE,"total",146101,209014,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",6,"gen",FALSE,"Raymond E. Beck","republican",FALSE,"total",62913,209014,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",7,"gen",FALSE,"Parren J. Mitchell","democrat",FALSE,"total",97104,109754,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",7,"gen",FALSE,"Victor Clark Jr. ","republican",FALSE,"total",12650,109754,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",8,"gen",FALSE,"Michael D. Barnes","democrat",FALSE,"total",148301,249960,FALSE,20171005
+1980,"Maryland","MD",24,52,52,"US House",8,"gen",FALSE,"Newton Steers","republican",FALSE,"total",101659,249960,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",1,"gen",FALSE,"Helen Poppy Doyle","democrat",FALSE,"total",52457,208991,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",1,"gen",FALSE,"Other","",TRUE,"total",20,208991,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",1,"gen",FALSE,"Silvio O. Conte","republican",FALSE,"total",156514,208991,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",10,"gen",FALSE,"Margaret M. Heckler","republican",FALSE,"total",131794,217433,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",10,"gen",FALSE,"Other","",TRUE,"total",10,217433,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",10,"gen",FALSE,"Robert E. McCarthy","democrat",FALSE,"total",85629,217433,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",11,"gen",FALSE,"Brian J. Donnelly","democrat",FALSE,"total",137066,137122,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",11,"gen",FALSE,"Other","",TRUE,"total",56,137122,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",12,"gen",FALSE,"Gerry E. Studds","democrat",FALSE,"total",195791,267421,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",12,"gen",FALSE,"Other","",TRUE,"total",10,267421,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",12,"gen",FALSE,"Paul V. Doane","republican",FALSE,"total",71620,267421,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",2,"gen",FALSE,"Edward P. Boland","democrat",FALSE,"total",120711,179665,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",2,"gen",FALSE,"John B. Aubuchon","independent",FALSE,"total",20247,179665,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",2,"gen",FALSE,"Other","",TRUE,"total",35,179665,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",2,"gen",FALSE,"Thomas P. Swank","republican",FALSE,"total",38672,179665,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",3,"gen",FALSE,"David G. Skehan","",FALSE,"total",54213,195783,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",3,"gen",FALSE,"Joseph D. Early","",FALSE,"total",141560,195783,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",3,"gen",FALSE,"Other","",TRUE,"total",10,195783,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",4,"gen",FALSE,"Barney Frank","democrat",FALSE,"total",103466,199376,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",4,"gen",FALSE,"Other","",TRUE,"total",12,199376,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",4,"gen",FALSE,"Richard A. Jones","republican",FALSE,"total",95898,199376,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",5,"gen",FALSE,"James M. Shannon","democrat",FALSE,"total",136758,207321,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",5,"gen",FALSE,"Other","",TRUE,"total",16,207321,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",5,"gen",FALSE,"William C. Sawyer","republican",FALSE,"total",70547,207321,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",6,"gen",FALSE,"Donald P. Batchelder","citizens",FALSE,"total",3290,219257,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",6,"gen",FALSE,"Nelson F. Gonzalez","socialist workers",FALSE,"total",1304,219257,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",6,"gen",FALSE,"Nicholas Mavroules","democrat",FALSE,"total",111393,219257,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",6,"gen",FALSE,"Other","",TRUE,"total",78,219257,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",6,"gen",FALSE,"Thomas H. Trimarco","republican",FALSE,"total",103192,219257,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",7,"gen",FALSE,"Edward J. Markey","democrat",FALSE,"total",155759,155783,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",7,"gen",FALSE,"Other","",TRUE,"total",24,155783,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",8,"gen",FALSE,"Other","",TRUE,"total",17,164183,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",8,"gen",FALSE,"Thomas P. O'Neill Jr. ","democrat",FALSE,"total",128689,164183,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",8,"gen",FALSE,"William A. Barnstead","republican",FALSE,"total",35477,164183,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",9,"gen",FALSE,"John Joseph Moakley","democrat",FALSE,"total",104010,104046,FALSE,20171005
+1980,"Massachusetts","MA",25,14,3,"US House",9,"gen",FALSE,"Other","",TRUE,"total",36,104046,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",1,"gen",FALSE,"","",TRUE,"total",1,130230,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",1,"gen",FALSE,"John Conyers Jr. ","democrat",FALSE,"total",123286,130230,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",1,"gen",FALSE,"Thomas W. Jones","libertarian",FALSE,"total",699,130230,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",1,"gen",FALSE,"William M. Bell","republican",FALSE,"total",6244,130230,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",10,"gen",FALSE,"","",TRUE,"total",10,242252,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",10,"gen",FALSE,"David Isaac ","american independent",FALSE,"total",1254,242252,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",10,"gen",FALSE,"Don Albosta","democrat",FALSE,"total",126962,242252,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",10,"gen",FALSE,"Frederick J. Dechow","libertarian",FALSE,"total",2530,242252,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",10,"gen",FALSE,"Richard J. Allen","republican",FALSE,"total",111496,242252,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",11,"gen",FALSE,"","",TRUE,"total",56,223139,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",11,"gen",FALSE,"Bob Davis","republican",FALSE,"total",146205,223139,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",11,"gen",FALSE,"Dan Dorrity","democrat",FALSE,"total",75515,223139,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",11,"gen",FALSE,"John C. Stariha","american independent",FALSE,"total",1363,223139,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",12,"gen",FALSE,"","",TRUE,"total",18,203647,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",12,"gen",FALSE,"David E. Bonior","democrat",FALSE,"total",112698,203647,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",12,"gen",FALSE,"Kirk Walsh","republican",FALSE,"total",90931,203647,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",13,"gen",FALSE,"","",TRUE,"total",12,87090,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",13,"gen",FALSE,"George W. Crockett","democrat",FALSE,"total",79719,87090,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",13,"gen",FALSE,"M. Michael Hurd","republican",FALSE,"total",6473,87090,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",13,"gen",FALSE,"Robert W. Roddis","libertarian",FALSE,"total",886,87090,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",14,"gen",FALSE,"","",TRUE,"total",5,169666,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",14,"gen",FALSE,"Dennis M. Hertel","democrat",FALSE,"total",90362,169666,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",14,"gen",FALSE,"John D. Litle","libertarian",FALSE,"total",904,169666,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",14,"gen",FALSE,"Vic Caputo","republican",FALSE,"total",78395,169666,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",15,"gen",FALSE,"","",TRUE,"total",82,167795,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",15,"gen",FALSE,"Aldi C. Fuhrman","american independent",FALSE,"total",1175,167795,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",15,"gen",FALSE,"Gerald R. Carlson","republican",FALSE,"total",53046,167795,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",15,"gen",FALSE,"William D. Ford","democrat",FALSE,"total",113492,167795,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",16,"gen",FALSE,"","",TRUE,"total",7,151465,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",16,"gen",FALSE,"John D. Dingell","democrat",FALSE,"total",105844,151465,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",16,"gen",FALSE,"Pamella A. Seay","republican",FALSE,"total",42735,151465,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",16,"gen",FALSE,"R. Scott Davidson","libertarian",FALSE,"total",1810,151465,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",16,"gen",FALSE,"Ronald Lee Slote","american independent",FALSE,"total",1069,151465,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",17,"gen",FALSE,"","",TRUE,"total",23,174528,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",17,"gen",FALSE,"L. Patterson","republican",FALSE,"total",44313,174528,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",17,"gen",FALSE,"William B. Krebaum","libertarian",FALSE,"total",2667,174528,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",17,"gen",FALSE,"William M. Brodhead","democrat",FALSE,"total",127525,174528,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",18,"gen",FALSE,"","",TRUE,"total",1,207977,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",18,"gen",FALSE,"Bette Erwin","libertarian",FALSE,"total",2323,207977,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",18,"gen",FALSE,"Betty J. Suida","republican",FALSE,"total",68575,207977,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",18,"gen",FALSE,"Howard L. Neal","american independent",FALSE,"total",1373,207977,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",18,"gen",FALSE,"Jim Blanchard","democrat",FALSE,"total",135705,207977,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",19,"gen",FALSE,"","",TRUE,"total",1,231894,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",19,"gen",FALSE,"Brian Wright","libertarian",FALSE,"total",3263,231894,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",19,"gen",FALSE,"Wayne E. Daniels","democrat",FALSE,"total",60100,231894,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",19,"gen",FALSE,"William S. Broomfield","republican",FALSE,"total",168530,231894,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",2,"gen",FALSE,"","",TRUE,"total",11,201801,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",2,"gen",FALSE,"Carl D. Pursell","republican",FALSE,"total",115562,201801,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",2,"gen",FALSE,"James L. Hudler","libertarian",FALSE,"total",1464,201801,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",2,"gen",FALSE,"John L. Wagner","american independent",FALSE,"total",1214,201801,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",2,"gen",FALSE,"Kathleen F. O'Reilly","democrat",FALSE,"total",83550,201801,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",3,"gen",FALSE,"","",TRUE,"total",9,217414,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",3,"gen",FALSE,"Charles Todd","libertarian",FALSE,"total",891,217414,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",3,"gen",FALSE,"Howard Wolpe","democrat",FALSE,"total",113080,217414,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",3,"gen",FALSE,"James S. Gilmore","republican",FALSE,"total",102591,217414,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",3,"gen",FALSE,"Susan K. Wells","american independent",FALSE,"total",843,217414,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",4,"gen",FALSE,"","",TRUE,"total",6,199292,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",4,"gen",FALSE,"Bruce A. Smith","libertarian",FALSE,"total",1644,199292,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",4,"gen",FALSE,"Dave Stockman","republican",FALSE,"total",148950,199292,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",4,"gen",FALSE,"Lyndon G. Furst","democrat",FALSE,"total",47777,199292,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",4,"gen",FALSE,"Robert Drenkhahn","american independent",FALSE,"total",915,199292,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",5,"gen",FALSE,"","",TRUE,"total",39,222158,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",5,"gen",FALSE,"Dale R. Sprik","democrat",FALSE,"total",101737,222158,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",5,"gen",FALSE,"Harold S. Sawyer","republican",FALSE,"total",118061,222158,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",5,"gen",FALSE,"Tom H. Smith","libertarian",FALSE,"total",2321,222158,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",6,"gen",FALSE,"","",TRUE,"total",6,219826,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",6,"gen",FALSE,"Bob Carr","democrat",FALSE,"total",108548,219826,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",6,"gen",FALSE,"Jim Dunn","republican",FALSE,"total",111272,219826,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",7,"gen",FALSE,"","",TRUE,"total",16,158803,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",7,"gen",FALSE,"Dale E. Kildee","democrat",FALSE,"total",147280,158803,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",7,"gen",FALSE,"Dennis L. Berry ","libertarian",FALSE,"total",11507,158803,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",8,"gen",FALSE,"","",TRUE,"total",7,204401,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",8,"gen",FALSE,"Bob Traxler","democrat",FALSE,"total",124155,204401,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",8,"gen",FALSE,"Norman R. Hughes","republican",FALSE,"total",77009,204401,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",8,"gen",FALSE,"Sheila M. Hart","libertarian",FALSE,"total",3230,204401,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",9,"gen",FALSE,"","",TRUE,"total",78,174776,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",9,"gen",FALSE,"Guy Vander Jagt","republican",FALSE,"total",168713,174776,FALSE,20171005
+1980,"Michigan","MI",26,34,23,"US House",9,"gen",FALSE,"Marshall A. Tufts","american independent",FALSE,"total",5985,174776,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",1,"gen",FALSE,"","",TRUE,"total",2,238380,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",1,"gen",FALSE,"Arlen Erdahl","republican",FALSE,"total",171099,238380,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",1,"gen",FALSE,"Russell V. Smith","democrat",FALSE,"total",67279,238380,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",2,"gen",FALSE,"Harold J. Bergquist","democrat",FALSE,"total",102586,260668,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",2,"gen",FALSE,"Tom Hagedorn ","republican",FALSE,"total",158082,260668,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",3,"gen",FALSE,"Bill Frenzel","republican",FALSE,"total",179393,237261,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",3,"gen",FALSE,"Joel A. Saliterman","democrat",FALSE,"total",57868,237261,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",4,"gen",FALSE,"Bruce F. Vento","democrat",FALSE,"total",119182,203712,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",4,"gen",FALSE,"James Kendrick","socialist workers",FALSE,"total",1993,203712,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",4,"gen",FALSE,"John Berg","republican",FALSE,"total",82537,203712,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",5,"gen",FALSE,"Jeffrey M. Miller","new union",FALSE,"total",2552,180430,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",5,"gen",FALSE,"John Doherty","republican",FALSE,"total",48200,180430,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",5,"gen",FALSE,"Martin Olav Sabo","democrat",FALSE,"total",126451,180430,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",5,"gen",FALSE,"Scott Wallace","industrial government",FALSE,"total",1616,180430,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",5,"gen",FALSE,"Steve Thomas","socialist workers",FALSE,"total",1611,180430,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",6,"gen",FALSE,"","",TRUE,"total",9,266584,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",6,"gen",FALSE,"Archie Baumann","democrat",FALSE,"total",126173,266584,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",6,"gen",FALSE,"Vin Weber","republican",FALSE,"total",140402,266584,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",7,"gen",FALSE,"","",TRUE,"total",3,259113,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",7,"gen",FALSE,"Arlan Stangeland","republican",FALSE,"total",135084,259113,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",7,"gen",FALSE,"Gene Wenstrom","democrat",FALSE,"total",124026,259113,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",8,"gen",FALSE,"","",TRUE,"total",53,258765,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",8,"gen",FALSE,"Edward Fiore","republican",FALSE,"total",72350,258765,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",8,"gen",FALSE,"Ilona Gersh","socialist workers",FALSE,"total",4134,258765,FALSE,20171005
+1980,"Minnesota","MN",27,41,33,"US House",8,"gen",FALSE,"James L. Oberstar","democrat",FALSE,"total",182228,258765,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",1,"gen",FALSE,"Jamie L. Whitten","democrat",FALSE,"total",104269,165561,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",1,"gen",FALSE,"T. K. Moffett","republican",FALSE,"total",61292,165561,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",2,"gen",FALSE,"David R. Bowen","democrat",FALSE,"total",96750,139050,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",2,"gen",FALSE,"Frank Drake","republican",FALSE,"total",42300,139050,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",3,"gen",FALSE,"G. V. (Sonny) Montgomery","democrat",FALSE,"total",128035,128035,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",4,"gen",FALSE,"Britt R. Singletary","democrat",FALSE,"total",52303,177896,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",4,"gen",FALSE,"John Wayne McInerney","independent",FALSE,"total",3313,177896,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",4,"gen",FALSE,"Jon C. Henson","republican",FALSE,"total",69321,177896,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",4,"gen",FALSE,"Leslie Burl McLemore","independent",FALSE,"total",52959,177896,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",5,"gen",FALSE,"Jimmy McVeay","democrat",FALSE,"total",46416,177975,FALSE,20171005
+1980,"Mississippi","MS",28,64,46,"US House",5,"gen",FALSE,"Trent Lott","republican",FALSE,"total",131559,177975,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",1,"gen",FALSE,"Bill White","republican",FALSE,"total",38667,129939,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",1,"gen",FALSE,"William (Bill) Clay","democrat",FALSE,"total",91272,129939,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",10,"gen",FALSE,"Bill D. Burlison","democrat",FALSE,"total",94465,210632,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",10,"gen",FALSE,"Bill Emerson","republican",FALSE,"total",116167,210632,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",2,"gen",FALSE,"John O. Shields","republican",FALSE,"total",81762,229989,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",2,"gen",FALSE,"Robert A. Young","democrat",FALSE,"total",148227,229989,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",3,"gen",FALSE,"Richard A. Gephardt","democrat",FALSE,"total",143132,184409,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",3,"gen",FALSE,"Robert A. Cedarburg","republican",FALSE,"total",41277,184409,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",4,"gen",FALSE,"Bill Baker","republican",FALSE,"total",71869,223328,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",4,"gen",FALSE,"Ike Skelton","democrat",FALSE,"total",151459,223328,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",5,"gen",FALSE,"Richard Bolling","democrat",FALSE,"total",110957,158266,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",5,"gen",FALSE,"Vincent E. Baker","republican",FALSE,"total",47309,158266,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",6,"gen",FALSE,"Tom Coleman","republican",FALSE,"total",149281,211329,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",6,"gen",FALSE,"Vernon King","democrat",FALSE,"total",62048,211329,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",7,"gen",FALSE,"Gene Taylor","republican",FALSE,"total",161668,238512,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",7,"gen",FALSE,"Ken Young","democrat",FALSE,"total",76844,238512,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",8,"gen",FALSE,"Steve Gardner","democrat",FALSE,"total",95751,223426,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",8,"gen",FALSE,"Wendell Bailey","republican",FALSE,"total",127675,223426,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",9,"gen",FALSE,"Harold L. Volkmer","democrat",FALSE,"total",135905,240740,FALSE,20171005
+1980,"Missouri","MO",29,43,34,"US House",9,"gen",FALSE,"John W. Turner","republican",FALSE,"total",104835,240740,FALSE,20171005
+1980,"Montana","MT",30,81,64,"US House",1,"gen",FALSE,"John K. (Jack) McDonald","republican",FALSE,"total",70874,183740,FALSE,20171005
+1980,"Montana","MT",30,81,64,"US House",1,"gen",FALSE,"Pat Williams","democrat",FALSE,"total",112866,183740,FALSE,20171005
+1980,"Montana","MT",30,81,64,"US House",2,"gen",FALSE,"Ron Marlenee","republican",FALSE,"total",91431,154801,FALSE,20171005
+1980,"Montana","MT",30,81,64,"US House",2,"gen",FALSE,"Tom (Thomas) Monahan","democrat",FALSE,"total",63370,154801,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",1,"gen",FALSE,"","",TRUE,"total",31,204341,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",1,"gen",FALSE,"Doug Bereuter","republican",FALSE,"total",160705,204341,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",1,"gen",FALSE,"Rex S. Story","democrat",FALSE,"total",43605,204341,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",2,"gen",FALSE,"","",TRUE,"total",224,203050,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",2,"gen",FALSE,"Hal Daub","republican",FALSE,"total",107736,203050,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",2,"gen",FALSE,"Richard M. Fellman","democrat",FALSE,"total",88843,203050,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",2,"gen",FALSE,"Susan K. Putney","libertarian",FALSE,"total",6247,203050,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",3,"gen",FALSE,"","",TRUE,"total",16,217870,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",3,"gen",FALSE,"Stan Ditus","democrat",FALSE,"total",34967,217870,FALSE,20171005
+1980,"Nebraska","NE",31,46,35,"US House",3,"gen",FALSE,"Virginia Smith","republican",FALSE,"total",182887,217870,FALSE,20171005
+1980,"Nevada","NV",32,88,65,"US House",0,"gen",FALSE,"Harry Joe Mangrum","libertarian",FALSE,"total",7759,236029,FALSE,20171005
+1980,"Nevada","NV",32,88,65,"US House",0,"gen",FALSE,"Jim Santini","democrat",FALSE,"total",165107,236029,FALSE,20171005
+1980,"Nevada","NV",32,88,65,"US House",0,"gen",FALSE,"Vince Saunders","republican",FALSE,"total",63163,236029,FALSE,20171005
+1980,"New Hampshire","NH",33,12,4,"US House",1,"gen",FALSE,"","",TRUE,"total",20,187646,FALSE,20171005
+1980,"New Hampshire","NH",33,12,4,"US House",1,"gen",FALSE,"Marshall W. Cobleigh","republican",FALSE,"total",73565,187646,FALSE,20171005
+1980,"New Hampshire","NH",33,12,4,"US House",1,"gen",FALSE,"Norman E. D'Amours","democrat",FALSE,"total",114061,187646,FALSE,20171005
+1980,"New Hampshire","NH",33,12,4,"US House",2,"gen",FALSE,"","",TRUE,"total",25,176679,FALSE,20171005
+1980,"New Hampshire","NH",33,12,4,"US House",2,"gen",FALSE,"Judd Gregg","republican",FALSE,"total",113304,176679,FALSE,20171005
+1980,"New Hampshire","NH",33,12,4,"US House",2,"gen",FALSE,"Maurice L. Arel","democrat",FALSE,"total",63350,176679,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",1,"gen",FALSE,"James J. Florio","democrat",FALSE,"total",147352,192081,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",1,"gen",FALSE,"Julius Levin","socialist labor",FALSE,"total",219,192081,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",1,"gen",FALSE,"Ronald K. Wishart","libertarian",FALSE,"total",1029,192081,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",1,"gen",FALSE,"Scott L. Sibert","republican",FALSE,"total",42154,192081,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",1,"gen",FALSE,"Thomas S. Watson Jr.","independent",FALSE,"total",1327,192081,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",10,"gen",FALSE,"Christine Hildebrand","socialist workers",FALSE,"total",219,89245,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",10,"gen",FALSE,"Christine Keno","human rights ratification",FALSE,"total",542,89245,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",10,"gen",FALSE,"Everett J. Jennings","republican",FALSE,"total",11778,89245,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",10,"gen",FALSE,"Frankie Lee Scott","youth against draft",FALSE,"total",281,89245,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",10,"gen",FALSE,"Peter W. Rodino Jr.","democrat",FALSE,"total",76154,89245,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",10,"gen",FALSE,"Ronald Penque","libertarian",FALSE,"total",271,89245,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",11,"gen",FALSE,"Jon Britton","socialist workers",FALSE,"total",1650,168524,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",11,"gen",FALSE,"Joseph G. Minish","democrat",FALSE,"total",106155,168524,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",11,"gen",FALSE,"Richard S. Roth","libertarian",FALSE,"total",1317,168524,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",11,"gen",FALSE,"Robert A. Davis","republican",FALSE,"total",57772,168524,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",11,"gen",FALSE,"Robert G. Trugman","the independent alternative",FALSE,"total",1630,168524,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",12,"gen",FALSE,"David-Leif Jensen","independent for congress",FALSE,"total",2358,175026,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",12,"gen",FALSE,"Matthew J. Rinaldo","republican",FALSE,"total",134973,175026,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",12,"gen",FALSE,"Rose Zeidwerg Monyek","democrat",FALSE,"total",36577,175026,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",12,"gen",FALSE,"William Vandersteel","libertarian",FALSE,"total",1118,175026,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",13,"gen",FALSE,"Dave Stickle","democrat",FALSE,"total",56251,213373,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",13,"gen",FALSE,"Jim Courter","republican",FALSE,"total",152862,213373,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",13,"gen",FALSE,"John S. Schafer","libertarian",FALSE,"total",4260,213373,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",14,"gen",FALSE,"Dennis Teti","republican",FALSE,"total",45606,135420,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",14,"gen",FALSE,"Frank J. Guarini","democrat",FALSE,"total",86921,135420,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",14,"gen",FALSE,"Jonathan Steele","libertarian",FALSE,"total",1765,135420,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",14,"gen",FALSE,"Kenneth Famularo","action talks",FALSE,"total",1128,135420,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",15,"gen",FALSE,"Bernard J. Dwyer","democrat",FALSE,"total",92457,173071,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",15,"gen",FALSE,"Charles Hart","libertarian",FALSE,"total",1865,173071,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",15,"gen",FALSE,"Ira W. Mintz","people's independent coalition",FALSE,"total",2937,173071,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",15,"gen",FALSE,"William J. O'Sullivan Jr.","republican",FALSE,"total",75812,173071,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",2,"gen",FALSE,"Adele Frisch","socialist labor",FALSE,"total",939,235710,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",2,"gen",FALSE,"Beech N. Fox","republican",FALSE,"total",97072,235710,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",2,"gen",FALSE,"Robert C. Rothhouse","libertarian",FALSE,"total",2262,235710,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",2,"gen",FALSE,"William J. Hughes","democrat",FALSE,"total",135437,235710,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",3,"gen",FALSE,"James J. Howard","democrat",FALSE,"total",106269,212830,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",3,"gen",FALSE,"L. James Wilson","j.e.b. party inc",FALSE,"total",284,212830,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",3,"gen",FALSE,"Lawrence D. Erickson","socialist",FALSE,"total",643,212830,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",3,"gen",FALSE,"Marie Sheehan Muhler","republican",FALSE,"total",104184,212830,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",3,"gen",FALSE,"Tom Palven","libertarian",FALSE,"total",1450,212830,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",4,"gen",FALSE,"Christopher H. Smith","republican",FALSE,"total",95447,168504,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",4,"gen",FALSE,"Frank Thompson Jr.","democrat",FALSE,"total",68480,168504,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",4,"gen",FALSE,"Jack Moyers","libertarian",FALSE,"total",2801,168504,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",4,"gen",FALSE,"Paul B. Rizzo","no slogan",FALSE,"total",1776,168504,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",5,"gen",FALSE,"Carl R. Samson","libertarian",FALSE,"total",2465,201299,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",5,"gen",FALSE,"Jasper C. Gould","contempt of court",FALSE,"total",1549,201299,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",5,"gen",FALSE,"Kieran E. Pillion Jr.","democrat",FALSE,"total",41269,201299,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",5,"gen",FALSE,"Millicent Fenwick","republican",FALSE,"total",156016,201299,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",6,"gen",FALSE,"Bernardo S. Doganiero","socialist labor",FALSE,"total",556,223254,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",6,"gen",FALSE,"Donald L. Smith","constitution",FALSE,"total",666,223254,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",6,"gen",FALSE,"Edwin B. Forsythe","republican",FALSE,"total",125792,223254,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",6,"gen",FALSE,"John Kinnevy III","citizens",FALSE,"total",1848,223254,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",6,"gen",FALSE,"Lewis M. Weinstein","democrat",FALSE,"total",92227,223254,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",6,"gen",FALSE,"Virginia A. Flynn","libertarian",FALSE,"total",2165,223254,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",7,"gen",FALSE,"Andrew Maguire","democrat",FALSE,"total",99737,214343,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",7,"gen",FALSE,"Marge Roukema","republican",FALSE,"total",108760,214343,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",7,"gen",FALSE,"Martin E. Wendelken","independent",FALSE,"total",612,214343,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",7,"gen",FALSE,"Patrick Randazzo","pro-life independent",FALSE,"total",3594,214343,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",7,"gen",FALSE,"Robert Shapiro","libertarian",FALSE,"total",1640,214343,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",8,"gen",FALSE,"Donna Rabel","socialist labor",FALSE,"total",1209,142201,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",8,"gen",FALSE,"Michael Horowitz","libertarian",FALSE,"total",874,142201,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",8,"gen",FALSE,"Robert A. Roe","democrat",FALSE,"total",95493,142201,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",8,"gen",FALSE,"William R. Cleveland","republican",FALSE,"total",44625,142201,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",9,"gen",FALSE,"Edward G. Davis","citizens",FALSE,"total",1177,196504,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",9,"gen",FALSE,"Garbiel M. Ambrosio","democrat",FALSE,"total",75321,196504,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",9,"gen",FALSE,"Harold C. Hollenbeck","republican",FALSE,"total",116128,196504,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",9,"gen",FALSE,"Henry Koch","libertarian",FALSE,"total",2290,196504,FALSE,20171005
+1980,"New Jersey","NJ",34,22,12,"US House",9,"gen",FALSE,"Herbert H. Shaw","politicians are crooks",FALSE,"total",1588,196504,FALSE,20171005
+1980,"New Mexico","NM",35,85,66,"US House",1,"gen",FALSE,"Bill Richardson","democrat",FALSE,"total",120903,246813,FALSE,20171005
+1980,"New Mexico","NM",35,85,66,"US House",1,"gen",FALSE,"Manuel Lujan Jr.","republican",FALSE,"total",125910,246813,FALSE,20171005
+1980,"New Mexico","NM",35,85,66,"US House",2,"gen",FALSE,"David W. King","democrat",FALSE,"total",55085,161992,FALSE,20171005
+1980,"New Mexico","NM",35,85,66,"US House",2,"gen",FALSE,"Dorothy Runnels","none",FALSE,"total",45343,161992,FALSE,20171005
+1980,"New Mexico","NM",35,85,66,"US House",2,"gen",FALSE,"Joseph R. Skeen","republican",FALSE,"total",61564,161992,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",1,"gen",FALSE,"Richard M. Cummings","liberal",FALSE,"total",3644,204486,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",1,"gen",FALSE,"Thomas A. Twomey","democrat",FALSE,"total",85629,204486,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",1,"gen",FALSE,"William Carney","conservative",FALSE,"total",15174,204486,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",1,"gen",FALSE,"William Carney","republican",FALSE,"total",91647,204486,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",1,"gen",FALSE,"William Carney","right to life",FALSE,"total",8392,204486,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",10,"gen",FALSE,"Joseph P. Cavanna","conservative",FALSE,"total",3942,100918,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",10,"gen",FALSE,"Mario Biaggi","democrat",FALSE,"total",57804,100918,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",10,"gen",FALSE,"Mario Biaggi","liberal",FALSE,"total",2429,100918,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",10,"gen",FALSE,"Mario Biaggi","republican",FALSE,"total",35089,100918,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",10,"gen",FALSE,"Michael F. Mari","right to life",FALSE,"total",1654,100918,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",11,"gen",FALSE,"Andrew E. Carlan","conservative",FALSE,"total",3868,98222,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",11,"gen",FALSE,"Andrew E. Carlan","republican",FALSE,"total",19128,98222,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",11,"gen",FALSE,"Andrew E. Carlan","right to life",FALSE,"total",2428,98222,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",11,"gen",FALSE,"James H. Scheuer","democrat",FALSE,"total",69922,98222,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",11,"gen",FALSE,"James H. Scheuer","liberal",FALSE,"total",2876,98222,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",12,"gen",FALSE,"Charles Gibbs","republican",FALSE,"total",3372,40689,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",12,"gen",FALSE,"Joseph Caesar","right to life",FALSE,"total",527,40689,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",12,"gen",FALSE,"Ralph J. Carrano","conservative",FALSE,"total",1344,40689,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",12,"gen",FALSE,"Shirley Chisholm","democrat",FALSE,"total",34611,40689,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",12,"gen",FALSE,"Shirley Chisholm","liberal",FALSE,"total",835,40689,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",13,"gen",FALSE,"Brendan J. Connolly","right to life",FALSE,"total",1666,103156,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",13,"gen",FALSE,"Harry DeMell","conservative",FALSE,"total",2723,103156,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",13,"gen",FALSE,"Harry DeMell","republican",FALSE,"total",16813,103156,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",13,"gen",FALSE,"Stephen J. Solarz","democrat",FALSE,"total",77704,103156,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",13,"gen",FALSE,"Stephen J. Solarz","liberal",FALSE,"total",4250,103156,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",14,"gen",FALSE,"Christopher Lovell","conservative",FALSE,"total",1103,59162,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",14,"gen",FALSE,"Christopher Lovell","republican",FALSE,"total",7154,59162,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",14,"gen",FALSE,"Frederick W. Richmond","democrat",FALSE,"total",42929,59162,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",14,"gen",FALSE,"Frederick W. Richmond","liberal",FALSE,"total",2100,59162,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",14,"gen",FALSE,"Keith E. Jones","socialist workers",FALSE,"total",1086,59162,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",14,"gen",FALSE,"Moses S. Harris","new alliance",FALSE,"total",4151,59162,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",14,"gen",FALSE,"Roy G. McKenzie","right to life",FALSE,"total",639,59162,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",15,"gen",FALSE,"Leo C. Zeferetti","democrat",FALSE,"total",49684,98976,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",15,"gen",FALSE,"Paul M. Atanasio","conservative",FALSE,"total",5501,98976,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",15,"gen",FALSE,"Paul M. Atanasio","republican",FALSE,"total",37709,98976,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",15,"gen",FALSE,"Paul M. Atanasio","right to life",FALSE,"total",3257,98976,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",15,"gen",FALSE,"Peter A. McNeill","liberal",FALSE,"total",2825,98976,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",16,"gen",FALSE,"Charles E. Schumer","democrat",FALSE,"total",64536,86926,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",16,"gen",FALSE,"Charles E. Schumer","liberal",FALSE,"total",2807,86926,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",16,"gen",FALSE,"Mary B. Spalding","right to life",FALSE,"total",2533,86926,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",16,"gen",FALSE,"Theodore Silverman","conservative",FALSE,"total",3190,86926,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",16,"gen",FALSE,"Theodore Silverman","republican",FALSE,"total",13860,86926,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",17,"gen",FALSE,"Guy V. Molinari","conservative",FALSE,"total",11763,145645,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",17,"gen",FALSE,"Guy V. Molinari","republican",FALSE,"total",57810,145645,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",17,"gen",FALSE,"John M. Murphy","democrat",FALSE,"total",46178,145645,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",17,"gen",FALSE,"John M. Murphy","right to life",FALSE,"total",4776,145645,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",17,"gen",FALSE,"Mary T. Codd","liberal",FALSE,"total",25118,145645,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",18,"gen",FALSE,"Arthur L. Washburn Jr.","right to life",FALSE,"total",1073,161200,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",18,"gen",FALSE,"Bill Green","independent neighbors",FALSE,"total",4055,161200,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",18,"gen",FALSE,"Bill Green","republican",FALSE,"total",87286,161200,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",18,"gen",FALSE,"Mark J. Green","democrat",FALSE,"total",62598,161200,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",18,"gen",FALSE,"Mark J. Green","liberal",FALSE,"total",6188,161200,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",19,"gen",FALSE,"Charles B. Rangel","democrat",FALSE,"total",72995,87376,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",19,"gen",FALSE,"Charles B. Rangel","liberal",FALSE,"total",3732,87376,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",19,"gen",FALSE,"Charles B. Rangel","republican",FALSE,"total",7335,87376,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",19,"gen",FALSE,"Marjorie Garvey","conservative",FALSE,"total",1940,87376,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",19,"gen",FALSE,"Marjorie Garvey","right to life",FALSE,"total",682,87376,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",19,"gen",FALSE,"Reba Williams Dixon","socialist workers",FALSE,"total",692,87376,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",2,"gen",FALSE,"Louis J. Modica","conservative",FALSE,"total",9143,149141,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",2,"gen",FALSE,"Louis J. Modica","republican",FALSE,"total",51256,149141,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",2,"gen",FALSE,"Louis J. Modica","right to life",FALSE,"total",4707,149141,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",2,"gen",FALSE,"Thomas J. Downey","democrat",FALSE,"total",84035,149141,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",20,"gen",FALSE,"David I. Caplan","conservative",FALSE,"total",2240,104929,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",20,"gen",FALSE,"James E. Greene","republican",FALSE,"total",15350,104929,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",20,"gen",FALSE,"Robert E. Massi","socialist labor",FALSE,"total",885,104929,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",20,"gen",FALSE,"Theodore S. Weiss","democrat",FALSE,"total",79356,104929,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",20,"gen",FALSE,"Theodore S. Weiss","liberal",FALSE,"total",7098,104929,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",21,"gen",FALSE,"Gina A. Aceto","conservative",FALSE,"total",272,32758,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",21,"gen",FALSE,"Loidis R. Cordero","right to life",FALSE,"total",313,32758,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",21,"gen",FALSE,"Robert Garcia","democrat",FALSE,"total",29731,32758,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",21,"gen",FALSE,"Robert Garcia","liberal",FALSE,"total",559,32758,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",21,"gen",FALSE,"Robert Garcia","republican",FALSE,"total",1883,32758,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",22,"gen",FALSE,"James J. Whalen","conservative",FALSE,"total",2771,79015,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",22,"gen",FALSE,"Jonathan B. Bingham","democrat",FALSE,"total",63178,79015,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",22,"gen",FALSE,"Jonathan B. Bingham","liberal",FALSE,"total",3123,79015,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",22,"gen",FALSE,"Robert Black","republican",FALSE,"total",9943,79015,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",23,"gen",FALSE,"Andrew A. Albanese","conservative",FALSE,"total",11905,152520,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",23,"gen",FALSE,"Andrew A. Albanese","republican",FALSE,"total",54866,152520,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",23,"gen",FALSE,"Peter A. Peyser","democrat",FALSE,"total",85749,152520,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",24,"gen",FALSE,"Joseph W. Christians","conservative",FALSE,"total",8757,168553,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",24,"gen",FALSE,"Joseph W. Christians","republican",FALSE,"total",52921,168553,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",24,"gen",FALSE,"Joseph W. Christians","right to life",FALSE,"total",5011,168553,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",24,"gen",FALSE,"Richard L. Ottinger","democrat",FALSE,"total",100182,168553,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",24,"gen",FALSE,"Richard O. Reyes","liberal",FALSE,"total",1682,168553,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",25,"gen",FALSE,"Gunars M. Ozols","democrat",FALSE,"total",37369,196305,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",25,"gen",FALSE,"Hamilton Fish Jr.","conservative",FALSE,"total",22317,196305,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",25,"gen",FALSE,"Hamilton Fish Jr.","republican",FALSE,"total",136619,196305,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",26,"gen",FALSE,"Benjamin A. Gilman","republican",FALSE,"total",137159,184692,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",26,"gen",FALSE,"Edmond W. Farrell","right to life",FALSE,"total",8766,184692,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",26,"gen",FALSE,"Eugene R. Victor","democrat",FALSE,"total",34906,184692,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",26,"gen",FALSE,"Eugene R. Victor","liberal",FALSE,"total",2569,184692,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",26,"gen",FALSE,"Tom Goonan","libertarian",FALSE,"total",1292,184692,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",27,"gen",FALSE,"Louis F. Muenkel","right to life",FALSE,"total",1719,188678,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",27,"gen",FALSE,"Matthew F. McHugh","democrat",FALSE,"total",103863,188678,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",27,"gen",FALSE,"Neil T. Wallace","conservative",FALSE,"total",7204,188678,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",27,"gen",FALSE,"Neil T. Wallace","republican",FALSE,"total",75892,188678,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",28,"gen",FALSE,"Frank Wicks","republican",FALSE,"total",37504,210655,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",28,"gen",FALSE,"Mary A. Bradt","conservative",FALSE,"total",4970,210655,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",28,"gen",FALSE,"Mary A. Bradt","right to life",FALSE,"total",2897,210655,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",28,"gen",FALSE,"Patricia Mayberry","socialist workers",FALSE,"total",1196,210655,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",28,"gen",FALSE,"Samuel S. Stratton","democrat",FALSE,"total",164088,210655,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",29,"gen",FALSE,"Gerald B. H. Solomon","conservative",FALSE,"total",12180,212328,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",29,"gen",FALSE,"Gerald B. H. Solomon","republican",FALSE,"total",124156,212328,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",29,"gen",FALSE,"Gerald B. H. Solomon","right to life",FALSE,"total",5295,212328,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",29,"gen",FALSE,"Rodger L. Hurley","democrat",FALSE,"total",65562,212328,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",29,"gen",FALSE,"Rodger L. Hurley","liberal",FALSE,"total",5135,212328,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",3,"gen",FALSE,"Gregory W. Carman","conservative",FALSE,"total",13084,175657,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",3,"gen",FALSE,"Gregory W. Carman","republican",FALSE,"total",74868,175657,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",3,"gen",FALSE,"Jerome A. Ambro Jr.","democrat",FALSE,"total",75389,175657,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",3,"gen",FALSE,"Jerome A. Ambro Jr.","right to life",FALSE,"total",8000,175657,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",3,"gen",FALSE,"John T. Meehan","liberal",FALSE,"total",4316,175657,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",30,"gen",FALSE,"David O'B. Martin","conservative",FALSE,"total",9512,173889,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",30,"gen",FALSE,"David O'B. Martin","republican",FALSE,"total",101496,173889,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",30,"gen",FALSE,"John R. Zagame","right to life",FALSE,"total",7985,173889,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",30,"gen",FALSE,"Mary Anne Krupsak","democrat",FALSE,"total",50635,173889,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",30,"gen",FALSE,"Mary Anne Krupsak","liberal",FALSE,"total",4261,173889,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",31,"gen",FALSE,"Donald J. Mitchell","republican",FALSE,"total",128397,175565,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",31,"gen",FALSE,"Donald J. Mitchell","right to life",FALSE,"total",7579,175565,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",31,"gen",FALSE,"Irving A. Schwartz","democrat",FALSE,"total",37266,175565,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",31,"gen",FALSE,"Irving A. Schwartz","liberal",FALSE,"total",2323,175565,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",32,"gen",FALSE,"George C. Wortley","conservative",FALSE,"total",9630,178957,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",32,"gen",FALSE,"George C. Wortley","republican",FALSE,"total",98498,178957,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",32,"gen",FALSE,"James Northrup","free libertarian",FALSE,"total",2316,178957,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",32,"gen",FALSE,"Jeffrey S. Brooks","democrat",FALSE,"total",52407,178957,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",32,"gen",FALSE,"Jeffrey S. Brooks","liberal",FALSE,"total",4128,178957,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",32,"gen",FALSE,"Peter J. DelGiorno","right to life",FALSE,"total",11978,178957,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",33,"gen",FALSE,"Dolore M. Reed","democrat",FALSE,"total",36941,175271,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",33,"gen",FALSE,"Dolore M. Reed","liberal",FALSE,"total",2601,175271,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",33,"gen",FALSE,"Gary A. Lee","conservative",FALSE,"total",13342,175271,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",33,"gen",FALSE,"Gary A. Lee","republican",FALSE,"total",119489,175271,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",33,"gen",FALSE,"William L. Jones","right to life",FALSE,"total",2898,175271,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",34,"gen",FALSE,"Clyde O. Benoy","conservative",FALSE,"total",5829,182795,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",34,"gen",FALSE,"David D. Hoesly","free libertarian",FALSE,"total",2627,182795,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",34,"gen",FALSE,"Frank Horton","republican",FALSE,"total",133278,182795,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",34,"gen",FALSE,"James Toole","democrat",FALSE,"total",37883,182795,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",34,"gen",FALSE,"William Bastuk","right to life",FALSE,"total",3178,182795,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",35,"gen",FALSE,"Barber B. Conable Jr.","republican",FALSE,"total",127623,176774,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",35,"gen",FALSE,"Bernard M. O'Connor","right to life",FALSE,"total",3772,176774,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",35,"gen",FALSE,"John M. Owens","conservative",FALSE,"total",5540,176774,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",35,"gen",FALSE,"John M. Owens","democrat",FALSE,"total",39214,176774,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",35,"gen",FALSE,"Lydia Bayoneta","workers world",FALSE,"total",625,176774,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",36,"gen",FALSE,"H. William Feder","conservative",FALSE,"total",4150,171357,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",36,"gen",FALSE,"H. William Feder","republican",FALSE,"total",41756,171357,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",36,"gen",FALSE,"H. William Feder","right to life",FALSE,"total",2522,171357,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",36,"gen",FALSE,"John J. LaFalce","democrat",FALSE,"total",115334,171357,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",36,"gen",FALSE,"John J. LaFalce","liberal",FALSE,"total",7595,171357,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",37,"gen",FALSE,"Henry J. Nowak","democrat",FALSE,"total",90119,114337,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",37,"gen",FALSE,"Henry J. Nowak","liberal",FALSE,"total",4771,114337,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",37,"gen",FALSE,"Roger Heymanowski","conservative",FALSE,"total",1859,114337,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",37,"gen",FALSE,"Roger Heymanowski","republican",FALSE,"total",14701,114337,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",37,"gen",FALSE,"Thomas A. O'Conner","right to life",FALSE,"total",2887,114337,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",38,"gen",FALSE,"Gale A. Denn","democrat",FALSE,"total",35681,205309,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",38,"gen",FALSE,"Gale A. Denn","liberal",FALSE,"total",2194,205309,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",38,"gen",FALSE,"Jack F. Kemp","conservative",FALSE,"total",16108,205309,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",38,"gen",FALSE,"Jack F. Kemp","republican",FALSE,"total",141763,205309,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",38,"gen",FALSE,"Jack F. Kemp","right to life",FALSE,"total",9563,205309,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",39,"gen",FALSE,"Genevieve F. Ronan","right to life",FALSE,"total",2554,171432,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",39,"gen",FALSE,"James Abdella","conservative",FALSE,"total",5845,171432,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",39,"gen",FALSE,"James Abdella","republican",FALSE,"total",69194,171432,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",39,"gen",FALSE,"Stanley N. Lundine","democrat",FALSE,"total",93839,171432,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",4,"gen",FALSE,"Charles F. Brennan","democrat",FALSE,"total",54607,175725,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",4,"gen",FALSE,"Charles F. Brennan","liberal",FALSE,"total",3663,175725,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",4,"gen",FALSE,"Norman F. Lent","conservative",FALSE,"total",12631,175725,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",4,"gen",FALSE,"Norman F. Lent","republican",FALSE,"total",97064,175725,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",4,"gen",FALSE,"Norman F. Lent","right to life",FALSE,"total",7760,175725,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",5,"gen",FALSE,"Karen S. Burstein","democrat",FALSE,"total",73032,182368,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",5,"gen",FALSE,"Karen S. Burstein","liberal",FALSE,"total",4196,182368,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",5,"gen",FALSE,"Raymond J. McGrath","conservative",FALSE,"total",9629,182368,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",5,"gen",FALSE,"Raymond J. McGrath","republican",FALSE,"total",88945,182368,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",5,"gen",FALSE,"Raymond J. McGrath","right to life",FALSE,"total",6566,182368,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",6,"gen",FALSE,"John LeBoutillier","conservative",FALSE,"total",11299,169971,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",6,"gen",FALSE,"John LeBoutillier","republican",FALSE,"total",71838,169971,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",6,"gen",FALSE,"John LeBoutillier","right to life",FALSE,"total",6625,169971,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",6,"gen",FALSE,"Lester L. Wolff","democrat",FALSE,"total",74319,169971,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",6,"gen",FALSE,"Lester L. Wolff","liberal",FALSE,"total",5890,169971,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",7,"gen",FALSE,"Francis A. Lees","conservative",FALSE,"total",3303,100840,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",7,"gen",FALSE,"Francis A. Lees","right to life",FALSE,"total",1400,100840,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",7,"gen",FALSE,"Joseph P. Addabbo","democrat",FALSE,"total",73785,100840,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",7,"gen",FALSE,"Joseph P. Addabbo","liberal",FALSE,"total",3072,100840,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",7,"gen",FALSE,"Joseph P. Addabbo","republican",FALSE,"total",19280,100840,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",8,"gen",FALSE,"Albert Lemishow","conservative",FALSE,"total",3937,111429,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",8,"gen",FALSE,"Albert Lemishow","republican",FALSE,"total",20970,111429,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",8,"gen",FALSE,"Albert Lemishow","right to life",FALSE,"total",2249,111429,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",8,"gen",FALSE,"Benjamin S. Rosenthal","democrat",FALSE,"total",79150,111429,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",8,"gen",FALSE,"Benjamin S. Rosenthal","liberal",FALSE,"total",5123,111429,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",9,"gen",FALSE,"Geraldine Ferraro","democrat",FALSE,"total",63796,109360,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",9,"gen",FALSE,"Gertrude Geniale","liberal",FALSE,"total",1091,109360,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",9,"gen",FALSE,"Vito P. Battista","conservative",FALSE,"total",7040,109360,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",9,"gen",FALSE,"Vito P. Battista","republican",FALSE,"total",34453,109360,FALSE,20171005
+1980,"New York","NY",36,21,13,"US House",9,"gen",FALSE,"Vito P. Battista","right to life",FALSE,"total",2980,109360,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",1,"gen",FALSE,"Walter B. Jones","democrat",FALSE,"total",108738,108738,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",10,"gen",FALSE,"James O. Icenhour","democrat",FALSE,"total",52485,173262,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",10,"gen",FALSE,"James T. Broyhill","republican",FALSE,"total",120777,173262,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",11,"gen",FALSE,"Lamar Gudger","democrat",FALSE,"total",90789,195274,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",11,"gen",FALSE,"William M. (Bill) Hendon","republican",FALSE,"total",104485,195274,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",2,"gen",FALSE,"Barry L. Gardner","republican",FALSE,"total",35946,135243,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",2,"gen",FALSE,"L.H. Fountain","democrat",FALSE,"total",99297,135243,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",3,"gen",FALSE,"Charles O. Whitley","democrat",FALSE,"total",84862,124255,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",3,"gen",FALSE,"Larry J. Parker","republican",FALSE,"total",39393,124255,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",4,"gen",FALSE,"Ike Andrews","democrat",FALSE,"total",97167,184631,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",4,"gen",FALSE,"John Cunningham","libertarian",FALSE,"total",2833,184631,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",4,"gen",FALSE,"Thurman Hogan","republican",FALSE,"total",84631,184631,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",5,"gen",FALSE,"Anne Bagnal","republican",FALSE,"total",94894,194338,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",5,"gen",FALSE,"Jeffery K. Miller","socialist workers",FALSE,"total",327,194338,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",5,"gen",FALSE,"Stephen L. Neal","democrat",FALSE,"total",99117,194338,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",6,"gen",FALSE,"Eugene Johnston","republican",FALSE,"total",80275,157232,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",6,"gen",FALSE,"Richardson Preyer","democrat",FALSE,"total",76957,157232,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",7,"gen",FALSE,"Charles G. Rose","democrat",FALSE,"total",88564,128834,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",7,"gen",FALSE,"Vivian S. Wright","republican",FALSE,"total",40270,128834,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",8,"gen",FALSE,"L.E. Harris","republican",FALSE,"total",67317,162330,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",8,"gen",FALSE,"W.G. (Bill) Hefner","democrat",FALSE,"total",95013,162330,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",9,"gen",FALSE,"James G. Martin","republican",FALSE,"total",101156,172660,FALSE,20171005
+1980,"North Carolina","NC",37,56,47,"US House",9,"gen",FALSE,"Randall R. Kincaid","democrat",FALSE,"total",71504,172660,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",1,"gen",FALSE,"Donald J. Zwick","democrat",FALSE,"total",38529,166180,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",1,"gen",FALSE,"Scott A. Breen","",TRUE,"total",3571,166180,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",1,"gen",FALSE,"Willis D. Gradison Jr.","republican",FALSE,"total",124080,166180,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",10,"gen",FALSE,"Clarence E. Miller","republican",FALSE,"total",143403,192836,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",10,"gen",FALSE,"Jack E. Stecher","democrat",FALSE,"total",49433,192836,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",11,"gen",FALSE,"Harold V. Richard Jr.","independent",FALSE,"total",5742,185473,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",11,"gen",FALSE,"J. William Stanton","republican",FALSE,"total",128507,185473,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",11,"gen",FALSE,"Patrick J. Donlin","democrat",FALSE,"total",51224,185473,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",12,"gen",FALSE,"","",TRUE,"total",4,206804,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",12,"gen",FALSE,"Bob Shamansky","democrat",FALSE,"total",108690,206804,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",12,"gen",FALSE,"Samuel L. Devine","republican",FALSE,"total",98110,206804,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",13,"gen",FALSE,"David Earl Atmstrong","republican",FALSE,"total",64296,177735,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",13,"gen",FALSE,"Donald J. Pease","democrat",FALSE,"total",113439,177735,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",14,"gen",FALSE,"John F. Seiberling","democrat",FALSE,"total",103336,159298,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",14,"gen",FALSE,"Louis A. Mangels","republican",FALSE,"total",55962,159298,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",15,"gen",FALSE,"Chalmers P. Wylie","republican",FALSE,"total",129025,177733,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",15,"gen",FALSE,"Terry Freeman","democrat",FALSE,"total",48708,177733,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",16,"gen",FALSE,"Larry V. Slagle","democrat",FALSE,"total",39219,189179,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",16,"gen",FALSE,"Ralph Regula","republican",FALSE,"total",149960,189179,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",17,"gen",FALSE,"Donald E. Yunker","democrat",FALSE,"total",47900,176770,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",17,"gen",FALSE,"John M. Ashbrook","republican",FALSE,"total",128870,176770,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",18,"gen",FALSE,"Douglas Applegate","democrat",FALSE,"total",134835,177189,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",18,"gen",FALSE,"Gary L. Hammersley","republican",FALSE,"total",42354,177189,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",19,"gen",FALSE,"Harry Meshel","democrat",FALSE,"total",77272,184304,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",19,"gen",FALSE,"Lyle Williams","republican",FALSE,"total",107032,184304,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",2,"gen",FALSE,"Thomas A. Luken","democrat",FALSE,"total",103423,176116,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",2,"gen",FALSE,"Tom (Thearon) Atkins","republican",FALSE,"total",72693,176116,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",20,"gen",FALSE,"Mary Rose Oakar","democrat",FALSE,"total",96217,96217,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",21,"gen",FALSE,"Louis Stokes","democrat",FALSE,"total",83188,94291,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",21,"gen",FALSE,"Robert L. Woodall","republican",FALSE,"total",11103,94291,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",22,"gen",FALSE,"Arnold Gleisser","independent",FALSE,"total",6896,195869,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",22,"gen",FALSE,"Dennis E. Eckart","democrat",FALSE,"total",108137,195869,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",22,"gen",FALSE,"Joseph J. Nahra","republican",FALSE,"total",80836,195869,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",23,"gen",FALSE,"","",TRUE,"total",6,144377,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",23,"gen",FALSE,"Ronald M. Mottl","democrat",FALSE,"total",144371,144377,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",3,"gen",FALSE,"Albert H. Sealy","republican",FALSE,"total",66698,166869,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",3,"gen",FALSE,"Richard L. Righter","independent",FALSE,"total",2903,166869,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",3,"gen",FALSE,"Robert E. Tharpe","independent",FALSE,"total",1710,166869,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",3,"gen",FALSE,"Tony P. Hall","democrat",FALSE,"total",95558,166869,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",4,"gen",FALSE,"Gerry Tebben","democrat",FALSE,"total",51150,184945,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",4,"gen",FALSE,"Tennyson Guyer","republican",FALSE,"total",133795,184945,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",5,"gen",FALSE,"Delbert L. Latta","republican",FALSE,"total",137003,194707,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",5,"gen",FALSE,"James R. Sherck","democrat",FALSE,"total",57704,194707,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",6,"gen",FALSE,"Bob McEwen","republican",FALSE,"total",101288,185523,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",6,"gen",FALSE,"Ted Strickland","democrat",FALSE,"total",84235,185523,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",7,"gen",FALSE,"Clarence J. Brown","republican",FALSE,"total",124137,163089,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",7,"gen",FALSE,"Donald Hollister","democrat",FALSE,"total",38952,163089,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",8,"gen",FALSE,"John W. Griffin","democrat",FALSE,"total",44162,183752,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",8,"gen",FALSE,"Thomas N. Kindness","republican",FALSE,"total",139590,183752,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",9,"gen",FALSE,"Ed Weber","republican",FALSE,"total",96927,172423,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",9,"gen",FALSE,"Edward Silvio Emery","independent",FALSE,"total",4357,172423,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",9,"gen",FALSE,"Thomas Ludlow Ashley","democrat",FALSE,"total",68728,172423,FALSE,20171005
+1980,"Ohio","OH",39,31,24,"US House",9,"gen",FALSE,"Toby Elizabeth Emmerich","independent",FALSE,"total",2411,172423,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",1,"gen",FALSE,"James R. Jones","democrat",FALSE,"total",115381,197674,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",1,"gen",FALSE,"Richard C. (Dick) Freeman","republican",FALSE,"total",82293,197674,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",2,"gen",FALSE,"Gary Richardson","republican",FALSE,"total",86544,188060,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",2,"gen",FALSE,"Mike Synar","democrat",FALSE,"total",101516,188060,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",3,"gen",FALSE,"Wes Watkins","democrat",FALSE,"total",1,1,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",4,"gen",FALSE,"Dave McCurdy","democrat",FALSE,"total",74245,145584,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",4,"gen",FALSE,"Howard Rutledge","republican",FALSE,"total",71339,145584,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",5,"gen",FALSE,"David Hood","democrat",FALSE,"total",36815,131590,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",5,"gen",FALSE,"James L. Rushing","libertarian",FALSE,"total",4722,131590,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",5,"gen",FALSE,"Mickey Edwards","republican",FALSE,"total",90053,131590,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",6,"gen",FALSE,"Carol McCurley","republican",FALSE,"total",60980,172674,FALSE,20171005
+1980,"Oklahoma","OK",40,73,53,"US House",6,"gen",FALSE,"Glenn English","democrat",FALSE,"total",111694,172674,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",1,"gen",FALSE,"","",TRUE,"total",20,308635,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",1,"gen",FALSE,"Les AuCoin","democrat",FALSE,"total",203532,308635,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",1,"gen",FALSE,"Lynn Engdahl","republican",FALSE,"total",105083,308635,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",2,"gen",FALSE,"","",TRUE,"total",18,290748,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",2,"gen",FALSE,"Al Ullman","democrat",FALSE,"total",138089,290748,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",2,"gen",FALSE,"Denny Smith","republican",FALSE,"total",141854,290748,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",2,"gen",FALSE,"Lloyd K. Marbet","independent",FALSE,"total",10787,290748,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",3,"gen",FALSE,"","",TRUE,"total",112,217423,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",3,"gen",FALSE,"Darrell R. Conger","republican",FALSE,"total",60940,217423,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",3,"gen",FALSE,"Ron Wyden","democrat",FALSE,"total",156371,217423,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",4,"gen",FALSE,"","",TRUE,"total",28,289634,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",4,"gen",FALSE,"Jim Weaver","democrat",FALSE,"total",158745,289634,FALSE,20171005
+1980,"Oregon","OR",41,92,72,"US House",4,"gen",FALSE,"Michael Fitzgerald","republican",FALSE,"total",130861,289634,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",1,"gen",FALSE,"Geoffrey Steinberg","libertarian",FALSE,"total",3161,155451,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",1,"gen",FALSE,"Michael Myers","democrat",FALSE,"total",52956,155451,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",1,"gen",FALSE,"Robert R. Burke","republican",FALSE,"total",37893,155451,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",1,"gen",FALSE,"Shaheed Abdul Haqq","citizens",FALSE,"total",2704,155451,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",1,"gen",FALSE,"Thomas M. Foglietta","foglietta (democrat)",FALSE,"total",58737,155451,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",10,"gen",FALSE,"Gene Basalyga","democrat",FALSE,"total",43152,190319,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",10,"gen",FALSE,"Joseph M. McDade","republican",FALSE,"total",145703,190319,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",10,"gen",FALSE,"Patrick Fallon","libertarian",FALSE,"total",1464,190319,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",11,"gen",FALSE,"James L. Nelligan","republican",FALSE,"total",93621,180324,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",11,"gen",FALSE,"Raphael Musto","democrat",FALSE,"total",86703,180324,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",12,"gen",FALSE,"Charles A. Getty","republican",FALSE,"total",72999,179749,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",12,"gen",FALSE,"John P. Murtha","democrat",FALSE,"total",106750,179749,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",13,"gen",FALSE,"Jon Houser","libertarian",FALSE,"total",1627,197584,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",13,"gen",FALSE,"Lawrence Coughlin","republican",FALSE,"total",138212,197584,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",13,"gen",FALSE,"Pete Slawek","democrat",FALSE,"total",57745,197584,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",14,"gen",FALSE,"Liz Hughes","citizens",FALSE,"total",3008,149624,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",14,"gen",FALSE,"Stan Thomas","republican",FALSE,"total",44071,149624,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",14,"gen",FALSE,"William J. Coyne","democrat",FALSE,"total",102545,149624,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",15,"gen",FALSE,"Barbara Karkutt","libertarian",FALSE,"total",1225,167725,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",15,"gen",FALSE,"Don Ritter","republican",FALSE,"total",99874,167725,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",15,"gen",FALSE,"Jeanette Reibman","democrat",FALSE,"total",66626,167725,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",16,"gen",FALSE,"James A. Woodcock","democrat",FALSE,"total",38891,168656,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",16,"gen",FALSE,"Robert S. Walker","republican",FALSE,"total",129765,168656,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",17,"gen",FALSE,"Allen E. Ertel","democrat",FALSE,"total",97995,161785,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",17,"gen",FALSE,"Daniel S. Seiverling","republican",FALSE,"total",63790,161785,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",18,"gen",FALSE,"Doug Walgren","democrat",FALSE,"total",127641,186462,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",18,"gen",FALSE,"Steven R. Snyder","republican",FALSE,"total",58821,186462,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",19,"gen",FALSE,"Bill Goodling","republican",FALSE,"total",136873,180002,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",19,"gen",FALSE,"Daniel R. Davies","libertarian",FALSE,"total",1545,180002,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",19,"gen",FALSE,"Richard P. Noll","democrat",FALSE,"total",41584,180002,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",2,"gen",FALSE,"Garland Dempsey","citizens",FALSE,"total",2396,131828,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",2,"gen",FALSE,"James L. Buckman","independent congressional",FALSE,"total",2326,131828,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",2,"gen",FALSE,"William H. Gray III","democrat",FALSE,"total",127106,131828,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",20,"gen",FALSE,"Joseph M. Gaydos","democrat",FALSE,"total",122100,168413,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",20,"gen",FALSE,"Kathleen M. Meyer","republican",FALSE,"total",46313,168413,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",21,"gen",FALSE,"Dirk Matson","republican",FALSE,"total",51821,164248,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",21,"gen",FALSE,"Don Bailey","democrat",FALSE,"total",112427,164248,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",22,"gen",FALSE,"Austin J. Murphy","democrat",FALSE,"total",118084,169768,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",22,"gen",FALSE,"Marilyn Coyle Ecoff","republican",FALSE,"total",50020,169768,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",22,"gen",FALSE,"William L. Krayer","libertarian",FALSE,"total",1664,169768,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",23,"gen",FALSE,"Bill Clinger","republican",FALSE,"total",122855,167046,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",23,"gen",FALSE,"Douglas M. Mason","citizens",FALSE,"total",3158,167046,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",23,"gen",FALSE,"Peter Atigan","democrat",FALSE,"total",41033,167046,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",24,"gen",FALSE,"David C. DiCarlo","democrat",FALSE,"total",86567,174555,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",24,"gen",FALSE,"Edward J. Hammer","independent",FALSE,"total",1301,174555,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",24,"gen",FALSE,"Marc Lincoln Marks","republican",FALSE,"total",86687,174555,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",25,"gen",FALSE,"Eugene V. Atkinson","democrat",FALSE,"total",119817,178585,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",25,"gen",FALSE,"Robert Morris","republican",FALSE,"total",58768,178585,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",3,"gen",FALSE,"John Morris","morris for congress",FALSE,"total",3951,124608,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",3,"gen",FALSE,"Max Weiner","citizens",FALSE,"total",11849,124608,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",3,"gen",FALSE,"Raymond F. Lederer","democrat",FALSE,"total",67942,124608,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",3,"gen",FALSE,"William J. Phillips","republican",FALSE,"total",40866,124608,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",4,"gen",FALSE,"Charles F. Dougherty","republican",FALSE,"total",127475,201370,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",4,"gen",FALSE,"Thomas J. Magrann","democrat",FALSE,"total",73895,201370,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",5,"gen",FALSE,"David F. Hoffman","libertarian",FALSE,"total",2245,198235,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",5,"gen",FALSE,"Grady G. Brickhouse","democrat",FALSE,"total",47092,198235,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",5,"gen",FALSE,"Richard T. Schulze","republican",FALSE,"total",148898,198235,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",6,"gen",FALSE,"George Hulshart","republican",FALSE,"total",57844,175809,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",6,"gen",FALSE,"Gus Yatron","democrat",FALSE,"total",117965,175809,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",7,"gen",FALSE,"Bob Edgar","democrat",FALSE,"total",99381,187024,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",7,"gen",FALSE,"Dennis J. Rochford","republican",FALSE,"total",87643,187024,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",8,"gen",FALSE,"Hans Schroeder","libertarian",FALSE,"total",1167,204345,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",8,"gen",FALSE,"James K. Coyne","republican",FALSE,"total",103585,204345,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",8,"gen",FALSE,"Peter H. Kostmayer","democrat",FALSE,"total",99593,204345,FALSE,20171005
+1980,"Pennsylvania","PA",42,23,14,"US House",9,"gen",FALSE,"Bud Shuster","republican",FALSE,"total",157241,157241,FALSE,20171005
+1980,"Rhode Island","RI",44,15,5,"US House",1,"gen",FALSE,"Fernand J. St Germain","democrat",FALSE,"total",120756,178600,FALSE,20171005
+1980,"Rhode Island","RI",44,15,5,"US House",1,"gen",FALSE,"William P. Montgomery","republican",FALSE,"total",57844,178600,FALSE,20171005
+1980,"Rhode Island","RI",44,15,5,"US House",2,"gen",FALSE,"Claudine Schneider","republican",FALSE,"total",115057,208027,FALSE,20171005
+1980,"Rhode Island","RI",44,15,5,"US House",2,"gen",FALSE,"Edward P. Beard","democrat",FALSE,"total",92970,208027,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",1,"gen",FALSE,"Charles D. Ravenel","democrat",FALSE,"total",76743,158731,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",1,"gen",FALSE,"Thomas F. Hartnett","republican",FALSE,"total",81988,158731,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",2,"gen",FALSE,"Floyd Spence","republican",FALSE,"total",92306,165659,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",2,"gen",FALSE,"Tom Turnipseed","democrat",FALSE,"total",73353,165659,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",3,"gen",FALSE,"Boyce Lee Muller","libertarian",FALSE,"total",1118,146638,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",3,"gen",FALSE,"Butler Derrick","democrat",FALSE,"total",87680,146638,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",3,"gen",FALSE,"Marshall Parker","republican",FALSE,"total",57840,146638,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",4,"gen",FALSE,"Carroll Campbell","republican",FALSE,"total",90941,97925,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",4,"gen",FALSE,"Thomas P. Waldenfels","libertarian",FALSE,"total",6984,97925,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",5,"gen",FALSE,"Ken Holland","democrat",FALSE,"total",99773,114025,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",5,"gen",FALSE,"Thomas Campbell","libertarian",FALSE,"total",14252,114025,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",6,"gen",FALSE,"John L. Napier","republican",FALSE,"total",75964,146711,FALSE,20171005
+1980,"South Carolina","SC",45,57,48,"US House",6,"gen",FALSE,"John W. Jenrette Jr.","democrat",FALSE,"total",70747,146711,FALSE,20171005
+1980,"South Dakota","SD",46,45,37,"US House",1,"gen",FALSE,"Bart Kull","republican",FALSE,"total",57155,167065,FALSE,20171005
+1980,"South Dakota","SD",46,45,37,"US House",1,"gen",FALSE,"Thomas A. Daschle","democrat",FALSE,"total",109910,167065,FALSE,20171005
+1980,"South Dakota","SD",46,45,37,"US House",2,"gen",FALSE,"Clint Roberts","republican",FALSE,"total",88991,152438,FALSE,20171005
+1980,"South Dakota","SD",46,45,37,"US House",2,"gen",FALSE,"Kenneth D. Stofferahn","democrat",FALSE,"total",63447,152438,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",1,"gen",FALSE,"","",TRUE,"total",17,151129,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",1,"gen",FALSE,"James H. Quillen","republican",FALSE,"total",130296,151129,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",1,"gen",FALSE,"John Curtis","independent",FALSE,"total",20816,151129,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",2,"gen",FALSE,"","",TRUE,"total",2,194527,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",2,"gen",FALSE,"David H. (Dave) Dunnaway","democrat",FALSE,"total",46578,194527,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",2,"gen",FALSE,"John J. Duncan","republican",FALSE,"total",147947,194527,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",3,"gen",FALSE,"","",TRUE,"total",40,192156,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",3,"gen",FALSE,"Glen Byers","republican",FALSE,"total",74761,192156,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",3,"gen",FALSE,"Marilyn Lloyd Bouquard","democrat",FALSE,"total",117355,192156,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",4,"gen",FALSE,"","",TRUE,"total",4,173570,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",4,"gen",FALSE,"Albert Gore Jr.","democrat",FALSE,"total",137612,173570,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",4,"gen",FALSE,"James Beau Seigneur","republican",FALSE,"total",35954,173570,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",5,"gen",FALSE,"","",TRUE,"total",10,181262,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",5,"gen",FALSE,"Bill Boner","democrat",FALSE,"total",118506,181262,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",5,"gen",FALSE,"Mike Adams","republican",FALSE,"total",62746,181262,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",6,"gen",FALSE,"","",TRUE,"total",566,128511,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",6,"gen",FALSE,"Robin L. Beard Jr.","republican",FALSE,"total",127945,128511,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",7,"gen",FALSE,"","",TRUE,"total",2,172835,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",7,"gen",FALSE,"Daniel Campbell","republican",FALSE,"total",39227,172835,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",7,"gen",FALSE,"Ed Jones","democrat",FALSE,"total",133606,172835,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",8,"gen",FALSE,"","",TRUE,"total",68,110207,FALSE,20171005
+1980,"Tennessee","TN",47,62,54,"US House",8,"gen",FALSE,"Harold E. Ford","democrat",FALSE,"total",110139,110207,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",1,"gen",FALSE,"Sam B. Hall Jr.","democrat",FALSE,"total",137665,137665,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",10,"gen",FALSE,"J.J. ""Jake"" Pickle","democrat",FALSE,"total",135618,229424,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",10,"gen",FALSE,"John Biggar","republican",FALSE,"total",88940,229424,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",10,"gen",FALSE,"Michael Grossberg","libertarian",FALSE,"total",4866,229424,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",11,"gen",FALSE,"Marvin Leath","democrat",FALSE,"total",128520,128520,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",12,"gen",FALSE,"Jim Bradshaw","republican",FALSE,"total",65005,165390,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",12,"gen",FALSE,"Jim Wright","democrat",FALSE,"total",99104,165390,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",12,"gen",FALSE,"Mrs. C. B. Mauldin","libertarian",FALSE,"total",1281,165390,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",13,"gen",FALSE,"Jack Hightower","democrat",FALSE,"total",98779,179598,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",13,"gen",FALSE,"Ron Slover","republican",FALSE,"total",80819,179598,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",14,"gen",FALSE,"C.L. Concklin","republican",FALSE,"total",71495,165379,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",14,"gen",FALSE,"William N. ""Bill"" Patman","democrat",FALSE,"total",93884,165379,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",15,"gen",FALSE,"E. ""Kika"" de la Garza","democrat",FALSE,"total",105325,150415,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",15,"gen",FALSE,"Lendy McDonald","republican",FALSE,"total",45090,150415,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",16,"gen",FALSE,"Catherine A. McDivitt","libertarian",FALSE,"total",19010,123744,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",16,"gen",FALSE,"Richard C. ""Dick"" White","democrat",FALSE,"total",104734,123744,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",17,"gen",FALSE,"Charles W. Stenholm","democrat",FALSE,"total",130465,130465,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",18,"gen",FALSE,"Bill Fraser","libertarian",FALSE,"total",1983,90096,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",18,"gen",FALSE,"C.L. Kennedy","republican",FALSE,"total",16128,90096,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",18,"gen",FALSE,"Mickey Leland","democrat",FALSE,"total",71985,90096,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",19,"gen",FALSE,"J. D. Webster","libertarian",FALSE,"total",8792,135424,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",19,"gen",FALSE,"Kent Hance","democrat",FALSE,"total",126632,135424,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",2,"gen",FALSE,"Charles Wilson","democrat",FALSE,"total",142496,205768,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",2,"gen",FALSE,"F.H. Pannill Sr.","republican",FALSE,"total",60742,205768,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",2,"gen",FALSE,"Martin Sorrells","libertarian",FALSE,"total",2530,205768,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",20,"gen",FALSE,"","",TRUE,"total",1,102685,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",20,"gen",FALSE,"Henry B. Gonzalez","democrat",FALSE,"total",84113,102685,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",20,"gen",FALSE,"Merle Nash","republican",FALSE,"total",17725,102685,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",20,"gen",FALSE,"Tom Burnham","libertarian",FALSE,"total",846,102685,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",21,"gen",FALSE,"Joe Sullivan","democrat",FALSE,"total",58425,256744,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",21,"gen",FALSE,"Tom Loeffler","republican",FALSE,"total",196424,256744,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",21,"gen",FALSE,"William Rice","libertarian",FALSE,"total",1895,256744,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",22,"gen",FALSE,"Mike Andrews","democrat",FALSE,"total",101094,209251,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",22,"gen",FALSE,"Ron Paul","republican",FALSE,"total",106797,209251,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",22,"gen",FALSE,"Vaudie V. Nance","independent",FALSE,"total",1360,209251,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",23,"gen",FALSE,"","",TRUE,"total",46,149780,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",23,"gen",FALSE,"Abraham ""Chick"" Kazen Jr.","democrat",FALSE,"total",104595,149780,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",23,"gen",FALSE,"Bobby Locke","republican",FALSE,"total",45139,149780,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",24,"gen",FALSE,"Clay Smothers","republican",FALSE,"total",59172,152862,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",24,"gen",FALSE,"Martin Frost","democrat",FALSE,"total",93690,152862,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",3,"gen",FALSE,"Earle Stephen Porter","democrat",FALSE,"total",49667,275234,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",3,"gen",FALSE,"Jim Collins","republican",FALSE,"total",218228,275234,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",3,"gen",FALSE,"William Stephen Briggs","libertarian",FALSE,"total",7339,275234,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",4,"gen",FALSE,"John Wright","republican",FALSE,"total",93915,196702,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",4,"gen",FALSE,"Ralph M. Hall","democrat",FALSE,"total",102787,196702,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",5,"gen",FALSE,"","",TRUE,"total",295,139035,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",5,"gen",FALSE,"Jim Mattox","democrat",FALSE,"total",70892,139035,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",5,"gen",FALSE,"Tom Pauken","republican",FALSE,"total",67848,139035,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",6,"gen",FALSE,"Dave ""Buster"" Haskins","republican",FALSE,"total",59503,204319,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",6,"gen",FALSE,"Phil Gramm","democrat",FALSE,"total",144816,204319,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",7,"gen",FALSE,"","",TRUE,"total",2,295684,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",7,"gen",FALSE,"Bill Archer","republican",FALSE,"total",242810,295684,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",7,"gen",FALSE,"Bill Ware","libertarian",FALSE,"total",4278,295684,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",7,"gen",FALSE,"Robert L. Hutchings","democrat",FALSE,"total",48594,295684,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",8,"gen",FALSE,"Bob Eckhardt","democrat",FALSE,"total",67921,140777,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",8,"gen",FALSE,"Jack Fields","republican",FALSE,"total",72856,140777,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",9,"gen",FALSE,"","",TRUE,"total",349,103574,FALSE,20171005
+1980,"Texas","TX",48,74,49,"US House",9,"gen",FALSE,"Jack Brooks","democrat",FALSE,"total",103225,103574,FALSE,20171005
+1980,"Utah","UT",49,87,67,"US House",1,"gen",FALSE,"Gunn McKay","democrat",FALSE,"total",144459,301570,FALSE,20171005
+1980,"Utah","UT",49,87,67,"US House",1,"gen",FALSE,"James V. Hansen","republican",FALSE,"total",157111,301570,FALSE,20171005
+1980,"Utah","UT",49,87,67,"US House",2,"gen",FALSE,"Arthur L. Monson","democrat",FALSE,"total",87967,290765,FALSE,20171005
+1980,"Utah","UT",49,87,67,"US House",2,"gen",FALSE,"Dan Marriott","republican",FALSE,"total",194885,290765,FALSE,20171005
+1980,"Utah","UT",49,87,67,"US House",2,"gen",FALSE,"David P. Hurst","socialist workers",FALSE,"total",982,290765,FALSE,20171005
+1980,"Utah","UT",49,87,67,"US House",2,"gen",FALSE,"Stan Larsen","independent",FALSE,"total",5411,290765,FALSE,20171005
+1980,"Utah","UT",49,87,67,"US House",2,"gen",FALSE,"Steven Ray Montgomery","american",FALSE,"total",1520,290765,FALSE,20171005
+1980,"Vermont","VT",50,13,6,"US House",0,"gen",FALSE,"","",TRUE,"total",447,194697,FALSE,20171005
+1980,"Vermont","VT",50,13,6,"US House",0,"gen",FALSE,"James Merrill Jeffords","republican",FALSE,"total",154274,194697,FALSE,20171005
+1980,"Vermont","VT",50,13,6,"US House",0,"gen",FALSE,"Peter Diamondstone","socialist",FALSE,"total",15218,194697,FALSE,20171005
+1980,"Vermont","VT",50,13,6,"US House",0,"gen",FALSE,"Robin Lloyd","citizens",FALSE,"total",24758,194697,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",1,"gen",FALSE,"","",TRUE,"total",21,143839,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",1,"gen",FALSE,"Paul S. Trible Jr.","republican",FALSE,"total",130130,143839,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",1,"gen",FALSE,"Sharon D. Grant","independent",FALSE,"total",13688,143839,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",10,"gen",FALSE,"","",TRUE,"total",21,216744,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",10,"gen",FALSE,"Frank R. Wolf","republican",FALSE,"total",110840,216744,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",10,"gen",FALSE,"Joseph L. Fisher","democrat",FALSE,"total",105883,216744,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",2,"gen",FALSE,"","",TRUE,"total",6,108328,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",2,"gen",FALSE,"G. Wiliam Whitehurst","republican",FALSE,"total",97319,108328,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",2,"gen",FALSE,"Kenneth P. Morrison","independent",FALSE,"total",11003,108328,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",3,"gen",FALSE,"","",TRUE,"total",25,186912,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",3,"gen",FALSE,"Howard H. Carwile","independent",FALSE,"total",19549,186912,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",3,"gen",FALSE,"James B. Turney","independent",FALSE,"total",9852,186912,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",3,"gen",FALSE,"John A. Mapp","democrat",FALSE,"total",60962,186912,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",3,"gen",FALSE,"Thomas J. ""Tom"" Bliley Jr.","republican",FALSE,"total",96524,186912,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",4,"gen",FALSE,"","",TRUE,"total",7,152494,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",4,"gen",FALSE,"Cecil Y. Jenkins","democrat",FALSE,"total",59930,152494,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",4,"gen",FALSE,"Robert W. ""Bob"" Daniel Jr.","republican",FALSE,"total",92557,152494,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",5,"gen",FALSE,"","",TRUE,"total",75,112218,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",5,"gen",FALSE,"W.C. (Dan) Daniel","democrat",FALSE,"total",112143,112218,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",6,"gen",FALSE,"","",TRUE,"total",1018,124143,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",6,"gen",FALSE,"M. Caldwell Butler","republican",FALSE,"total",123125,124143,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",7,"gen",FALSE,"","",TRUE,"total",439,140396,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",7,"gen",FALSE,"J. Kenneth Robinson","republican",FALSE,"total",139957,140396,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",8,"gen",FALSE,"","",TRUE,"total",14,195897,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",8,"gen",FALSE,"Deborah L. Frantz","independent",FALSE,"total",5729,195897,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",8,"gen",FALSE,"Herbert E. Harris II","democrat",FALSE,"total",94530,195897,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",8,"gen",FALSE,"Stanford E. ""Stan"" Parris","republican",FALSE,"total",95624,195897,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",9,"gen",FALSE,"","",TRUE,"total",32,171864,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",9,"gen",FALSE,"Roosevelt Ferguson","democrat",FALSE,"total",52636,171864,FALSE,20171005
+1980,"Virginia","VA",51,54,40,"US House",9,"gen",FALSE,"William C. Wampler","republican",FALSE,"total",119196,171864,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",1,"gen",FALSE,"Joel Pritchard","republican",FALSE,"total",180475,230534,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",1,"gen",FALSE,"Maurice Willey","libertarian",FALSE,"total",8229,230534,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",1,"gen",FALSE,"Robin Drake","democrat",FALSE,"total",41830,230534,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",2,"gen",FALSE,"Al Swift","democrat",FALSE,"total",162002,253688,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",2,"gen",FALSE,"Neal Snider","republican",FALSE,"total",82639,253688,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",2,"gen",FALSE,"William L. McCord","libertarian",FALSE,"total",9047,253688,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",3,"gen",FALSE,"Don Bonker","democrat",FALSE,"total",155906,248778,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",3,"gen",FALSE,"Rod Culp","republican",FALSE,"total",92872,248778,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",4,"gen",FALSE,"Mike McCormack","democrat",FALSE,"total",100114,234805,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",4,"gen",FALSE,"Sid Morrison","republican",FALSE,"total",134691,234805,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",5,"gen",FALSE,"John Sonneland","republican",FALSE,"total",111705,232235,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",5,"gen",FALSE,"Thomas S. Foley","democrat",FALSE,"total",120530,232235,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",6,"gen",FALSE,"Jim Beaver","republican",FALSE,"total",106236,229139,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",6,"gen",FALSE,"Norman D. Dicks","democrat",FALSE,"total",122903,229139,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",7,"gen",FALSE,"Mike Lowry","democrat",FALSE,"total",112848,197066,FALSE,20171005
+1980,"Washington","WA",53,91,73,"US House",7,"gen",FALSE,"Ron Dunlap","republican",FALSE,"total",84218,197066,FALSE,20171005
+1980,"West Virginia","WV",54,55,56,"US House",1,"gen",FALSE,"Joe Bartlett","republican",FALSE,"total",61438,168909,FALSE,20171005
+1980,"West Virginia","WV",54,55,56,"US House",1,"gen",FALSE,"Robert H. Mollohan","democrat",FALSE,"total",107471,168909,FALSE,20171005
+1980,"West Virginia","WV",54,55,56,"US House",2,"gen",FALSE,"Cleve Benedict","republican",FALSE,"total",102805,183745,FALSE,20171005
+1980,"West Virginia","WV",54,55,56,"US House",2,"gen",FALSE,"Pat R. Hamilton","democrat",FALSE,"total",80940,183745,FALSE,20171005
+1980,"West Virginia","WV",54,55,56,"US House",3,"gen",FALSE,"John G. Hutchinson","democrat",FALSE,"total",84980,179563,FALSE,20171005
+1980,"West Virginia","WV",54,55,56,"US House",3,"gen",FALSE,"Mick Staton","republican",FALSE,"total",94583,179563,FALSE,20171005
+1980,"West Virginia","WV",54,55,56,"US House",4,"gen",FALSE,"Nick Joe Rahall II","democrat",FALSE,"total",117595,153615,FALSE,20171005
+1980,"West Virginia","WV",54,55,56,"US House",4,"gen",FALSE,"Winton Guy Covey Jr.","republican",FALSE,"total",36020,153615,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",1,"gen",FALSE,"","",TRUE,"total",5,224442,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",1,"gen",FALSE,"Arthur F. Jackson","libertarian",FALSE,"total",2168,224442,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",1,"gen",FALSE,"Kathryn H. Canary","republican",FALSE,"total",96047,224442,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",1,"gen",FALSE,"Les Aspin","democrat",FALSE,"total",126222,224442,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",2,"gen",FALSE,"","",TRUE,"total",5,263138,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",2,"gen",FALSE,"James A. Wright","republican",FALSE,"total",119514,263138,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",2,"gen",FALSE,"Leslie Graves Key","libertarian",FALSE,"total",1582,263138,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",2,"gen",FALSE,"Robert Kastenmeier","democrat",FALSE,"total",142037,263138,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",3,"gen",FALSE,"","",TRUE,"total",8,258868,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",3,"gen",FALSE,"Alvin J. Baldus","democrat",FALSE,"total",126859,258868,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",3,"gen",FALSE,"Steven Gunderson","republican",FALSE,"total",132001,258868,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",4,"gen",FALSE,"","",TRUE,"total",5,209139,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",4,"gen",FALSE,"Clement J. Zablocki","democrat",FALSE,"total",146437,209139,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",4,"gen",FALSE,"Elroy C. Honadel","republican",FALSE,"total",61027,209139,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",4,"gen",FALSE,"Lynn Rashkind","independent",FALSE,"total",1670,209139,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",5,"gen",FALSE,"","",TRUE,"total",6,168218,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",5,"gen",FALSE,"David Bathke","republican",FALSE,"total",37267,168218,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",5,"gen",FALSE,"Frank Forrestal","independent",FALSE,"total",1371,168218,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",5,"gen",FALSE,"Henry S. Reuss","democrat",FALSE,"total",129574,168218,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",6,"gen",FALSE,"","",TRUE,"total",3,242611,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",6,"gen",FALSE,"Gary R. Goyke","democrat",FALSE,"total",98628,242611,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",6,"gen",FALSE,"Thomas E. Petri","republican",FALSE,"total",143980,242611,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",7,"gen",FALSE,"","",TRUE,"total",22,254107,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",7,"gen",FALSE,"David Obey","democrat",FALSE,"total",164340,254107,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",7,"gen",FALSE,"Vinton A. Vesta","republican",FALSE,"total",89745,254107,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",8,"gen",FALSE,"","",TRUE,"total",19,250726,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",8,"gen",FALSE,"Michael R. Monfils","democrat",FALSE,"total",81043,250726,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",8,"gen",FALSE,"Toby Roth","republican",FALSE,"total",169664,250726,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",9,"gen",FALSE,"","",TRUE,"total",14,263079,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",9,"gen",FALSE,"F. James Sensenbrenner Jr.","republican",FALSE,"total",206227,263079,FALSE,20171005
+1980,"Wisconsin","WI",55,35,25,"US House",9,"gen",FALSE,"Gary C. Benedict","democrat",FALSE,"total",56838,263079,FALSE,20171005
+1980,"Wyoming","WY",56,83,68,"US House",0,"gen",FALSE,"Dick Cheney","republican",FALSE,"total",116361,169699,FALSE,20171005
+1980,"Wyoming","WY",56,83,68,"US House",0,"gen",FALSE,"Jim Rogers","democrat",FALSE,"total",53338,169699,FALSE,20171005

@@ -1,0 +1,127 @@
+"year","state","state_po","state_fips","state_cen","state_ic","office","district","stage","special","candidate","party","writein","mode","candidatevotes","totalvotes","unofficial","version"
+1978,"Alabama","AL",1,63,41,"US Senate","statewide","gen",FALSE,"Howell Heflin","democrat",FALSE,"total",547054,582005,FALSE,20171011
+1978,"Alabama","AL",1,63,41,"US Senate","statewide","gen",FALSE,"Jerome B. Couch","prohibition",FALSE,"total",34951,582005,FALSE,20171011
+1978,"Alabama","AL",1,63,41,"US Senate","statewide","gen",TRUE,"A. J. Killinsworth","prohibition",FALSE,"total",5814,729842,FALSE,20171011
+1978,"Alabama","AL",1,63,41,"US Senate","statewide","gen",TRUE,"Donald Stewart","democrat",FALSE,"total",401852,729842,FALSE,20171011
+1978,"Alabama","AL",1,63,41,"US Senate","statewide","gen",TRUE,"James D. Martin","republican",FALSE,"total",316170,729842,FALSE,20171011
+1978,"Alabama","AL",1,63,41,"US Senate","statewide","gen",TRUE,"Michael R. A. Erdey","libertarian",FALSE,"total",6006,729842,FALSE,20171011
+1978,"Alaska","AK",2,94,81,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",384,122741,FALSE,20171011
+1978,"Alaska","AK",2,94,81,"US Senate","statewide","gen",FALSE,"Donald Hobbs","democrat",FALSE,"total",29574,122741,FALSE,20171011
+1978,"Alaska","AK",2,94,81,"US Senate","statewide","gen",FALSE,"Ted Stevens","republican",FALSE,"total",92783,122741,FALSE,20171011
+1978,"Arkansas","AR",5,71,42,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",113,517138,FALSE,20171011
+1978,"Arkansas","AR",5,71,42,"US Senate","statewide","gen",FALSE,"David Pryor","democrat",FALSE,"total",395506,517138,FALSE,20171011
+1978,"Arkansas","AR",5,71,42,"US Senate","statewide","gen",FALSE,"John Graham Black","independent",FALSE,"total",37211,517138,FALSE,20171011
+1978,"Arkansas","AR",5,71,42,"US Senate","statewide","gen",FALSE,"Tom Kelly","republican",FALSE,"total",84308,517138,FALSE,20171011
+1978,"Colorado","CO",8,84,62,"US Senate","statewide","gen",FALSE,"Floyd K. Haskell","democrat",FALSE,"total",330148,819256,FALSE,20171011
+1978,"Colorado","CO",8,84,62,"US Senate","statewide","gen",FALSE,"John Shue ","national statesman",FALSE,"total",2518,819256,FALSE,20171011
+1978,"Colorado","CO",8,84,62,"US Senate","statewide","gen",FALSE,"Vedder V. Dron","united states party",FALSE,"total",5789,819256,FALSE,20171011
+1978,"Colorado","CO",8,84,62,"US Senate","statewide","gen",FALSE,"William L. Armstrong","republican",FALSE,"total",480801,819256,FALSE,20171011
+1978,"Delaware","DE",10,51,11,"US Senate","statewide","gen",FALSE,"Donald G. Gies","american",FALSE,"total",1663,162072,FALSE,20171011
+1978,"Delaware","DE",10,51,11,"US Senate","statewide","gen",FALSE,"James H. Baxter Jr.","republican",FALSE,"total",66479,162072,FALSE,20171011
+1978,"Delaware","DE",10,51,11,"US Senate","statewide","gen",FALSE,"Joseph R. Biden Jr.","democrat",FALSE,"total",93930,162072,FALSE,20171011
+1978,"Georgia","GA",13,58,44,"US Senate","statewide","gen",FALSE,"John W. Stokes","republican",FALSE,"total",108808,645128,FALSE,20171011
+1978,"Georgia","GA",13,58,44,"US Senate","statewide","gen",FALSE,"Sam Nunn","democrat",FALSE,"total",536320,645128,FALSE,20171011
+1978,"Idaho","ID",16,82,63,"US Senate","statewide","gen",FALSE,"Dwight Jensen","democrat",FALSE,"total",89635,284047,FALSE,20171011
+1978,"Idaho","ID",16,82,63,"US Senate","statewide","gen",FALSE,"James A. McClure","republican",FALSE,"total",194412,284047,FALSE,20171011
+1978,"Illinois","IL",17,33,21,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",159,3184764,FALSE,20171011
+1978,"Illinois","IL",17,33,21,"US Senate","statewide","gen",FALSE,"Alex Smith","democrat",FALSE,"total",1448187,3184764,FALSE,20171011
+1978,"Illinois","IL",17,33,21,"US Senate","statewide","gen",FALSE,"Bruce Lee Green","libertarian",FALSE,"total",16320,3184764,FALSE,20171011
+1978,"Illinois","IL",17,33,21,"US Senate","statewide","gen",FALSE,"Charles H. Perey","republican",FALSE,"total",1698711,3184764,FALSE,20171011
+1978,"Illinois","IL",17,33,21,"US Senate","statewide","gen",FALSE,"Gerald Rose","socialist labor",FALSE,"total",5465,3184764,FALSE,20171011
+1978,"Illinois","IL",17,33,21,"US Senate","statewide","gen",FALSE,"Patricia Grogan","socialist workers",FALSE,"total",15922,3184764,FALSE,20171011
+1978,"Iowa","IA",19,42,31,"US Senate","statewide","gen",FALSE,"Ben L. Olson","libertarian",FALSE,"total",3689,824576,FALSE,20171011
+1978,"Iowa","IA",19,42,31,"US Senate","statewide","gen",FALSE,"Dick Clark","democrat",FALSE,"total",395066,824576,FALSE,20171011
+1978,"Iowa","IA",19,42,31,"US Senate","statewide","gen",FALSE,"Gerald Leo Baker","independent",FALSE,"total",4223,824576,FALSE,20171011
+1978,"Iowa","IA",19,42,31,"US Senate","statewide","gen",FALSE,"Roger W. Jepsen","republican",FALSE,"total",421598,824576,FALSE,20171011
+1978,"Kansas","KS",20,47,32,"US Senate","statewide","gen",FALSE,"Bill Roy","democrat",FALSE,"total",317602,748839,FALSE,20171011
+1978,"Kansas","KS",20,47,32,"US Senate","statewide","gen",FALSE,"James R. Maher","conservative",FALSE,"total",22497,748839,FALSE,20171011
+1978,"Kansas","KS",20,47,32,"US Senate","statewide","gen",FALSE,"Nancy Landon Kassebaum","republican",FALSE,"total",403354,748839,FALSE,20171011
+1978,"Kansas","KS",20,47,32,"US Senate","statewide","gen",FALSE,"Russell Mikels","prohibition",FALSE,"total",5386,748839,FALSE,20171011
+1978,"Kentucky","KY",21,61,51,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",43,476783,FALSE,20171011
+1978,"Kentucky","KY",21,61,51,"US Senate","statewide","gen",FALSE,"Anthony Albert McCord","american",FALSE,"total",10244,476783,FALSE,20171011
+1978,"Kentucky","KY",21,61,51,"US Senate","statewide","gen",FALSE,"Louie Guenthner Jr. ","republican",FALSE,"total",175766,476783,FALSE,20171011
+1978,"Kentucky","KY",21,61,51,"US Senate","statewide","gen",FALSE,"Walter D. Huddleston","democrat",FALSE,"total",290730,476783,FALSE,20171011
+1978,"Louisiana","LA",22,72,45,"US Senate","statewide","gen",FALSE,"J. Bennett Johnston Jr. ","democrat",FALSE,"total",1,1,FALSE,20171011
+1978,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Hayes E. Gahagan","independent",FALSE,"total",27824,375114,FALSE,20171011
+1978,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"John J. Jannace","independent",FALSE,"total",5553,375114,FALSE,20171011
+1978,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"Plato Truman","independent",FALSE,"total",2116,375114,FALSE,20171011
+1978,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"William D. Hathaway","democrat",FALSE,"total",127327,375114,FALSE,20171011
+1978,"Maine","ME",23,11,2,"US Senate","statewide","gen",FALSE,"William S. Cohen","republican",FALSE,"total",212294,375114,FALSE,20171011
+1978,"Massachusetts","MA",25,14,3,"US Senate","statewide","gen",FALSE,"Edward W. Brooke","republican",FALSE,"total",890584,1985700,FALSE,20171011
+1978,"Massachusetts","MA",25,14,3,"US Senate","statewide","gen",FALSE,"Other","",FALSE,"total",1833,1985700,FALSE,20171011
+1978,"Massachusetts","MA",25,14,3,"US Senate","statewide","gen",FALSE,"Paul E. Tsongas","democrat",FALSE,"total",1093283,1985700,FALSE,20171011
+1978,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Carl Levin","democrat",FALSE,"total",1484193,2846630,FALSE,20171011
+1978,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"Robert P. Griffin","republican",FALSE,"total",1362165,2846630,FALSE,20171011
+1978,"Michigan","MI",26,34,23,"US Senate","statewide","gen",FALSE,"scatter","",FALSE,"total",272,2846630,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",72,1580622,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Brian John Coyle","public interest independent",FALSE,"total",8083,1580622,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Jean T. Brust","workers",FALSE,"total",3891,1580622,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Leonard Richards","libertarian",FALSE,"total",2992,1580622,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Rudolph E. Boschwitz","republican",FALSE,"total",894092,1580622,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Sal Carlone","american",FALSE,"total",23261,1580622,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"Wendell Anderson","democrat",FALSE,"total",638375,1580622,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",FALSE,"William Peterson","socialist workers",FALSE,"total",9856,1580622,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",TRUE,"","",TRUE,"total",878,1558376,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",TRUE,"Bob Short","democrat",FALSE,"total",538675,1558376,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",TRUE,"Christine Frank","socialist",FALSE,"total",11397,1558376,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",TRUE,"David Durenberger","republican",FALSE,"total",957908,1558376,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",TRUE,"Frederick Hewitt","libertarian",FALSE,"total",4116,1558376,FALSE,20171011
+1978,"Minnesota","MN",27,41,33,"US Senate","statewide","gen",TRUE,"Paul Helm","american",FALSE,"total",45402,1558376,FALSE,20171011
+1978,"Mississippi","MS",28,64,46,"US Senate","statewide","gen",FALSE,"Henry Jay Kirksey","independent",FALSE,"total",1747,590236,FALSE,20171011
+1978,"Mississippi","MS",28,64,46,"US Senate","statewide","gen",FALSE,"James Charles Evers","independent",FALSE,"total",133646,590236,FALSE,20171011
+1978,"Mississippi","MS",28,64,46,"US Senate","statewide","gen",FALSE,"Maurice Dantin","democrat",FALSE,"total",187541,590236,FALSE,20171011
+1978,"Mississippi","MS",28,64,46,"US Senate","statewide","gen",FALSE,"Thad Cochran","republican",FALSE,"total",267302,590236,FALSE,20171011
+1978,"Montana","MT",30,81,64,"US Senate","statewide","gen",FALSE,"Larry Williams","republican",FALSE,"total",127589,287942,FALSE,20171011
+1978,"Montana","MT",30,81,64,"US Senate","statewide","gen",FALSE,"Max Baucus","democrat",FALSE,"total",160353,287942,FALSE,20171011
+1978,"Nebraska","NE",31,46,35,"US Senate","statewide","gen",FALSE,"Donald Eugene Shasten","republican",FALSE,"total",159706,493802,FALSE,20171011
+1978,"Nebraska","NE",31,46,35,"US Senate","statewide","gen",FALSE,"James J. Exon","democrat",FALSE,"total",334096,493802,FALSE,20171011
+1978,"New Hampshire","NH",33,12,4,"US Senate","statewide","gen",FALSE,"Craig Franklin","libertarian",FALSE,"total",2070,263760,FALSE,20171011
+1978,"New Hampshire","NH",33,12,4,"US Senate","statewide","gen",FALSE,"Gordon J. Humphrey","republican",FALSE,"total",133745,263760,FALSE,20171011
+1978,"New Hampshire","NH",33,12,4,"US Senate","statewide","gen",FALSE,"Thomas J. McIntyre","democrat",FALSE,"total",127945,263760,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Alice Conner","independent",FALSE,"total",2384,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Bill Bradley","democrat",FALSE,"total",1082960,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Bill Gahres","independent",FALSE,"total",3817,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Herbert Harry Shaw","independent",FALSE,"total",4736,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"J. M. Carter Jr. ","independent",FALSE,"total",3618,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Jack Moyers","independent",FALSE,"total",3809,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Jasper C. Gould","independent",FALSE,"total",2955,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Jeffrey Bell","republican",FALSE,"total",844200,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Paul Ferguson","independent",FALSE,"total",2604,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"Robert Brown","labor",FALSE,"total",3656,1957515,FALSE,20171011
+1978,"New Jersey","NJ",34,22,12,"US Senate","statewide","gen",FALSE,"William R. Thorn","independent",FALSE,"total",2776,1957515,FALSE,20171011
+1978,"New Mexico","NM",35,85,66,"US Senate","statewide","gen",FALSE,"Pete V. Domenici","republican",FALSE,"total",183442,343487,FALSE,20171011
+1978,"New Mexico","NM",35,85,66,"US Senate","statewide","gen",FALSE,"Toney Anaya","democrat",FALSE,"total",160045,343487,FALSE,20171011
+1978,"North Carolina","NC",37,56,47,"US Senate","statewide","gen",FALSE,"Jesse Helms","republican",FALSE,"total",619151,1135814,FALSE,20171011
+1978,"North Carolina","NC",37,56,47,"US Senate","statewide","gen",FALSE,"John Randolph Ingram","democrat",FALSE,"total",516663,1135814,FALSE,20171011
+1978,"Oklahoma","OK",40,73,53,"US Senate","statewide","gen",FALSE,"David Lyle Boren","democrat",FALSE,"total",493953,754264,FALSE,20171011
+1978,"Oklahoma","OK",40,73,53,"US Senate","statewide","gen",FALSE,"Glenn E. Hager","independent",FALSE,"total",3875,754264,FALSE,20171011
+1978,"Oklahoma","OK",40,73,53,"US Senate","statewide","gen",FALSE,"Paul Edward Trent","independent",FALSE,"total",3015,754264,FALSE,20171011
+1978,"Oklahoma","OK",40,73,53,"US Senate","statewide","gen",FALSE,"Richard King Carter","independent",FALSE,"total",2209,754264,FALSE,20171011
+1978,"Oklahoma","OK",40,73,53,"US Senate","statewide","gen",FALSE,"Riley Donica","independent",FALSE,"total",3355,754264,FALSE,20171011
+1978,"Oklahoma","OK",40,73,53,"US Senate","statewide","gen",FALSE,"Robert B. Kamm","republican",FALSE,"total",247857,754264,FALSE,20171011
+1978,"Oregon","OR",41,92,72,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",737,892518,FALSE,20171011
+1978,"Oregon","OR",41,92,72,"US Senate","statewide","gen",FALSE,"Mark Hatfield","republican",FALSE,"total",550165,892518,FALSE,20171011
+1978,"Oregon","OR",41,92,72,"US Senate","statewide","gen",FALSE,"Vern Cook","democrat",FALSE,"total",341616,892518,FALSE,20171011
+1978,"Rhode Island","RI",44,15,5,"US Senate","statewide","gen",FALSE,"Claiborne Pell","democrat",FALSE,"total",229557,305618,FALSE,20171011
+1978,"Rhode Island","RI",44,15,5,"US Senate","statewide","gen",FALSE,"James G. Reyonlds","republican",FALSE,"total",76061,305618,FALSE,20171011
+1978,"South Carolina","SC",45,57,48,"US Senate","statewide","gen",FALSE,"Charles D. Ravenel","democrat",FALSE,"total",280146,632063,FALSE,20171011
+1978,"South Carolina","SC",45,57,48,"US Senate","statewide","gen",FALSE,"Strom Thurmond","republican",FALSE,"total",351917,632063,FALSE,20171011
+1978,"South Dakota","SD",46,45,37,"US Senate","statewide","gen",FALSE,"Don Barnett","democrat",FALSE,"total",84767,255599,FALSE,20171011
+1978,"South Dakota","SD",46,45,37,"US Senate","statewide","gen",FALSE,"Larry Pressler","republican",FALSE,"total",170832,255599,FALSE,20171011
+1978,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",71,1157094,FALSE,20171011
+1978,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Fern Lucius Keasler","independent",FALSE,"total",2243,1157094,FALSE,20171011
+1978,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Howard H. Baker","republican",FALSE,"total",642644,1157094,FALSE,20171011
+1978,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Jane Eskind","democrat",FALSE,"total",466228,1157094,FALSE,20171011
+1978,"Tennessee","TN",47,62,54,"US Senate","statewide","gen",FALSE,"Thomas J. Anderson","independent",FALSE,"total",45908,1157094,FALSE,20171011
+1978,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"John G. Tower","republican",FALSE,"total",1151376,2312540,FALSE,20171011
+1978,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"Luis A. Diaz de Loen","la raza unida",FALSE,"total",17869,2312540,FALSE,20171011
+1978,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"Miguel Pendas","socialist workers",FALSE,"total",4018,2312540,FALSE,20171011
+1978,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"Other","",FALSE,"total",128,2312540,FALSE,20171011
+1978,"Texas","TX",48,74,49,"US Senate","statewide","gen",FALSE,"Robert Krueger","democrat",FALSE,"total",1139149,2312540,FALSE,20171011
+1978,"Virginia","VA",51,54,40,"US Senate","statewide","gen",FALSE,"","",TRUE,"total",513,1222256,FALSE,20171011
+1978,"Virginia","VA",51,54,40,"US Senate","statewide","gen",FALSE,"Andrew P. Miller","democrat",FALSE,"total",608511,1222256,FALSE,20171011
+1978,"Virginia","VA",51,54,40,"US Senate","statewide","gen",FALSE,"John William Warner","republican",FALSE,"total",613232,1222256,FALSE,20171011
+1978,"West Virginia","WV",54,55,56,"US Senate","statewide","gen",FALSE,"Arch A. Moore Jr. ","republican",FALSE,"total",244317,493351,FALSE,20171011
+1978,"West Virginia","WV",54,55,56,"US Senate","statewide","gen",FALSE,"Jennings Randolph","democrat",FALSE,"total",249034,493351,FALSE,20171011
+1978,"Wyoming","WY",56,83,68,"US Senate","statewide","gen",FALSE,"Alan Kooi Simpson","republican",FALSE,"total",50456,133364,FALSE,20171011
+1978,"Wyoming","WY",56,83,68,"US Senate","statewide","gen",FALSE,"Raymond B. Whitaker","democrat",FALSE,"total",82908,133364,FALSE,20171011

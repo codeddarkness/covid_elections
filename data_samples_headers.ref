@@ -1,0 +1,21 @@
+# nytimes_covid-19-data/us-states.csv sample
+[date],[state],fips,cases,deaths
+
+# nytimes_covid-19-data/us-counties-recent.csv sample
+[date],[county],[state],fips,cases,deaths
+
+# nytimes_covid-19-data/colleges/colleges.csv sample
+[date],[state],[county],[city],ipeds_id,[college],cases,cases_2021,notes
+
+# nytimes_covid-19-data/prisons/facilities.csv sample
+nyt_id,[facility_name],[facility_type],[facility_city],[facility_county],facility_county_fips,[facility_state],facility_lng,facility_lat,latest_inmate_population,max_inmate_population_2020,total_inmate_cases,total_inmate_deaths,total_officer_cases,total_officer_deaths,note
+
+# nytimes_covid-19-data/prisons/systems.csv sample
+[system],inmate_tests,total_inmate_cases,total_inmate_deaths,latest_inmate_population,max_inmate_population_2020,total_officer_cases,total_officer_deaths
+
+# nytimes_covid-19-data/excess-deaths/deaths.csv sample
+[country],[placename],[frequency],[start_date],[end_date],[year],[month],[week],deaths,expected_deaths,excess_deaths,baseline
+
+# nytimes_covid-19-data/mask-use/mask-use-by-county.csv sample
+[COUNTYFP],NEVER,RARELY,SOMETIMES,FREQUENTLY,ALWAYS
+
