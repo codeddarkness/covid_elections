@@ -1,8 +1,8 @@
 .DS_Store
-election_data/2022-elections-official/
-election_data/PresElectionResults/
-election_data/US_County_Level_Election_Results_08-24/
-election_data/election-results/
+#election_data/2022-elections-official/
+#election_data/PresElectionResults/
+#election_data/US_County_Level_Election_Results_08-24/
+#election_data/election-results/
 nytimes_covid-19-data/
 unused/
 unused/export_dataverse/
@@ -13,5 +13,4 @@ create_covid_data_sample.sh
 sample_covid_data.csv.ref
 sample_election_data.csv.ref
 sync.sh
-sync.sh_v0
 sync.sh_v0
