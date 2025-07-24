@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 & Election Data Integrated Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@2.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a1a3a 100%);
+            padding: 1rem;
+            border-bottom: 3px solid #6366f1;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .header h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header .subtitle {
+            text-align: center;
+            color: #a855f7;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .nav-menu {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .nav-dropdown {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dropdown:hover {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            transform: translateY(-1px);
+        }
+
+        .nav-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            z-index: 1;
+            border-radius: 6px;
+            border: 1px solid #6366f1;
+        }
+
+        .nav-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .nav-content a:hover {
+            background-color: #6366f1;
+        }
+
+        .nav-menu:hover .nav-content {
+            display: block;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            min-height: calc(100vh - 100px);
+        }
+
+        .integration-status {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 2px solid #6366f1;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .integration-status.active {
+            border-color: #10b981;
+            background: linear-gradient(135deg, #1a2e1a 0%, #16213e 100%);
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+
+        .status-indicator.covid { background-color: #ef4444; }
+        .status-indicator.election { background-color: #3b82f6; }
+        .status-indicator.integrated { background-color: #10b981; }
+
+        .controls {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid #6366f1;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .controls-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: end;
+            margin-bottom: 1rem;
+        }
+
+        .controls-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .control-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .control-item label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .control-item select, .control-item input {
+            width: 100%;
+            padding: 0.5rem;
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #6366f1;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .control-item select:focus, .control-item input:focus {
+            outline: none;
+            border-color: #a855f7;
+            box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.3);
+        }
+
+        .control-item.button-item {
+            flex: 0 0 auto;
+            min-width: auto;
+            display: flex;
+            align-items: end;
+        }
+
+        .button {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            transform: translateY(-1px);
+        }
+
+        .button:disabled {
+            background: linear-gradient(135deg, #666666 0%, #777777 100%);
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .button.active {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .button.integration {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .selected-regions {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid #6366f1;
+        }
+
+        .regions-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #6366f1;
+        }
+
+        .regions-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .region-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 20px;
+            font-size: 14px;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .region-tag.integrated {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .region-tag .data-availability {
+            font-size: 10px;
+            opacity: 0.9;
+            margin-left: 0.5rem;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .region-tag .political-info {
+            font-size: 10px;
+            opacity: 0.8;
+            margin-left: 0.5rem;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .region-tag .political-info.democrat {
+            background-color: rgba(30, 64, 175, 0.4);
+            color: #93c5fd;
+        }
+
+        .region-tag .political-info.republican {
+            background-color: rgba(220, 38, 38, 0.4);
+            color: #fca5a5;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-panel {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #6366f1;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .chart-panel.integrated {
+            border-color: #10b981;
+            background: linear-gradient(135deg, #1a2e1a 0%, #1a1a2e 100%);
+        }
+
+        .chart-panel h3 {
+            margin-bottom: 1rem;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #6366f1;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .stat-card.integrated {
+            border-color: #10b981;
+            background: linear-gradient(135deg, #1a2e1a 0%, #1a1a2e 100%);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #a855f7;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .stat-value.integrated {
+            color: #10b981;
+        }
+
+        .stat-label {
+            color: #cccccc;
+            font-size: 0.9rem;
+        }
+
+        .integration-insights {
+            background: linear-gradient(135deg, #2a1a3a 0%, #1a2e3a 100%);
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .insights-title {
+            color: #10b981;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .insight-item {
+            background: rgba(16, 185, 129, 0.1);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #10b981;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #cccccc;
+        }
+
+        .error {
+            background-color: #dc2626;
+            color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 1200px) {
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .control-item {
+                min-width: 100%;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>COVID-19 & Election Data Integration Dashboard</h1>
+        <div class="subtitle">Analyzing pandemic impacts across political contexts</div>
+        <div class="nav-menu">
+            <button class="nav-dropdown">Navigation Menu</button>
+            <div class="nav-content">
+                <a href="#" onclick="showPage('dashboard')">Integrated Dashboard</a>
+                <a href="covid_dashboard.html">COVID-19 Data</a>
+                <a href="election_dashboard.html">Election Data</a>
+                <a href="#" onclick="showPage('methodology')">Integration Methodology</a>
+                <a href="#" onclick="showPage('insights')">Key Insights</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Main Integrated Dashboard -->
+        <div id="dashboard" class="page active">
+            <!-- Integration Status -->
+            <div class="integration-status" id="integrationStatus">
+                <div class="status-indicator covid"></div>COVID Data: <span id="covidStatus">Not loaded</span>
+                <div class="status-indicator election"></div>Election Data: <span id="electionStatus">Not loaded</span>
+                <div class="status-indicator integrated"></div>Integration: <span id="integrationActive">Inactive</span>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <!-- Data type selection -->
+                <div class="controls-row">
+                    <div class="control-item">
+                        <label for="dataType">COVID Data Type:</label>
+                        <select id="dataType" onchange="loadCovidData()">
+                            <option value="">Select COVID Data Type</option>
+                            <option value="us-states">US States</option>
+                            <option value="us-counties">US Counties</option>
+                        </select>
+                    </div>
+                    <div class="control-item">
+                        <label for="integrationMode">Integration Mode:</label>
+                        <select id="integrationMode" onchange="updateIntegrationMode()">
+                            <option value="overlay">Overlay View</option>
+                            <option value="correlation">Correlation Analysis</option>
+                            <option value="comparative">Comparative Analysis</option>
+                            <option value="temporal">Temporal Integration</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Dynamic selectors -->
+                <div class="controls-row" id="selectorsRow" style="display: none;">
+                    <!-- Dynamic selectors will be added here -->
+                </div>
+
+                <!-- Action buttons -->
+                <div class="controls-row">
+                    <div class="control-item button-item">
+                        <button class="button" onclick="addIntegratedRegion()" id="addRegionBtn" disabled>Add Region</button>
+                    </div>
+                    <div class="control-item button-item">
+                        <button class="button integration" onclick="generateInsights()" id="insightsBtn" disabled>Generate Insights</button>
+                    </div>
+                </div>
+
+                <!-- Date range for COVID data -->
+                <div class="controls-row">
+                    <div class="control-item">
+                        <label for="startDate">COVID Data Start:</label>
+                        <input type="date" id="startDate" value="2020-03-01">
+                    </div>
+                    <div class="control-item">
+                        <label for="endDate">COVID Data End:</label>
+                        <input type="date" id="endDate" value="2021-06-01">
+                    </div>
+                    <div class="control-item button-item">
+                        <button class="button" onclick="updateAnalysis()" id="updateBtn" disabled>Update Analysis</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selected Regions -->
+            <div class="selected-regions">
+                <div class="regions-header">
+                    <h3 class="regions-title">Integrated Regions:</h3>
+                    <div class="regions-controls">
+                        <button class="button" onclick="exportData()" id="exportBtn" disabled>Export Data</button>
+                        <button class="button" onclick="clearRegions()">Clear All</button>
+                    </div>
+                </div>
+                <div id="regionTags">
+                    <p>No regions selected</p>
+                </div>
+            </div>
+
+            <!-- Key Insights -->
+            <div class="integration-insights" id="insightsPanel" style="display: none;">
+                <div class="insights-title">🧠 Integration Insights</div>
+                <div id="insightsContent">
+                    <!-- Insights will be generated here -->
+                </div>
+            </div>
+
+            <!-- Statistics Grid -->
+            <div class="stats-grid" id="statsGrid" style="display: none;">
+                <!-- Stats cards will be generated here -->
+            </div>
+
+            <!-- Charts Container -->
+            <div class="charts-container" id="chartsContainer" style="display: none;">
+                <!-- Charts will be generated here -->
+            </div>
+
+            <div class="loading" id="loadingIndicator" style="display: none;">
+                Loading and integrating data...
+            </div>
+        </div>
+
+        <!-- Methodology Page -->
+        <div id="methodology" class="page" style="display: none;">
+            <div class="info-section">
+                <h2>Integration Methodology</h2>
+                
+                <h3>Data Integration Approach</h3>
+                <p>This integrated dashboard combines COVID-19 health data with 2020 Presidential Election results to analyze pandemic impacts across different political contexts.</p>
+
+                <h3>Geographic Matching</h3>
+                <ul>
+                    <li><strong>State Level:</strong> Direct name matching between datasets</li>
+                    <li><strong>County Level:</strong> Matching by county name and state combination</li>
+                    <li><strong>Data Validation:</strong> Verification of geographic alignment accuracy</li>
+                </ul>
+
+                <h3>Temporal Alignment</h3>
+                <ul>
+                    <li><strong>Election Baseline:</strong> November 2020 political landscape</li>
+                    <li><strong>COVID Timeline:</strong> Pandemic progression from March 2020 onwards</li>
+                    <li><strong>Integration Windows:</strong> Analysis periods around election date</li>
+                </ul>
+
+                <h3>Analysis Methods</h3>
+                <ul>
+                    <li><strong>Overlay Analysis:</strong> COVID metrics overlaid with political data</li>
+                    <li><strong>Correlation Studies:</strong> Statistical relationships between variables</li>
+                    <li><strong>Comparative Analysis:</strong> Cross-political comparison of health outcomes</li>
+                    <li><strong>Temporal Integration:</strong> Timeline analysis with political context</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Insights Page -->
+        <div id="insights" class="page" style="display: none;">
+            <div class="info-section">
+                <h2>Key Research Insights</h2>
+                
+                <h3>Political Context and Health Outcomes</h3>
+                <p>Analysis of pandemic impacts across different political landscapes reveals patterns in public health responses and outcomes.</p>
+
+                <h3>Regional Variations</h3>
+                <ul>
+                    <li>Differences in policy implementation across political divides</li>
+                    <li>Variation in public health compliance and outcomes</li>
+                    <li>Economic and social factors influencing pandemic response</li>
+                </ul>
+
+                <h3>Temporal Patterns</h3>
+                <ul>
+                    <li>Pre-election pandemic trends and political messaging</li>
+                    <li>Post-election changes in public health approaches</li>
+                    <li>Seasonal variations in political vs. health priorities</li>
+                </ul>
+
+                <h3>Research Applications</h3>
+                <ul>
+                    <li>Public health policy effectiveness analysis</li>
+                    <li>Political communication impact on health behaviors</li>
+                    <li>Geographic and demographic correlation studies</li>
+                    <li>Future pandemic preparedness planning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let covidData = {};
+        let electionData = [];
+        let selectedRegions = [];
+        let integrationMode = 'overlay';
+        let charts = {};
+        let currentInsights = [];
+
+        // Selector configurations for COVID data
+        const selectorConfigs = {
+            'us-states': [
+                { key: 'state', label: 'State', type: 'select' }
+            ],
+            'us-counties': [
+                { key: 'state', label: 'State', type: 'select' },
+                { key: 'county', label: 'County', type: 'select' }
+            ]
+        };
+
+        // Political party colors
+        const partyColors = {
+            'DEMOCRAT': '#1e40af',
+            'REPUBLICAN': '#dc2626',
+            'LIBERTARIAN': '#fbbf24',
+            'GREEN': '#10b981',
+            'OTHER': '#9ca3af'
+        };
+
+        // Navigation function
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        // Load election data on page load
+        async function loadElectionData() {
+            try {
+                console.log('Loading election data...');
+                const response = await fetch('countypres_2020.csv');
+                if (!response.ok) throw new Error('Failed to load election data');
+                
+                const csvText = await response.text();
+                const parsedData = Papa.parse(csvText, {
+                    header: true,
+                    dynamicTyping: true,
+                    skipEmptyLines: true
+                });
+
+                electionData = parsedData.data.filter(row => 
+                    row.mode === 'TOTAL' && row.office === 'US PRESIDENT' && row.year === 2020
+                );
+                
+                document.getElementById('electionStatus').textContent = `Loaded (${electionData.length} records)`;
+                updateIntegrationStatus();
+                
+            } catch (error) {
+                console.error('Error loading election data:', error);
+                document.getElementById('electionStatus').textContent = 'Failed to load';
+            }
+        }
+
+        // Load COVID data
+        async function loadCovidData() {
+            const dataType = document.getElementById('dataType').value;
+            if (!dataType) return;
+
+            showLoading(true);
+            
+            try {
+                const csvFile = `nytimes_covid-19-data/us-${dataType === 'us-states' ? 'states' : 'counties-recent'}.csv`;
+                
+                const response = await fetch(csvFile);
+                if (!response.ok) throw new Error(`Failed to load ${csvFile}`);
+                
+                const csvText = await response.text();
+                const parsedData = Papa.parse(csvText, {
+                    header: true,
+                    dynamicTyping: true,
+                    skipEmptyLines: true
+                });
+
+                const cleanData = parsedData.data.filter(row => 
+                    Object.values(row).some(value => value !== null && value !== '')
+                );
+                
+                covidData[dataType] = cleanData;
+                document.getElementById('covidStatus').textContent = `Loaded ${dataType} (${cleanData.length} records)`;
+                
+                createDynamicSelectors(dataType);
+                populateDynamicSelectors(dataType);
+                updateIntegrationStatus();
+                showLoading(false);
+                
+            } catch (error) {
+                console.error('Error loading COVID data:', error);
+                document.getElementById('covidStatus').textContent = 'Failed to load';
+                showLoading(false);
+            }
+        }
+
+        // Create dynamic selectors
+        function createDynamicSelectors(dataType) {
+            const selectorsRow = document.getElementById('selectorsRow');
+            const config = selectorConfigs[dataType];
+            
+            if (!config) {
+                selectorsRow.style.display = 'none';
+                return;
+            }
+
+            selectorsRow.innerHTML = '';
+            selectorsRow.style.display = 'flex';
+
+            config.forEach(selector => {
+                const controlItem = document.createElement('div');
+                controlItem.className = 'control-item';
+                
+                const label = document.createElement('label');
+                label.textContent = selector.label + ':';
+                label.setAttribute('for', `selector_${selector.key}`);
+                
+                const select = document.createElement('select');
+                select.id = `selector_${selector.key}`;
+                select.onchange = () => updateDependentSelectors(dataType);
+                
+                const defaultOption = document.createElement('option');
+                defaultOption.value = '';
+                defaultOption.textContent = `Select ${selector.label}`;
+                select.appendChild(defaultOption);
+                
+                controlItem.appendChild(label);
+                controlItem.appendChild(select);
+                selectorsRow.appendChild(controlItem);
+            });
+        }
+
+        // Populate dynamic selectors
+        function populateDynamicSelectors(dataType) {
+            const currentData = covidData[dataType];
+            const config = selectorConfigs[dataType];
+            
+            if (!currentData || !config) return;
+
+            config.forEach(selector => {
+                const selectElement = document.getElementById(`selector_${selector.key}`);
+                if (!selectElement) return;
+
+                const values = [...new Set(currentData.map(d => d[selector.key]))].filter(Boolean).sort();
+                
+                selectElement.innerHTML = selectElement.firstElementChild.outerHTML;
+                
+                values.forEach(value => {
+                    const option = document.createElement('option');
+                    option.value = value;
+                    option.textContent = value;
+                    selectElement.appendChild(option);
+                });
+            });
+        }
+
+        // Update dependent selectors
+        function updateDependentSelectors(dataType) {
+            const currentData = covidData[dataType];
+            const config = selectorConfigs[dataType];
+            
+            if (!currentData || !config) return;
+
+            // Get current filters
+            const filters = {};
+            config.forEach(selector => {
+                const selectElement = document.getElementById(`selector_${selector.key}`);
+                if (selectElement && selectElement.value) {
+                    filters[selector.key] = selectElement.value;
+                }
+            });
+
+            // Check if we can add a region
+            const hasSelection = config.some(selector => {
+                const selectElement = document.getElementById(`selector_${selector.key}`);
+                return selectElement && selectElement.value;
+            });
+
+            document.getElementById('addRegionBtn').disabled = !hasSelection;
+        }
+
+        // Add integrated region
+        function addIntegratedRegion() {
+            const dataType = document.getElementById('dataType').value;
+            if (!dataType) return;
+
+            const regionLabel = getSelectedRegionLabel(dataType);
+            if (!regionLabel) return;
+
+            // Check for data availability
+            const covidAvailable = hasCovidData(regionLabel, dataType);
+            const electionAvailable = hasElectionData(regionLabel, dataType);
+
+            if (!covidAvailable && !electionAvailable) {
+                alert('No data available for this region');
+                return;
+            }
+
+            const region = {
+                label: regionLabel,
+                dataType: dataType,
+                covid: covidAvailable,
+                election: electionAvailable,
+                integrated: covidAvailable && electionAvailable
+            };
+
+            if (!selectedRegions.find(r => r.label === regionLabel)) {
+                selectedRegions.push(region);
+                updateRegionTags();
+                updateAnalysis();
+                
+                // Clear selections
+                const config = selectorConfigs[dataType];
+                if (config) {
+                    config.forEach(selector => {
+                        const selectElement = document.getElementById(`selector_${selector.key}`);
+                        if (selectElement) selectElement.value = '';
+                    });
+                }
+                document.getElementById('addRegionBtn').disabled = true;
+            }
+        }
+
+        // Get selected region label
+        function getSelectedRegionLabel(dataType) {
+            const config = selectorConfigs[dataType];
+            if (!config) return '';
+
+            const parts = [];
+            config.forEach(selector => {
+                const selectElement = document.getElementById(`selector_${selector.key}`);
+                if (selectElement && selectElement.value) {
+                    parts.push(selectElement.value);
+                }
+            });
+
+            return parts.join(', ') || '';
+        }
+
+        // Check if COVID data exists for region
+        function hasCovidData(regionLabel, dataType) {
+            const currentData = covidData[dataType];
+            if (!currentData) return false;
+
+            if (dataType === 'us-states') {
+                return currentData.some(d => d.state === regionLabel);
+            } else if (dataType === 'us-counties') {
+                const [county, state] = regionLabel.split(', ');
+                return currentData.some(d => d.county === county && d.state === state);
+            }
+            return false;
+        }
+
+        // Check if election data exists for region
+        function hasElectionData(regionLabel, dataType) {
+            if (!electionData.length) return false;
+
+            if (dataType === 'us-states') {
+                return electionData.some(d => d.state === regionLabel);
+            } else if (dataType === 'us-counties') {
+                const [county, state] = regionLabel.split(', ');
+                return electionData.some(d => d.county_name === county && d.state === state);
+            }
+            return false;
+        }
+
+        // Update region tags
+        function updateRegionTags() {
+            const tagsContainer = document.getElementById('regionTags');
+            
+            if (selectedRegions.length === 0) {
+                tagsContainer.innerHTML = '<p>No regions selected</p>';
+                return;
+            }
+
+            tagsContainer.innerHTML = selectedRegions.map(region => {
+                const tagClass = region.integrated ? 'integrated' : '';
+                const dataAvailability = [];
+                if (region.covid) dataAvailability.push('COVID');
+                if (region.election) dataAvailability.push('Election');
+                
+                let politicalInfo = '';
+                if (region.election) {
+                    const politicalData = getElectionDataForRegion(region);
+                    if (politicalData.length > 0) {
+                        const { winner, partyTotals, totalVotes } = aggregatePoliticalData(politicalData);
+                        const demPct = totalVotes > 0 ? ((partyTotals['DEMOCRAT'] || 0) / totalVotes * 100).toFixed(0) : 0;
+                        const repPct = totalVotes > 0 ? ((partyTotals['REPUBLICAN'] || 0) / totalVotes * 100).toFixed(0) : 0;
+                        const winnerClass = winner === 'DEMOCRAT' ? 'democrat' : winner === 'REPUBLICAN' ? 'republican' : '';
+                        politicalInfo = `<span class="political-info ${winnerClass}">D:${demPct}% R:${repPct}%</span>`;
+                    }
+                }
+                
+                return `<span class="region-tag ${tagClass}">
+                    ${region.label}
+                    <span class="data-availability">${dataAvailability.join('+')}</span>
+                    ${politicalInfo}
+                    <span onclick="removeRegion('${region.label}')" style="margin-left: 0.5rem; cursor: pointer; font-weight: bold;">×</span>
+                </span>`;
+            }).join('');
+
+            // Update button states
+            const hasIntegrated = selectedRegions.some(r => r.integrated);
+            document.getElementById('insightsBtn').disabled = !hasIntegrated;
+            document.getElementById('exportBtn').disabled = selectedRegions.length === 0;
+            document.getElementById('updateBtn').disabled = selectedRegions.length === 0;
+        }
+
+        // Get election data for a region
+        function getElectionDataForRegion(region) {
+            if (region.dataType === 'us-states') {
+                return electionData.filter(d => d.state === region.label);
+            } else if (region.dataType === 'us-counties') {
+                const [county, state] = region.label.split(', ');
+                return electionData.filter(d => d.county_name === county && d.state === state);
+            }
+            return [];
+        }
+
+        // Aggregate political data
+        function aggregatePoliticalData(politicalData) {
+            const partyTotals = {};
+            let totalVotes = 0;
+
+            politicalData.forEach(record => {
+                const party = record.party || 'OTHER';
+                const votes = record.candidatevotes || 0;
+                
+                if (!partyTotals[party]) partyTotals[party] = 0;
+                partyTotals[party] += votes;
+                totalVotes = Math.max(totalVotes, record.totalvotes || 0);
+            });
+
+            let winner = 'Unknown';
+            let maxVotes = 0;
+            Object.keys(partyTotals).forEach(party => {
+                if (partyTotals[party] > maxVotes) {
+                    maxVotes = partyTotals[party];
+                    winner = party;
+                }
+            });
+
+            return { partyTotals, totalVotes, winner };
+        }
+
+        // Remove region
+        function removeRegion(regionLabel) {
+            selectedRegions = selectedRegions.filter(r => r.label !== regionLabel);
+            updateRegionTags();
+            updateAnalysis();
+        }
+
+        // Clear all regions
+        function clearRegions() {
+            selectedRegions = [];
+            updateRegionTags();
+            clearCharts();
+            document.getElementById('statsGrid').style.display = 'none';
+            document.getElementById('chartsContainer').style.display = 'none';
+            document.getElementById('insightsPanel').style.display = 'none';
+        }
+
+        // Update integration mode
+        function updateIntegrationMode() {
+            integrationMode = document.getElementById('integrationMode').value;
+            updateAnalysis();
+        }
+
+        // Update integration status
+        function updateIntegrationStatus() {
+            const statusDiv = document.getElementById('integrationStatus');
+            const hasCovidData = Object.keys(covidData).length > 0;
+            const hasElectionData = electionData.length > 0;
+            const isIntegrated = hasCovidData && hasElectionData;
+
+            document.getElementById('integrationActive').textContent = isIntegrated ? 'Active' : 'Inactive';
+            
+            if (isIntegrated) {
+                statusDiv.classList.add('active');
+            } else {
+                statusDiv.classList.remove('active');
+            }
+        }
+
+        // Update analysis
+        function updateAnalysis() {
+            if (selectedRegions.length === 0) return;
+
+            generateStatistics();
+            generateCharts();
+            
+            document.getElementById('statsGrid').style.display = 'grid';
+            document.getElementById('chartsContainer').style.display = 'grid';
+        }
+
+        // Generate statistics
+        function generateStatistics() {
+            const statsGrid = document.getElementById('statsGrid');
+            
+            const integratedRegions = selectedRegions.filter(r => r.integrated);
+            const covidOnlyRegions = selectedRegions.filter(r => r.covid && !r.election);
+            const electionOnlyRegions = selectedRegions.filter(r => r.election && !r.covid);
+
+            let totalVotes = 0;
+            let totalCovidCases = 0;
+            let demWins = 0;
+            let repWins = 0;
+
+            integratedRegions.forEach(region => {
+                const electionData = getElectionDataForRegion(region);
+                if (electionData.length > 0) {
+                    const { partyTotals, totalVotes: regionVotes, winner } = aggregatePoliticalData(electionData);
+                    totalVotes += regionVotes;
+                    if (winner === 'DEMOCRAT') demWins++;
+                    else if (winner === 'REPUBLICAN') repWins++;
+                }
+
+                // Get COVID data for region
+                const covidRegionData = getCovidDataForRegion(region);
+                if (covidRegionData.length > 0) {
+                    const latestCovid = covidRegionData[covidRegionData.length - 1];
+                    totalCovidCases += latestCovid.cases || 0;
+                }
+            });
+
+            statsGrid.innerHTML = `
+                <div class="stat-card integrated">
+                    <div class="stat-value integrated">${integratedRegions.length}</div>
+                    <div class="stat-label">Integrated Regions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${totalCovidCases.toLocaleString()}</div>
+                    <div class="stat-label">Total COVID Cases</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${totalVotes.toLocaleString()}</div>
+                    <div class="stat-label">Total Votes Cast</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${demWins}/${repWins}</div>
+                    <div class="stat-label">Dem/Rep Wins</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${selectedRegions.length}</div>
+                    <div class="stat-label">Total Regions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${integrationMode}</div>
+                    <div class="stat-label">Analysis Mode</div>
+                </div>
+            `;
+        }
+
+        // Get COVID data for a region
+        function getCovidDataForRegion(region) {
+            const currentData = covidData[region.dataType];
+            if (!currentData) return [];
+
+            if (region.dataType === 'us-states') {
+                return currentData.filter(d => d.state === region.label)
+                    .sort((a, b) => new Date(a.date) - new Date(b.date));
+            } else if (region.dataType === 'us-counties') {
+                const [county, state] = region.label.split(', ');
+                return currentData.filter(d => d.county === county && d.state === state)
+                    .sort((a, b) => new Date(a.date) - new Date(b.date));
+            }
+            return [];
+        }
+
+        // Generate charts based on integration mode
+        function generateCharts() {
+            clearCharts();
+            const chartsContainer = document.getElementById('chartsContainer');
+            chartsContainer.innerHTML = '';
+
+            const integratedRegions = selectedRegions.filter(r => r.integrated);
+            
+            if (integratedRegions.length === 0) {
+                chartsContainer.innerHTML = '<div class="chart-panel"><h3>No integrated regions available</h3><p>Select regions with both COVID and election data to see integrated analysis.</p></div>';
+                return;
+            }
+
+            switch (integrationMode) {
+                case 'overlay':
+                    createOverlayChart(integratedRegions);
+                    createPoliticalBreakdownChart(integratedRegions);
+                    break;
+                case 'correlation':
+                    createCorrelationChart(integratedRegions);
+                    createScatterplotChart(integratedRegions);
+                    break;
+                case 'comparative':
+                    createComparativeChart(integratedRegions);
+                    createTimelineChart(integratedRegions);
+                    break;
+                case 'temporal':
+                    createTemporalIntegrationChart(integratedRegions);
+                    createElectionTimelineChart(integratedRegions);
+                    break;
+            }
+        }
+
+        // Create overlay chart
+        function createOverlayChart(regions) {
+            const chartPanel = document.createElement('div');
+            chartPanel.className = 'chart-panel integrated';
+            chartPanel.innerHTML = `
+                <h3>📊 COVID Cases with Political Context</h3>
+                <div class="chart-container">
+                    <canvas id="overlay-chart"></canvas>
+                </div>
+            `;
+            document.getElementById('chartsContainer').appendChild(chartPanel);
+
+            const ctx = document.getElementById('overlay-chart').getContext('2d');
+            
+            const datasets = regions.map((region, index) => {
+                const covidData = getCovidDataForRegion(region);
+                const electionData = getElectionDataForRegion(region);
+                
+                if (covidData.length === 0) return null;
+
+                const { winner } = aggregatePoliticalData(electionData);
+                const color = partyColors[winner] || partyColors['OTHER'];
+
+                const startDate = new Date(document.getElementById('startDate').value);
+                const endDate = new Date(document.getElementById('endDate').value);
+                
+                const filteredData = covidData.filter(d => {
+                    const recordDate = new Date(d.date);
+                    return recordDate >= startDate && recordDate <= endDate;
+                });
+
+                return {
+                    label: `${region.label} (${winner === 'DEMOCRAT' ? 'D' : winner === 'REPUBLICAN' ? 'R' : 'O'})`,
+                    data: filteredData.map(d => ({ x: d.date, y: d.cases || 0 })),
+                    borderColor: color,
+                    backgroundColor: color + '33',
+                    tension: 0.1,
+                    pointRadius: 2,
+                    fill: false
+                };
+            }).filter(Boolean);
+
+            const config = {
+                type: 'line',
+                data: { datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#ffffff', padding: 15 }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleColor: '#ffffff',
+                            bodyColor: '#ffffff'
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: { unit: 'day' },
+                            ticks: { color: '#ffffff' },
+                            grid: { color: '#333333' },
+                            title: { display: true, text: 'Date', color: '#ffffff' }
+                        },
+                        y: {
+                            ticks: { 
+                                color: '#ffffff',
+                                callback: value => value.toLocaleString()
+                            },
+                            grid: { color: '#333333' },
+                            title: { display: true, text: 'COVID Cases', color: '#ffffff' }
+                        }
+                    }
+                }
+            };
+
+            charts['overlay-chart'] = new Chart(ctx, config);
+        }
+
+        // Create political breakdown chart
+        function createPoliticalBreakdownChart(regions) {
+            const chartPanel = document.createElement('div');
+            chartPanel.className = 'chart-panel integrated';
+            chartPanel.innerHTML = `
+                <h3>🗳️ Political Composition of Selected Regions</h3>
+                <div class="chart-container">
+                    <canvas id="political-breakdown-chart"></canvas>
+                </div>
+            `;
+            document.getElementById('chartsContainer').appendChild(chartPanel);
+
+            const ctx = document.getElementById('political-breakdown-chart').getContext('2d');
+            
+            const partyTotals = { DEMOCRAT: 0, REPUBLICAN: 0, OTHER: 0 };
+            let totalVotes = 0;
+
+            regions.forEach(region => {
+                const electionData = getElectionDataForRegion(region);
+                if (electionData.length > 0) {
+                    const { partyTotals: regionTotals, totalVotes: regionTotal } = aggregatePoliticalData(electionData);
+                    Object.keys(regionTotals).forEach(party => {
+                        if (partyTotals[party] !== undefined) {
+                            partyTotals[party] += regionTotals[party];
+                        } else {
+                            partyTotals.OTHER += regionTotals[party];
+                        }
+                    });
+                    totalVotes += regionTotal;
+                }
+            });
+
+            const data = Object.keys(partyTotals).map(party => 
+                totalVotes > 0 ? (partyTotals[party] / totalVotes) * 100 : 0
+            );
+
+            const config = {
+                type: 'doughnut',
+                data: {
+                    labels: ['Democrat', 'Republican', 'Other'],
+                    datasets: [{
+                        data: data,
+                        backgroundColor: [partyColors.DEMOCRAT, partyColors.REPUBLICAN, partyColors.OTHER],
+                        borderColor: '#333333',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#ffffff', padding: 20 }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleColor: '#ffffff',
+                            bodyColor: '#ffffff',
+                            callbacks: {
+                                label: context => `${context.label}: ${context.parsed.toFixed(1)}%`
+                            }
+                        }
+                    }
+                }
+            };
+
+            charts['political-breakdown-chart'] = new Chart(ctx, config);
+        }
+
+        // Placeholder functions for other chart types
+        function createCorrelationChart(regions) {
+            // Implementation for correlation analysis
+            console.log('Creating correlation chart for', regions.length, 'regions');
+        }
+
+        function createScatterplotChart(regions) {
+            // Implementation for scatterplot analysis
+            console.log('Creating scatterplot chart for', regions.length, 'regions');
+        }
+
+        function createComparativeChart(regions) {
+            // Implementation for comparative analysis
+            console.log('Creating comparative chart for', regions.length, 'regions');
+        }
+
+        function createTimelineChart(regions) {
+            // Implementation for timeline analysis
+            console.log('Creating timeline chart for', regions.length, 'regions');
+        }
+
+        function createTemporalIntegrationChart(regions) {
+            // Implementation for temporal integration
+            console.log('Creating temporal integration chart for', regions.length, 'regions');
+        }
+
+        function createElectionTimelineChart(regions) {
+            // Implementation for election timeline
+            console.log('Creating election timeline chart for', regions.length, 'regions');
+        }
+
+        // Generate insights
+        function generateInsights() {
+            const integratedRegions = selectedRegions.filter(r => r.integrated);
+            if (integratedRegions.length === 0) return;
+
+            const insights = [];
+            
+            // Analyze political-health correlations
+            let demCases = 0, repCases = 0, demRegions = 0, repRegions = 0;
+            
+            integratedRegions.forEach(region => {
+                const electionData = getElectionDataForRegion(region);
+                const covidData = getCovidDataForRegion(region);
+                
+                if (electionData.length > 0 && covidData.length > 0) {
+                    const { winner } = aggregatePoliticalData(electionData);
+                    const latestCovid = covidData[covidData.length - 1];
+                    const cases = latestCovid.cases || 0;
+                    
+                    if (winner === 'DEMOCRAT') {
+                        demCases += cases;
+                        demRegions++;
+                    } else if (winner === 'REPUBLICAN') {
+                        repCases += cases;
+                        repRegions++;
+                    }
+                }
+            });
+
+            if (demRegions > 0 && repRegions > 0) {
+                const demAvg = demCases / demRegions;
+                const repAvg = repCases / repRegions;
+                const diff = Math.abs(demAvg - repAvg);
+                const higher = demAvg > repAvg ? 'Democratic' : 'Republican';
+                
+                insights.push(`${higher}-leaning regions show ${(diff/Math.min(demAvg, repAvg)*100).toFixed(1)}% higher average COVID cases per region.`);
+            }
+
+            // Add more insights
+            insights.push(`Analysis includes ${integratedRegions.length} regions with both COVID and election data.`);
+            insights.push(`Data integration covers the period from ${document.getElementById('startDate').value} to ${document.getElementById('endDate').value}.`);
+
+            // Display insights
+            const insightsContent = document.getElementById('insightsContent');
+            insightsContent.innerHTML = insights.map(insight => 
+                `<div class="insight-item">💡 ${insight}</div>`
+            ).join('');
+            
+            document.getElementById('insightsPanel').style.display = 'block';
+        }
+
+        // Export data
+        function exportData() {
+            const exportData = {
+                regions: selectedRegions,
+                mode: integrationMode,
+                dateRange: {
+                    start: document.getElementById('startDate').value,
+                    end: document.getElementById('endDate').value
+                },
+                timestamp: new Date().toISOString()
+            };
+
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], {
+                type: 'application/json'
+            });
+            
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `covid-election-integration-${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Clear charts
+        function clearCharts() {
+            Object.values(charts).forEach(chart => {
+                try {
+                    chart.destroy();
+                } catch (e) {
+                    console.warn('Error destroying chart:', e);
+                }
+            });
+            charts = {};
+        }
+
+        // Show loading
+        function showLoading(show) {
+            document.getElementById('loadingIndicator').style.display = show ? 'block' : 'none';
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('COVID-Election Integration Dashboard initialized');
+            loadElectionData();
+        });
+    </script>
+</body>
+</html>

@@ -549,6 +549,21 @@
                 font-size: 12px;
             }
         }
+            .button.political {
+            background-color: #6366f1;
+        }
+
+        .button.political:hover {
+            background-color: #4f46e5;
+        }
+
+        .button.political.active {
+            background-color: #a855f7;
+        }
+
+        .button.political.active:hover {
+            background-color: #9333ea;
+        }
     </style>
 </head>
 <body>
@@ -630,6 +645,7 @@
                     <div class="regions-controls">
                         <button class="button" onclick="toggleComparisonMode()" id="comparisonBtn" disabled>Show Comparison Table</button>
                         <button class="button" onclick="toggleChartMode()" id="chartModeBtn" disabled>Cumulative View</button>
+                        <button class="button" onclick="togglePoliticalAnalysis()" id="politicalBtn" disabled>Political Analysis</button>
                         <button class="button" onclick="clearRegions()">Clear All</button>
                     </div>
                 </div>
@@ -975,20 +991,34 @@
                 }
             });
 
-            return parts.join(' - ') || 'Unknown Region';
+            const label = parts.join(', ') || 'Unknown Region';
+            console.log('Selected region label:', label, 'for dataType:', dataType);
+            return label;
         }
 
         // Political analysis toggle
         function togglePoliticalAnalysis() {
-            showPoliticalAnalysis = document.getElementById('showPolitical').checked;
+            showPoliticalAnalysis = !showPoliticalAnalysis;
+            const btn = document.getElementById('politicalBtn');
             
-            if (showPoliticalAnalysis && electionData.length === 0) {
-                loadElectionData().then(() => {
+            if (showPoliticalAnalysis) {
+                btn.textContent = 'Hide Political Analysis';
+                btn.classList.add('active');
+                
+                if (electionData.length === 0) {
+                    loadElectionData().then(() => {
+                        updateRegionTags();
+                        updatePoliticalSummary();
+                        updateCharts();
+                    });
+                } else {
                     updateRegionTags();
                     updatePoliticalSummary();
                     updateCharts();
-                });
+                }
             } else {
+                btn.textContent = 'Political Analysis';
+                btn.classList.remove('active');
                 updateRegionTags();
                 updatePoliticalSummary();
                 updateCharts();
@@ -1213,6 +1243,7 @@
                 
                 document.getElementById('comparisonBtn').disabled = false;
                 document.getElementById('chartModeBtn').disabled = false;
+                document.getElementById(\'politicalBtn\').disabled = false;
                 
                 const config = selectorConfigs[dataType];
                 if (config) {
@@ -1241,6 +1272,7 @@
             if (selectedRegions.length === 0) {
                 document.getElementById('comparisonBtn').disabled = true;
                 document.getElementById('chartModeBtn').disabled = true;
+            document.getElementById(\'politicalBtn\').disabled = true;
                 document.getElementById('comparisonTable').style.display = 'none';
                 document.getElementById('overlayControls').classList.remove('visible');
             }
@@ -1256,6 +1288,7 @@
             clearCharts();
             document.getElementById('comparisonBtn').disabled = true;
             document.getElementById('chartModeBtn').disabled = true;
+            document.getElementById(\'politicalBtn\').disabled = true;
             document.getElementById('comparisonTable').style.display = 'none';
             document.getElementById('overlayControls').classList.remove('visible');
         }
@@ -1267,15 +1300,18 @@
             try {
                 if (dataType === 'us-states') {
                     // Match by state name
-                    return electionData.filter(d => d.state.toUpperCase() === region.toUpperCase());
+                    return electionData.filter(d => d.state && d.state.toUpperCase() === region.toUpperCase());
                 } else if (dataType === 'us-counties') {
                     // Parse "County, State" format
                     const [county, state] = region.split(', ');
                     if (!county || !state) return null;
                     
                     return electionData.filter(d => 
+                        d.state && d.county_name && 
                         d.state.toUpperCase() === state.toUpperCase() && 
-                        d.county_name === county || (d.county_name === "Miami-Dade" && county === "Miami Dade") || (d.county_name === "Miami Dade" && county === "Miami-Dade")
+                        (d.county_name.toUpperCase() === county.toUpperCase() ||
+                         (d.county_name === "Miami-Dade" && county.toUpperCase() === "MIAMI DADE") ||
+                         (d.county_name === "Miami Dade" && county.toUpperCase() === "MIAMI-DADE"))
                     );
                 }
             } catch (error) {
@@ -1302,8 +1338,10 @@
                     partyTotals[party] = 0;
                 }
                 partyTotals[party] += votes;
-                totalVotes = Math.max(totalVotes, record.totalvotes || 0);
             });
+
+            // Calculate total votes as sum of all party votes
+            totalVotes = Object.values(partyTotals).reduce((sum, votes) => sum + votes, 0);
 
             // Determine winner
             let winner = 'Unknown';
@@ -2339,10 +2377,15 @@
             if (!currentData) return [];
             
             if (dataType === 'us-states') {
-                return currentData.filter(d => d.state.toUpperCase() === region.toUpperCase()).sort((a, b) => new Date(a.date) - new Date(b.date));
+                return currentData.filter(d => d.state && d.state.toUpperCase() === region.toUpperCase()).sort((a, b) => new Date(a.date) - new Date(b.date));
             } else if (dataType === 'us-counties') {
                 const [county, state] = region.split(', ');
-                return currentData.filter(d => d.county === county && d.state.toUpperCase() === state.toUpperCase()).sort((a, b) => new Date(a.date) - new Date(b.date));
+                if (!county || !state) return [];
+                return currentData.filter(d => 
+                    d.county && d.state && 
+                    d.county.toUpperCase() === county.toUpperCase() && 
+                    d.state.toUpperCase() === state.toUpperCase()
+                ).sort((a, b) => new Date(a.date) - new Date(b.date));
             } else if (dataType === 'colleges') {
                 const collegeName = region.split(' (')[0];
                 return currentData.filter(d => d.college === collegeName);
