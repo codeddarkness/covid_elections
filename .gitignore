@@ -2,58 +2,42 @@
 .DS_Store
 .DS_Store?
 ._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
 # Backup files
 *.backup
 *.backup-*
 *_backup_*
-*.bak
 
 # Version files  
-*_v[0-9]
-*_v[0-9][0-9]
+*_v[0-9]*
 covid_dashboard.html_v*
-election_dashboard.html_v*
-sync.sh_v*
 
 # Temporary files
 *.tmp
-*.temp
 current_project_structure.txt
 retry_later
 
-# Reference files
-*.ref
-data_samples*.ref
-sample_*.ref
-
-# Development/debug scripts
+# Development scripts
+fix_*.sh
+setup_*.sh
 debug_*.sh
-update_county_display.sh
 
-# Node modules (if any)
+# Large data directories
+election_data/
+unused/
+versions/
+zipcodes/
+
+# Node modules
 node_modules/
 
 # Logs
 *.log
-npm-debug.log*
 
 # Environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*
 
 # IDE files
 .vscode/
 .idea/
 *.swp
-*.swo
-
-# OS generated files
-Icon?
