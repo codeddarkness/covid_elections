@@ -991,7 +991,15 @@
                 }
             });
 
-            const label = parts.join(', ') || 'Unknown Region';
+            let label = '';
+            if (dataType === 'us-states') {
+                label = parts[0] || '';
+            } else if (dataType === 'us-counties') {
+                label = parts.join(', ') || '';
+            } else {
+                label = parts.join(' - ') || '';
+            }
+            
             console.log('Selected region label:', label, 'for dataType:', dataType);
             return label;
         }
@@ -1061,6 +1069,8 @@
 
         // Data loading functions (existing COVID functionality)
         async function loadData() {
+            console.log('loadData called with dataType:', dataType);
+            
             const dataType = document.getElementById('dataType').value;
             if (!dataType) return;
 
