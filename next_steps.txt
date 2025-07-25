@@ -1,0 +1,129 @@
+# COVID-19 & Election Data Dashboard Project Summary
+
+## Project Overview
+Interactive web dashboard analyzing COVID-19 pandemic data alongside 2020 Presidential Election results to explore correlations between public health outcomes and political geography.
+
+## Tech Stack
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+), no frameworks
+- **Visualization**: Chart.js v3.9.1 for interactive charts
+- **Data Processing**: Papa Parse v5.4.1 for CSV handling
+- **Architecture**: Client-side only, no server dependencies
+- **Hosting**: Static files served from web server
+
+## Data Sources
+- **COVID Data**: NY Times COVID-19 repository (states, counties, colleges, prisons, etc.)
+- **Election Data**: MIT Election Lab 2020 Presidential results by county
+- **File Format**: CSV files loaded dynamically via fetch()
+
+## Current Critical Issue: Dynamic Selectors Not Appearing
+
+### Problem Description
+The dashboard has a dynamic selector system that should show dropdowns based on selected data type:
+- Select "US States" → Should show State dropdown
+- Select "US Counties" → Should show County + State dropdowns  
+- Select other data types → Should show relevant field dropdowns
+
+**Current Status**: No dynamic selectors appear when data types are selected. The `selectorsRow` div remains hidden.
+
+### Symptoms
+1. Data loads successfully (confirmed via console logs)
+2. `createDynamicSelectors()` and `populateDynamicSelectors()` functions exist
+3. `selectorConfigs` object is properly defined
+4. `selectorsRow` div exists in HTML
+5. All verification checks pass, but selectors still don't appear
+6. No JavaScript errors in browser console
+7. "Add Region" button remains disabled
+
+### Project Structure
+```
+covid_elections/
+├── covid_dashboard.html          # Main dashboard (the problematic file)
+├── election_dashboard.html       # Election-only dashboard (works fine)
+├── covid_election_integrated.html # Integration dashboard (separate)
+├── index.html                    # Simple redirect to covid_dashboard.html
+├── countypres_2020.csv           # Election data
+├── nytimes_covid-19-data/        # COVID data directory
+└── sync_simple.sh               # Deployment script
+```
+
+### Key Code Components
+
+#### Selector Configuration
+```javascript
+const selectorConfigs = {
+    'us-states': [
+        { key: 'date', label: 'Date', type: 'select' },
+        { key: 'state', label: 'State', type: 'select' }
+    ],
+    'us-counties': [
+        { key: 'date', label: 'Date', type: 'select' },
+        { key: 'county', label: 'County', type: 'select' },
+        { key: 'state', label: 'State', type: 'select' }
+    ],
+    // ... other data types
+};
+```
+
+#### Critical Functions
+1. `loadData()` - Fetches CSV, calls selector creation functions
+2. `createDynamicSelectors(dataType)` - Creates DOM elements for selectors
+3. `populateDynamicSelectors(dataType)` - Populates dropdowns with data
+4. `updateDependentSelectors(dataType)` - Handles cascading selections
+
+#### HTML Structure
+```html
+<div class="controls-row" id="selectorsRow" style="display: none;">
+    <!-- Dynamic selectors should be added here -->
+</div>
+```
+
+### Fixes Attempted
+1. **Syntax Errors**: Fixed escaped quote issues in JavaScript
+2. **Function Calls**: Ensured `loadData()` calls selector functions immediately
+3. **Function Existence**: Verified all selector functions are present
+4. **Data Format**: Fixed region label formatting (`'County, State'` vs `'County - State'`)
+5. **Political Analysis**: Moved from checkbox to button toggle (working)
+6. **Debug Logging**: Added extensive console logging
+7. **CSS Styling**: Added proper button styling
+
+### Debug Information
+- All verification checks pass ✅
+- Functions exist and are called ✅  
+- Data loads successfully ✅
+- No JavaScript console errors ✅
+- **But selectors still don't appear** ❌
+
+### Suspected Issues
+1. **Timing Problem**: Selectors created before DOM ready?
+2. **CSS Display Issue**: Elements created but not visible?
+3. **Event Handler Problem**: `onchange` for data type selector not firing?
+4. **Scope Issue**: Functions called but in wrong context?
+5. **Race Condition**: Multiple rapid calls causing conflicts?
+
+### Working Reference
+The `election_dashboard.html` has a simpler but working selector system:
+- Static State/County dropdowns
+- Manual population via `loadCountiesForState()`
+- No dynamic creation, just show/hide and populate
+
+### Next Steps Needed
+1. **Deep Debug**: Add step-by-step logging to trace execution flow
+2. **DOM Inspection**: Verify if elements are created but hidden
+3. **Event Debugging**: Confirm `loadData()` is actually called on dropdown change
+4. **Simplification**: Consider reverting to static selectors like election dashboard
+5. **Browser Testing**: Test in different browsers for compatibility issues
+
+### Development Environment
+- Local development with Python HTTP server
+- Production deployment via SSH to `bataleon` server
+- Files synced with `sync_simple.sh` script
+- Multiple backups created during debugging process
+
+### Success Criteria
+When working correctly:
+1. Select "US States" → State dropdown appears immediately
+2. Select "US Counties" → County and State dropdowns appear
+3. Selecting values enables "Add Region" button
+4. Selected regions can be added for analysis and visualization
+
+**The core mystery**: All code verification passes, but the visual selectors never appear in the browser.
