@@ -612,17 +612,8 @@
                         <button class="button" onclick="updateCharts()" id="updateBtn" disabled>Update Charts</button>
                     </div>
                 </div>
-
-                <!-- Political analysis toggle -->
-                <div class="controls-row">
-                    <div class="control-item">
-                        <label for="showPolitical">
-                            <input type="checkbox" id="showPolitical" onchange="togglePoliticalAnalysis()" style="margin-right: 0.5rem;">
-                            Show Political Analysis (for US States/Counties)
-                        </label>
-                    </div>
-                </div>
             </div>
+            
             <div class="selected-regions">
                 <!-- Compact header with controls -->
                 <div class="regions-header">
@@ -630,6 +621,7 @@
                     <div class="regions-controls">
                         <button class="button" onclick="toggleComparisonMode()" id="comparisonBtn" disabled>Show Comparison Table</button>
                         <button class="button" onclick="toggleChartMode()" id="chartModeBtn" disabled>Cumulative View</button>
+                        <button class="button" onclick="togglePoliticalAnalysis()" id="politicalBtn" disabled>Show Political Analysis</button>
                         <button class="button" onclick="clearRegions()">Clear All</button>
                     </div>
                 </div>
@@ -779,6 +771,7 @@
         let overlayMode = false;
         let overlaySelections = {};
         let showPoliticalAnalysis = false;
+        
         // Selector configurations based on bracketed headers from data_samples_headers.ref
         const selectorConfigs = {
             'us-states': [
@@ -838,7 +831,6 @@
             });
             document.getElementById(pageId).classList.add('active');
         }
-
 
         function createDynamicSelectors(dataType) {
             const selectorsRow = document.getElementById('selectorsRow');
@@ -975,20 +967,39 @@
                 }
             });
 
+            // For US counties, format as "County, State" to match parsing expectations
+            if (dataType === 'us-counties' && parts.length >= 2) {
+                const county = parts[0];
+                const state = parts[1];
+                return `${county}, ${state}`;
+            }
+
             return parts.join(' - ') || 'Unknown Region';
         }
 
-        // Political analysis toggle
+        // Political analysis toggle - now button instead of checkbox
         function togglePoliticalAnalysis() {
-            showPoliticalAnalysis = document.getElementById('showPolitical').checked;
+            showPoliticalAnalysis = !showPoliticalAnalysis;
+            const btn = document.getElementById('politicalBtn');
             
-            if (showPoliticalAnalysis && electionData.length === 0) {
-                loadElectionData().then(() => {
+            if (showPoliticalAnalysis) {
+                btn.textContent = 'Hide Political Analysis';
+                btn.classList.add('active');
+                
+                if (electionData.length === 0) {
+                    loadElectionData().then(() => {
+                        updateRegionTags();
+                        updatePoliticalSummary();
+                        updateCharts();
+                    });
+                } else {
                     updateRegionTags();
                     updatePoliticalSummary();
                     updateCharts();
-                });
+                }
             } else {
+                btn.textContent = 'Show Political Analysis';
+                btn.classList.remove('active');
                 updateRegionTags();
                 updatePoliticalSummary();
                 updateCharts();
@@ -1115,81 +1126,6 @@
             }
         }
 
-        function populateRegionSelect(dataType) {
-            const regionSelect = document.getElementById('regionSelect');
-            regionSelect.innerHTML = '<option value="">Select a region</option>';
-            
-            const currentData = allDataSets[dataType];
-            if (!currentData) return;
-
-            try {
-                let regions = [];
-                
-                if (dataType === 'us-states') {
-                    regions = [...new Set(currentData.map(d => d.state))].filter(Boolean).sort();
-                } else if (dataType === 'us-counties') {
-                    // Sort by state, then county
-                    const countyData = [...new Set(currentData.map(d => `${d.state}||${d.county}`))].filter(Boolean);
-                    regions = countyData.map(item => {
-                        const [state, county] = item.split('||');
-                        return { state, county, display: `${county}, ${state}` };
-                    }).sort((a, b) => {
-                        if (a.state !== b.state) return a.state.localeCompare(b.state);
-                        return a.county.localeCompare(b.county);
-                    }).map(item => item.display);
-                } else if (dataType === 'colleges') {
-                    // Sort by state, then college name
-                    const collegeData = currentData.map(d => ({
-                        state: d.state,
-                        college: d.college,
-                        display: `${d.college} (${d.state})`
-                    })).filter(item => item.state && item.college)
-                    .sort((a, b) => {
-                        if (a.state !== b.state) return a.state.localeCompare(b.state);
-                        return a.college.localeCompare(b.college);
-                    });
-                    regions = [...new Set(collegeData.map(item => item.display))];
-                } else if (dataType === 'prisons-facilities') {
-                    const facilityData = currentData.map(d => ({
-                        state: d.facility_state,
-                        facility: d.facility_name,
-                        display: `${d.facility_name} (${d.facility_state})`
-                    })).filter(item => item.state && item.facility)
-                    .sort((a, b) => {
-                        if (a.state !== b.state) return a.state.localeCompare(b.state);
-                        return a.facility.localeCompare(b.facility);
-                    });
-                    regions = [...new Set(facilityData.map(item => item.display))];
-                } else if (dataType === 'prisons-systems') {
-                    regions = [...new Set(currentData.map(d => d.state || d.system))].filter(Boolean).sort();
-                } else if (dataType === 'excess-deaths') {
-                    regions = [...new Set(currentData.map(d => d.placename ? `${d.placename}, ${d.country}` : d.country))].filter(Boolean).sort();
-                } else if (dataType === 'mask-use') {
-                    const message = document.createElement('option');
-                    message.value = '';
-                    message.textContent = 'Mask use data shows county-level percentages by FIPS code';
-                    regionSelect.appendChild(message);
-                    return;
-                }
-
-                console.log(`Found ${regions.length} regions for ${dataType}`);
-
-                regions.forEach(region => {
-                    const option = document.createElement('option');
-                    option.value = region;
-                    option.textContent = region;
-                    regionSelect.appendChild(option);
-                });
-
-                regionSelect.disabled = false;
-                document.getElementById('addRegionBtn').disabled = false;
-                
-            } catch (error) {
-                console.error('Error populating region select:', error);
-                showError('Error loading region data');
-            }
-        }
-
         function enableControls() {
             document.getElementById('startDate').disabled = false;
             document.getElementById('endDate').disabled = false;
@@ -1213,6 +1149,11 @@
                 
                 document.getElementById('comparisonBtn').disabled = false;
                 document.getElementById('chartModeBtn').disabled = false;
+                
+                // Enable political button for US regions
+                if (dataType === 'us-states' || dataType === 'us-counties') {
+                    document.getElementById('politicalBtn').disabled = false;
+                }
                 
                 const config = selectorConfigs[dataType];
                 if (config) {
@@ -1241,8 +1182,13 @@
             if (selectedRegions.length === 0) {
                 document.getElementById('comparisonBtn').disabled = true;
                 document.getElementById('chartModeBtn').disabled = true;
+                document.getElementById('politicalBtn').disabled = true;
                 document.getElementById('comparisonTable').style.display = 'none';
                 document.getElementById('overlayControls').classList.remove('visible');
+            } else {
+                // Check if we still have US regions for political analysis
+                const hasUSRegions = selectedDataTypes.some(dt => dt === 'us-states' || dt === 'us-counties');
+                document.getElementById('politicalBtn').disabled = !hasUSRegions;
             }
         }
 
@@ -1250,12 +1196,16 @@
             selectedRegions = [];
             selectedDataTypes = [];
             overlaySelections = {};
+            showPoliticalAnalysis = false;
             updateRegionTags();
             updateOverlayControls();
             updatePoliticalSummary();
             clearCharts();
             document.getElementById('comparisonBtn').disabled = true;
             document.getElementById('chartModeBtn').disabled = true;
+            document.getElementById('politicalBtn').disabled = true;
+            document.getElementById('politicalBtn').textContent = 'Show Political Analysis';
+            document.getElementById('politicalBtn').classList.remove('active');
             document.getElementById('comparisonTable').style.display = 'none';
             document.getElementById('overlayControls').classList.remove('visible');
         }
@@ -1275,7 +1225,9 @@
                     
                     return electionData.filter(d => 
                         d.state.toUpperCase() === state.toUpperCase() && 
-                        d.county_name === county || (d.county_name === "Miami-Dade" && county === "Miami Dade") || (d.county_name === "Miami Dade" && county === "Miami-Dade")
+                        (d.county_name === county || 
+                         (d.county_name === "Miami-Dade" && county === "Miami Dade") || 
+                         (d.county_name === "Miami Dade" && county === "Miami-Dade"))
                     );
                 }
             } catch (error) {
@@ -1285,7 +1237,7 @@
             return null;
         }
 
-        // Aggregate political data by party
+        // Fixed aggregation function - correctly calculate percentages
         function aggregatePoliticalData(politicalData) {
             if (!politicalData || politicalData.length === 0) {
                 return { partyTotals: {}, totalVotes: 0, winner: 'Unknown' };
@@ -1302,7 +1254,7 @@
                     partyTotals[party] = 0;
                 }
                 partyTotals[party] += votes;
-                totalVotes = Math.max(totalVotes, record.totalvotes || 0);
+                totalVotes += votes; // Sum all votes, not max
             });
 
             // Determine winner
@@ -1778,7 +1730,7 @@
 
             regions.forEach(region => {
                 const politicalData = getRegionPoliticalData(region, dataType);
-                if (politicalData) {
+                if (politicalData && politicalData.length > 0) {
                     const { partyTotals, totalVotes } = aggregatePoliticalData(politicalData);
                     
                     const demPct = totalVotes > 0 ? ((partyTotals['DEMOCRAT'] || 0) / totalVotes) * 100 : 0;
@@ -2342,7 +2294,12 @@
                 return currentData.filter(d => d.state.toUpperCase() === region.toUpperCase()).sort((a, b) => new Date(a.date) - new Date(b.date));
             } else if (dataType === 'us-counties') {
                 const [county, state] = region.split(', ');
-                return currentData.filter(d => d.county === county && d.state.toUpperCase() === state.toUpperCase()).sort((a, b) => new Date(a.date) - new Date(b.date));
+                if (!county || !state) {
+                    console.warn('Invalid county format:', region);
+                    return [];
+                }
+                return currentData.filter(d =>d.county === county && d.state.toUpperCase() === state.toUpperCase()
+                ).sort((a, b) => new Date(a.date) - new Date(b.date));
             } else if (dataType === 'colleges') {
                 const collegeName = region.split(' (')[0];
                 return currentData.filter(d => d.college === collegeName);
@@ -2424,3 +2381,4 @@
         });
     </script>
 </body>
+</html>
