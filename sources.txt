@@ -5,3 +5,5 @@ https://github.com/tonmcg/US_County_Level_Election_Results_08-24.git
 https://github.com/jaytimm/PresElectionResults
 https://github.com/MEDSL/2022-elections-official.git
 https://github.com/fivethirtyeight/election-results.git
+https://github.com/uscensusbureau/citysdk
+https://gist.github.com/mattkram/d3880a3a23ca36ccf10f22c1f49adb29       ## US Census Data
